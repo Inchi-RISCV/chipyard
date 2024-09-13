@@ -90,6 +90,46 @@ module CSRFile(
   input         io_gva,
                 io_fcsr_flags_valid,
   input  [4:0]  io_fcsr_flags_bits,
+  input         io_counters_0_inc,
+                io_counters_1_inc,
+                io_counters_2_inc,
+                io_counters_3_inc,
+                io_counters_4_inc,
+                io_counters_5_inc,
+                io_counters_6_inc,
+                io_counters_7_inc,
+                io_counters_8_inc,
+                io_counters_9_inc,
+                io_counters_10_inc,
+                io_counters_11_inc,
+                io_counters_12_inc,
+                io_counters_13_inc,
+                io_counters_14_inc,
+                io_counters_15_inc,
+                io_counters_16_inc,
+                io_counters_17_inc,
+                io_counters_18_inc,
+                io_counters_19_inc,
+                io_counters_20_inc,
+                io_counters_21_inc,
+                io_counters_22_inc,
+                io_counters_23_inc,
+                io_counters_24_inc,
+                io_counters_25_inc,
+                io_counters_26_inc,
+                io_counters_27_inc,
+                io_counters_28_inc,
+                io_counters_29_inc,
+                io_counters_30_inc,
+                io_counters_31_inc,
+                io_counters_32_inc,
+                io_counters_33_inc,
+                io_counters_34_inc,
+                io_counters_35_inc,
+                io_counters_36_inc,
+                io_counters_37_inc,
+                io_counters_38_inc,
+                io_counters_39_inc,
   input  [31:0] io_inst_0,
   input         io_vector_set_vs_dirty,
                 io_vector_set_vconfig_valid,
@@ -214,6 +254,102 @@ module CSRFile(
                 io_pmp_7_cfg_r,
   output [29:0] io_pmp_7_addr,
   output [31:0] io_pmp_7_mask,
+  output        io_pmp_8_cfg_l,
+  output [1:0]  io_pmp_8_cfg_a,
+  output        io_pmp_8_cfg_x,
+                io_pmp_8_cfg_w,
+                io_pmp_8_cfg_r,
+  output [29:0] io_pmp_8_addr,
+  output [31:0] io_pmp_8_mask,
+  output        io_pmp_9_cfg_l,
+  output [1:0]  io_pmp_9_cfg_a,
+  output        io_pmp_9_cfg_x,
+                io_pmp_9_cfg_w,
+                io_pmp_9_cfg_r,
+  output [29:0] io_pmp_9_addr,
+  output [31:0] io_pmp_9_mask,
+  output        io_pmp_10_cfg_l,
+  output [1:0]  io_pmp_10_cfg_a,
+  output        io_pmp_10_cfg_x,
+                io_pmp_10_cfg_w,
+                io_pmp_10_cfg_r,
+  output [29:0] io_pmp_10_addr,
+  output [31:0] io_pmp_10_mask,
+  output        io_pmp_11_cfg_l,
+  output [1:0]  io_pmp_11_cfg_a,
+  output        io_pmp_11_cfg_x,
+                io_pmp_11_cfg_w,
+                io_pmp_11_cfg_r,
+  output [29:0] io_pmp_11_addr,
+  output [31:0] io_pmp_11_mask,
+  output        io_pmp_12_cfg_l,
+  output [1:0]  io_pmp_12_cfg_a,
+  output        io_pmp_12_cfg_x,
+                io_pmp_12_cfg_w,
+                io_pmp_12_cfg_r,
+  output [29:0] io_pmp_12_addr,
+  output [31:0] io_pmp_12_mask,
+  output        io_pmp_13_cfg_l,
+  output [1:0]  io_pmp_13_cfg_a,
+  output        io_pmp_13_cfg_x,
+                io_pmp_13_cfg_w,
+                io_pmp_13_cfg_r,
+  output [29:0] io_pmp_13_addr,
+  output [31:0] io_pmp_13_mask,
+  output        io_pmp_14_cfg_l,
+  output [1:0]  io_pmp_14_cfg_a,
+  output        io_pmp_14_cfg_x,
+                io_pmp_14_cfg_w,
+                io_pmp_14_cfg_r,
+  output [29:0] io_pmp_14_addr,
+  output [31:0] io_pmp_14_mask,
+  output        io_pmp_15_cfg_l,
+  output [1:0]  io_pmp_15_cfg_a,
+  output        io_pmp_15_cfg_x,
+                io_pmp_15_cfg_w,
+                io_pmp_15_cfg_r,
+  output [29:0] io_pmp_15_addr,
+  output [31:0] io_pmp_15_mask,
+  output [63:0] io_counters_0_eventSel,
+                io_counters_1_eventSel,
+                io_counters_2_eventSel,
+                io_counters_3_eventSel,
+                io_counters_4_eventSel,
+                io_counters_5_eventSel,
+                io_counters_6_eventSel,
+                io_counters_7_eventSel,
+                io_counters_8_eventSel,
+                io_counters_9_eventSel,
+                io_counters_10_eventSel,
+                io_counters_11_eventSel,
+                io_counters_12_eventSel,
+                io_counters_13_eventSel,
+                io_counters_14_eventSel,
+                io_counters_15_eventSel,
+                io_counters_16_eventSel,
+                io_counters_17_eventSel,
+                io_counters_18_eventSel,
+                io_counters_19_eventSel,
+                io_counters_20_eventSel,
+                io_counters_21_eventSel,
+                io_counters_22_eventSel,
+                io_counters_23_eventSel,
+                io_counters_24_eventSel,
+                io_counters_25_eventSel,
+                io_counters_26_eventSel,
+                io_counters_27_eventSel,
+                io_counters_28_eventSel,
+                io_counters_29_eventSel,
+                io_counters_30_eventSel,
+                io_counters_31_eventSel,
+                io_counters_32_eventSel,
+                io_counters_33_eventSel,
+                io_counters_34_eventSel,
+                io_counters_35_eventSel,
+                io_counters_36_eventSel,
+                io_counters_37_eventSel,
+                io_counters_38_eventSel,
+                io_counters_39_eventSel,
   output        io_inhibit_cycle,
                 io_trace_0_valid,
   output [39:0] io_trace_0_iaddr,
@@ -344,6 +480,54 @@ module CSRFile(
   reg         reg_pmp_7_cfg_w;	// @[CSR.scala:501:20]
   reg         reg_pmp_7_cfg_r;	// @[CSR.scala:501:20]
   reg  [29:0] reg_pmp_7_addr;	// @[CSR.scala:501:20]
+  reg         reg_pmp_8_cfg_l;	// @[CSR.scala:501:20]
+  reg  [1:0]  reg_pmp_8_cfg_a;	// @[CSR.scala:501:20]
+  reg         reg_pmp_8_cfg_x;	// @[CSR.scala:501:20]
+  reg         reg_pmp_8_cfg_w;	// @[CSR.scala:501:20]
+  reg         reg_pmp_8_cfg_r;	// @[CSR.scala:501:20]
+  reg  [29:0] reg_pmp_8_addr;	// @[CSR.scala:501:20]
+  reg         reg_pmp_9_cfg_l;	// @[CSR.scala:501:20]
+  reg  [1:0]  reg_pmp_9_cfg_a;	// @[CSR.scala:501:20]
+  reg         reg_pmp_9_cfg_x;	// @[CSR.scala:501:20]
+  reg         reg_pmp_9_cfg_w;	// @[CSR.scala:501:20]
+  reg         reg_pmp_9_cfg_r;	// @[CSR.scala:501:20]
+  reg  [29:0] reg_pmp_9_addr;	// @[CSR.scala:501:20]
+  reg         reg_pmp_10_cfg_l;	// @[CSR.scala:501:20]
+  reg  [1:0]  reg_pmp_10_cfg_a;	// @[CSR.scala:501:20]
+  reg         reg_pmp_10_cfg_x;	// @[CSR.scala:501:20]
+  reg         reg_pmp_10_cfg_w;	// @[CSR.scala:501:20]
+  reg         reg_pmp_10_cfg_r;	// @[CSR.scala:501:20]
+  reg  [29:0] reg_pmp_10_addr;	// @[CSR.scala:501:20]
+  reg         reg_pmp_11_cfg_l;	// @[CSR.scala:501:20]
+  reg  [1:0]  reg_pmp_11_cfg_a;	// @[CSR.scala:501:20]
+  reg         reg_pmp_11_cfg_x;	// @[CSR.scala:501:20]
+  reg         reg_pmp_11_cfg_w;	// @[CSR.scala:501:20]
+  reg         reg_pmp_11_cfg_r;	// @[CSR.scala:501:20]
+  reg  [29:0] reg_pmp_11_addr;	// @[CSR.scala:501:20]
+  reg         reg_pmp_12_cfg_l;	// @[CSR.scala:501:20]
+  reg  [1:0]  reg_pmp_12_cfg_a;	// @[CSR.scala:501:20]
+  reg         reg_pmp_12_cfg_x;	// @[CSR.scala:501:20]
+  reg         reg_pmp_12_cfg_w;	// @[CSR.scala:501:20]
+  reg         reg_pmp_12_cfg_r;	// @[CSR.scala:501:20]
+  reg  [29:0] reg_pmp_12_addr;	// @[CSR.scala:501:20]
+  reg         reg_pmp_13_cfg_l;	// @[CSR.scala:501:20]
+  reg  [1:0]  reg_pmp_13_cfg_a;	// @[CSR.scala:501:20]
+  reg         reg_pmp_13_cfg_x;	// @[CSR.scala:501:20]
+  reg         reg_pmp_13_cfg_w;	// @[CSR.scala:501:20]
+  reg         reg_pmp_13_cfg_r;	// @[CSR.scala:501:20]
+  reg  [29:0] reg_pmp_13_addr;	// @[CSR.scala:501:20]
+  reg         reg_pmp_14_cfg_l;	// @[CSR.scala:501:20]
+  reg  [1:0]  reg_pmp_14_cfg_a;	// @[CSR.scala:501:20]
+  reg         reg_pmp_14_cfg_x;	// @[CSR.scala:501:20]
+  reg         reg_pmp_14_cfg_w;	// @[CSR.scala:501:20]
+  reg         reg_pmp_14_cfg_r;	// @[CSR.scala:501:20]
+  reg  [29:0] reg_pmp_14_addr;	// @[CSR.scala:501:20]
+  reg         reg_pmp_15_cfg_l;	// @[CSR.scala:501:20]
+  reg  [1:0]  reg_pmp_15_cfg_a;	// @[CSR.scala:501:20]
+  reg         reg_pmp_15_cfg_x;	// @[CSR.scala:501:20]
+  reg         reg_pmp_15_cfg_w;	// @[CSR.scala:501:20]
+  reg         reg_pmp_15_cfg_r;	// @[CSR.scala:501:20]
+  reg  [29:0] reg_pmp_15_addr;	// @[CSR.scala:501:20]
   reg  [63:0] reg_mie;	// @[CSR.scala:503:20]
   reg  [63:0] reg_mideleg;	// @[CSR.scala:505:18]
   wire [63:0] read_mideleg = reg_mideleg & 64'h222;	// @[CSR.scala:505:18, :506:38]
@@ -383,18 +567,178 @@ module CSRFile(
   reg  [6:0]  reg_vstart;	// @[CSR.scala:584:42]
   reg         reg_vxsat;	// @[CSR.scala:585:41]
   reg  [1:0]  reg_vxrm;	// @[CSR.scala:586:40]
-  reg  [2:0]  reg_mcountinhibit;	// @[CSR.scala:588:34]
+  reg  [42:0] reg_mcountinhibit;	// @[CSR.scala:588:34]
   reg  [5:0]  small_0;	// @[Counters.scala:45:41]
   reg  [57:0] large_0;	// @[Counters.scala:50:31]
   wire [63:0] value = {large_0, small_0};	// @[Cat.scala:33:92, Counters.scala:45:41, :50:31]
   reg  [5:0]  small_1;	// @[Counters.scala:45:41]
   reg  [57:0] large_1;	// @[Counters.scala:50:31]
   wire [63:0] value_1 = {large_1, small_1};	// @[Cat.scala:33:92, Counters.scala:45:41, :50:31]
+  reg  [63:0] reg_hpmevent_0;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_1;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_2;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_3;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_4;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_5;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_6;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_7;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_8;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_9;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_10;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_11;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_12;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_13;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_14;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_15;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_16;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_17;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_18;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_19;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_20;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_21;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_22;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_23;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_24;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_25;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_26;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_27;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_28;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_29;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_30;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_31;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_32;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_33;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_34;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_35;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_36;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_37;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_38;	// @[CSR.scala:593:50]
+  reg  [63:0] reg_hpmevent_39;	// @[CSR.scala:593:50]
+  reg  [5:0]  small_2;	// @[Counters.scala:45:69]
+  reg  [33:0] large_2;	// @[Counters.scala:50:69]
+  wire [39:0] value_2 = {large_2, small_2};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_3;	// @[Counters.scala:45:69]
+  reg  [33:0] large_3;	// @[Counters.scala:50:69]
+  wire [39:0] value_3 = {large_3, small_3};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_4;	// @[Counters.scala:45:69]
+  reg  [33:0] large_4;	// @[Counters.scala:50:69]
+  wire [39:0] value_4 = {large_4, small_4};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_5;	// @[Counters.scala:45:69]
+  reg  [33:0] large_5;	// @[Counters.scala:50:69]
+  wire [39:0] value_5 = {large_5, small_5};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_6;	// @[Counters.scala:45:69]
+  reg  [33:0] large_6;	// @[Counters.scala:50:69]
+  wire [39:0] value_6 = {large_6, small_6};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_7;	// @[Counters.scala:45:69]
+  reg  [33:0] large_7;	// @[Counters.scala:50:69]
+  wire [39:0] value_7 = {large_7, small_7};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_8;	// @[Counters.scala:45:69]
+  reg  [33:0] large_8;	// @[Counters.scala:50:69]
+  wire [39:0] value_8 = {large_8, small_8};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_9;	// @[Counters.scala:45:69]
+  reg  [33:0] large_9;	// @[Counters.scala:50:69]
+  wire [39:0] value_9 = {large_9, small_9};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_10;	// @[Counters.scala:45:69]
+  reg  [33:0] large_10;	// @[Counters.scala:50:69]
+  wire [39:0] value_10 = {large_10, small_10};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_11;	// @[Counters.scala:45:69]
+  reg  [33:0] large_11;	// @[Counters.scala:50:69]
+  wire [39:0] value_11 = {large_11, small_11};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_12;	// @[Counters.scala:45:69]
+  reg  [33:0] large_12;	// @[Counters.scala:50:69]
+  wire [39:0] value_12 = {large_12, small_12};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_13;	// @[Counters.scala:45:69]
+  reg  [33:0] large_13;	// @[Counters.scala:50:69]
+  wire [39:0] value_13 = {large_13, small_13};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_14;	// @[Counters.scala:45:69]
+  reg  [33:0] large_14;	// @[Counters.scala:50:69]
+  wire [39:0] value_14 = {large_14, small_14};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_15;	// @[Counters.scala:45:69]
+  reg  [33:0] large_15;	// @[Counters.scala:50:69]
+  wire [39:0] value_15 = {large_15, small_15};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_16;	// @[Counters.scala:45:69]
+  reg  [33:0] large_16;	// @[Counters.scala:50:69]
+  wire [39:0] value_16 = {large_16, small_16};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_17;	// @[Counters.scala:45:69]
+  reg  [33:0] large_17;	// @[Counters.scala:50:69]
+  wire [39:0] value_17 = {large_17, small_17};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_18;	// @[Counters.scala:45:69]
+  reg  [33:0] large_18;	// @[Counters.scala:50:69]
+  wire [39:0] value_18 = {large_18, small_18};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_19;	// @[Counters.scala:45:69]
+  reg  [33:0] large_19;	// @[Counters.scala:50:69]
+  wire [39:0] value_19 = {large_19, small_19};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_20;	// @[Counters.scala:45:69]
+  reg  [33:0] large_20;	// @[Counters.scala:50:69]
+  wire [39:0] value_20 = {large_20, small_20};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_21;	// @[Counters.scala:45:69]
+  reg  [33:0] large_21;	// @[Counters.scala:50:69]
+  wire [39:0] value_21 = {large_21, small_21};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_22;	// @[Counters.scala:45:69]
+  reg  [33:0] large_22;	// @[Counters.scala:50:69]
+  wire [39:0] value_22 = {large_22, small_22};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_23;	// @[Counters.scala:45:69]
+  reg  [33:0] large_23;	// @[Counters.scala:50:69]
+  wire [39:0] value_23 = {large_23, small_23};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_24;	// @[Counters.scala:45:69]
+  reg  [33:0] large_24;	// @[Counters.scala:50:69]
+  wire [39:0] value_24 = {large_24, small_24};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_25;	// @[Counters.scala:45:69]
+  reg  [33:0] large_25;	// @[Counters.scala:50:69]
+  wire [39:0] value_25 = {large_25, small_25};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_26;	// @[Counters.scala:45:69]
+  reg  [33:0] large_26;	// @[Counters.scala:50:69]
+  wire [39:0] value_26 = {large_26, small_26};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_27;	// @[Counters.scala:45:69]
+  reg  [33:0] large_27;	// @[Counters.scala:50:69]
+  wire [39:0] value_27 = {large_27, small_27};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_28;	// @[Counters.scala:45:69]
+  reg  [33:0] large_28;	// @[Counters.scala:50:69]
+  wire [39:0] value_28 = {large_28, small_28};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_29;	// @[Counters.scala:45:69]
+  reg  [33:0] large_29;	// @[Counters.scala:50:69]
+  wire [39:0] value_29 = {large_29, small_29};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_30;	// @[Counters.scala:45:69]
+  reg  [33:0] large_30;	// @[Counters.scala:50:69]
+  wire [39:0] value_30 = {large_30, small_30};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_31;	// @[Counters.scala:45:69]
+  reg  [33:0] large_31;	// @[Counters.scala:50:69]
+  wire [39:0] value_31 = {large_31, small_31};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_32;	// @[Counters.scala:45:69]
+  reg  [33:0] large_32;	// @[Counters.scala:50:69]
+  wire [39:0] value_32 = {large_32, small_32};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_33;	// @[Counters.scala:45:69]
+  reg  [33:0] large_33;	// @[Counters.scala:50:69]
+  wire [39:0] value_33 = {large_33, small_33};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_34;	// @[Counters.scala:45:69]
+  reg  [33:0] large_34;	// @[Counters.scala:50:69]
+  wire [39:0] value_34 = {large_34, small_34};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_35;	// @[Counters.scala:45:69]
+  reg  [33:0] large_35;	// @[Counters.scala:50:69]
+  wire [39:0] value_35 = {large_35, small_35};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_36;	// @[Counters.scala:45:69]
+  reg  [33:0] large_36;	// @[Counters.scala:50:69]
+  wire [39:0] value_36 = {large_36, small_36};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_37;	// @[Counters.scala:45:69]
+  reg  [33:0] large_37;	// @[Counters.scala:50:69]
+  wire [39:0] value_37 = {large_37, small_37};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_38;	// @[Counters.scala:45:69]
+  reg  [33:0] large_38;	// @[Counters.scala:50:69]
+  wire [39:0] value_38 = {large_38, small_38};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_39;	// @[Counters.scala:45:69]
+  reg  [33:0] large_39;	// @[Counters.scala:50:69]
+  wire [39:0] value_39 = {large_39, small_39};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_40;	// @[Counters.scala:45:69]
+  reg  [33:0] large_40;	// @[Counters.scala:50:69]
+  wire [39:0] value_40 = {large_40, small_40};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
+  reg  [5:0]  small_41;	// @[Counters.scala:45:69]
+  reg  [33:0] large_41;	// @[Counters.scala:50:69]
+  wire [39:0] value_41 = {large_41, small_41};	// @[Cat.scala:33:92, Counters.scala:45:69, :50:69]
   wire        mip_seip = reg_mip_seip | io_interrupts_seip;	// @[CSR.scala:512:20, :604:57]
   wire [63:0] _GEN = {52'h0, io_interrupts_meip, 1'h0, mip_seip, 1'h0, io_interrupts_mtip, 1'h0, reg_mip_stip, 1'h0, io_interrupts_msip, 1'h0, reg_mip_ssip, 1'h0};	// @[CSR.scala:512:20, :604:57, :612:56, :976:17]
   wire [15:0] _GEN_0 = {4'h0, io_interrupts_meip, 1'h0, mip_seip, 1'h0, io_interrupts_mtip, 1'h0, reg_mip_stip, 1'h0, io_interrupts_msip, 1'h0, reg_mip_ssip, 1'h0} & reg_mie[15:0];	// @[CSR.scala:503:20, :512:20, :604:57, :612:56, :1598:23]
-  wire [15:0] _GEN_1 = ~(reg_mstatus_prv[1]) | reg_mstatus_mie ? ~(~_GEN_0 | read_mideleg[15:0]) : 16'h0;	// @[CSR.scala:410:28, :506:38, :612:56, :618:{25,51,62,83,85,105}, Mux.scala:27:73]
-  wire [10:0] _GEN_2 = reg_mstatus_v | reg_mstatus_prv == 2'h0 | reg_mstatus_prv == 2'h1 & reg_mstatus_sie ? _GEN_0[11:1] & read_mideleg[11:1] : 11'h0;	// @[CSR.scala:410:28, :418:25, :506:38, :612:56, :619:{25,68,78,98,110,151}, Mux.scala:27:73]
+  wire [15:0] _GEN_1 = ~(reg_mstatus_prv[1]) | reg_mstatus_mie ? ~(~_GEN_0 | read_mideleg[15:0]) : 16'h0;	// @[CSR.scala:410:28, :506:38, :612:56, :618:{25,51,62,83,85,105}, :1628:9]
+  wire [10:0] _GEN_2 = reg_mstatus_v | reg_mstatus_prv == 2'h0 | reg_mstatus_prv == 2'h1 & reg_mstatus_sie ? _GEN_0[11:1] & read_mideleg[11:1] : 11'h0;	// @[CSR.scala:410:28, :418:25, :506:38, :536:32, :612:56, :619:{25,68,78,98,110,151}]
   wire [29:0] _GEN_3 = {reg_pmp_0_addr[28:0], reg_pmp_0_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
   wire [29:0] _GEN_4 = {reg_pmp_1_addr[28:0], reg_pmp_1_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
   wire [29:0] _GEN_5 = {reg_pmp_2_addr[28:0], reg_pmp_2_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
@@ -403,16 +747,23 @@ module CSRFile(
   wire [29:0] _GEN_8 = {reg_pmp_5_addr[28:0], reg_pmp_5_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
   wire [29:0] _GEN_9 = {reg_pmp_6_addr[28:0], reg_pmp_6_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
   wire [29:0] _GEN_10 = {reg_pmp_7_addr[28:0], reg_pmp_7_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
+  wire [29:0] _GEN_11 = {reg_pmp_8_addr[28:0], reg_pmp_8_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
+  wire [29:0] _GEN_12 = {reg_pmp_9_addr[28:0], reg_pmp_9_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
+  wire [29:0] _GEN_13 = {reg_pmp_10_addr[28:0], reg_pmp_10_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
+  wire [29:0] _GEN_14 = {reg_pmp_11_addr[28:0], reg_pmp_11_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
+  wire [29:0] _GEN_15 = {reg_pmp_12_addr[28:0], reg_pmp_12_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
+  wire [29:0] _GEN_16 = {reg_pmp_13_addr[28:0], reg_pmp_13_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
+  wire [29:0] _GEN_17 = {reg_pmp_14_addr[28:0], reg_pmp_14_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
+  wire [29:0] _GEN_18 = {reg_pmp_15_addr[28:0], reg_pmp_15_cfg_a[0]};	// @[CSR.scala:501:20, PMP.scala:57:31, :58:23]
   reg  [63:0] reg_misa;	// @[CSR.scala:647:25]
   wire [31:0] _read_mtvec_T_5 = reg_mtvec & {24'hFFFFFF, ~(reg_mtvec[0] ? 8'hFE : 8'h2)};	// @[Bitwise.scala:77:12, CSR.scala:402:47, :520:31, :1651:{39,41}, package.scala:166:{35,37,41}]
   wire [63:0] read_mtvec = {32'h0, _read_mtvec_T_5};	// @[CSR.scala:402:47, Cat.scala:33:92, package.scala:166:35]
   wire [38:0] _read_stvec_T_5 = reg_stvec & {31'h7FFFFFFF, ~(reg_stvec[0] ? 8'hFE : 8'h2)};	// @[CSR.scala:577:22, :1598:23, :1651:{39,41}, PMP.scala:58:16, package.scala:166:{35,37,41}]
   wire [63:0] read_stvec = {{25{_read_stvec_T_5[38]}}, _read_stvec_T_5};	// @[Bitwise.scala:77:12, Cat.scala:33:92, package.scala:124:38, :166:35]
-  wire [39:0] _GEN_11 = {38'h0, ~(reg_misa[2]), 1'h1};	// @[CSR.scala:530:26, :647:25, :1650:{31,36,45}]
-  wire [39:0] _T_30 = ~(~reg_mepc | _GEN_11);	// @[CSR.scala:513:21, :1650:{26,28,31}]
-  wire [39:0] _T_44 = ~(~reg_dpc | _GEN_11);	// @[CSR.scala:491:20, :1650:{26,28,31}]
+  wire [39:0] _GEN_19 = {38'h0, ~(reg_misa[2]), 1'h1};	// @[CSR.scala:530:26, :647:25, :1650:{31,36,45}]
+  wire [39:0] _T_124 = ~(~reg_dpc | _GEN_19);	// @[CSR.scala:491:20, :1650:{26,28,31}]
   wire [63:0] sie_mask = reg_mideleg & 64'h222;	// @[CSR.scala:505:18, :506:38, :743:18]
-  wire [39:0] _T_61 = ~(~reg_sepc | _GEN_11);	// @[CSR.scala:573:21, :1650:{26,28,31}]
+  wire [39:0] _T_141 = ~(~reg_sepc | _GEN_19);	// @[CSR.scala:573:21, :1650:{26,28,31}]
   reg  [63:0] reg_custom_0;	// @[CSR.scala:793:43]
   wire [11:0] decoded_decoded_invInputs = ~io_rw_addr;	// @[pla.scala:78:21]
   wire [10:0] _decoded_decoded_T = {decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :91:29]
@@ -440,124 +791,307 @@ module CSRFile(
   wire [11:0] _decoded_decoded_T_44 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
   wire [10:0] _decoded_decoded_T_46 = {io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
   wire [10:0] _decoded_decoded_T_48 = {decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [10:0] _decoded_decoded_T_50 = {io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_52 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_54 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_56 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_58 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_60 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_62 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_64 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_66 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_68 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_70 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_72 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_74 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_76 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_78 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_80 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_82 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_84 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_86 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_88 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_90 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_92 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_94 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_96 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_98 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_100 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_102 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_104 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_106 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
   wire [11:0] _decoded_decoded_T_108 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
   wire [11:0] _decoded_decoded_T_110 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
   wire [11:0] _decoded_decoded_T_112 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
   wire [11:0] _decoded_decoded_T_114 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [9:0]  _decoded_decoded_T_116 = {io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [10:0] _decoded_decoded_T_118 = {decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_122 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_124 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_126 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_128 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_130 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_132 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_134 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_136 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_156 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_158 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_162 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_164 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [10:0] _decoded_decoded_T_166 = {io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [5:0]  _decoded_decoded_T_168 = {io_rw_addr[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [10:0] _decoded_decoded_T_170 = {decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [11:0] _decoded_decoded_T_172 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_116 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_118 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_120 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_122 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_124 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_126 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [10:0] _decoded_decoded_T_128 = {io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], io_rw_addr[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [10:0] _decoded_decoded_T_130 = {decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [10:0] _decoded_decoded_T_132 = {io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_134 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_136 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_138 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_140 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_142 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_144 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_146 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_148 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_150 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_152 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_154 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_156 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_158 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_160 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_162 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_164 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_168 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_170 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_174 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_176 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [10:0] _decoded_decoded_T_178 = {io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], io_rw_addr[5], decoded_decoded_invInputs[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [5:0]  _decoded_decoded_T_180 = {io_rw_addr[6], io_rw_addr[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], decoded_decoded_invInputs[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [10:0] _decoded_decoded_T_182 = {decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_184 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_186 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_188 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_190 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_192 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_194 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_196 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_198 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_200 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_202 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_204 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_206 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_208 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_210 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_212 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_214 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_216 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_218 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_220 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_222 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_224 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_226 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_228 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_230 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_232 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_234 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_236 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_238 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_240 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_242 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_244 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_246 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_248 = {decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_250 = {io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_252 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_254 = {io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_256 = {decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_258 = {io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_260 = {decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [11:0] _decoded_decoded_T_262 = {io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [10:0] _decoded_decoded_T_264 = {io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], decoded_decoded_invInputs[10], io_rw_addr[11]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
   wire [63:0] _reg_bp_0_control_WIRE_1 = ((io_rw_cmd[1] ? _io_rw_rdata_WIRE : 64'h0) | io_rw_wdata) & ~((&(io_rw_cmd[1:0])) ? io_rw_wdata : 64'h0);	// @[CSR.scala:1628:{9,13,30,39,41,45,49,55}, Mux.scala:27:73]
   wire        system_insn = io_rw_cmd == 3'h4;	// @[CSR.scala:648:32, :858:31]
-  wire [11:0] _GEN_12 = ~io_rw_addr;	// @[pla.scala:78:21]
-  wire        insn_call = system_insn & (&{_GEN_12[0], _GEN_12[1], _GEN_12[2], _GEN_12[3], _GEN_12[4], _GEN_12[5], _GEN_12[6], _GEN_12[7], _GEN_12[8], _GEN_12[9], _GEN_12[10], _GEN_12[11]});	// @[CSR.scala:858:31, :875:83, Cat.scala:33:92, pla.scala:78:21, :91:29, :98:74]
-  wire        insn_break = system_insn & (&{io_rw_addr[0], _GEN_12[1], _GEN_12[2], _GEN_12[3], _GEN_12[4], _GEN_12[5], _GEN_12[6], _GEN_12[7], _GEN_12[8], _GEN_12[9], _GEN_12[10], _GEN_12[11]});	// @[CSR.scala:858:31, :875:83, Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29, :98:74]
-  wire        insn_ret = system_insn & (|{&{_GEN_12[2], _GEN_12[3], _GEN_12[4], _GEN_12[5], _GEN_12[6], _GEN_12[7], io_rw_addr[8], _GEN_12[10], _GEN_12[11]}, &{io_rw_addr[10], _GEN_12[11]}});	// @[CSR.scala:858:31, :875:83, Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29, :98:74, :114:39]
-  wire [29:0] _GEN_13 = ~(io_decode_0_inst[31:2]);	// @[pla.scala:78:21]
-  wire [9:0]  _decoded_T_20 = {io_decode_0_inst[22], _GEN_13[21], _GEN_13[22], _GEN_13[23], _GEN_13[24], _GEN_13[25], io_decode_0_inst[28], _GEN_13[27], _GEN_13[28], _GEN_13[29]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [16:0] _decoded_T_22 = {io_decode_0_inst[0], io_decode_0_inst[1], _GEN_13[0], _GEN_13[1], io_decode_0_inst[4], io_decode_0_inst[5], io_decode_0_inst[6], _GEN_13[5], _GEN_13[6], _GEN_13[7], io_decode_0_inst[25], _GEN_13[24], _GEN_13[25], io_decode_0_inst[28], _GEN_13[27], _GEN_13[28], _GEN_13[29]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
-  wire [1:0]  _decoded_orMatrixOutputs_T_10 = {&{io_decode_0_inst[0], _GEN_13[20], _GEN_13[21], _GEN_13[22], _GEN_13[23], _GEN_13[24], _GEN_13[25], io_decode_0_inst[28], _GEN_13[28], _GEN_13[29]}, &{io_decode_0_inst[30], _GEN_13[29]}};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [11:0] _GEN_20 = ~io_rw_addr;	// @[pla.scala:78:21]
+  wire        insn_call = system_insn & (&{_GEN_20[0], _GEN_20[1], _GEN_20[2], _GEN_20[3], _GEN_20[4], _GEN_20[5], _GEN_20[6], _GEN_20[7], _GEN_20[8], _GEN_20[9], _GEN_20[10], _GEN_20[11]});	// @[CSR.scala:858:31, :875:83, Cat.scala:33:92, pla.scala:78:21, :91:29, :98:74]
+  wire        insn_break = system_insn & (&{io_rw_addr[0], _GEN_20[1], _GEN_20[2], _GEN_20[3], _GEN_20[4], _GEN_20[5], _GEN_20[6], _GEN_20[7], _GEN_20[8], _GEN_20[9], _GEN_20[10], _GEN_20[11]});	// @[CSR.scala:858:31, :875:83, Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire        insn_ret = system_insn & (|{&{_GEN_20[2], _GEN_20[3], _GEN_20[4], _GEN_20[5], _GEN_20[6], _GEN_20[7], io_rw_addr[8], _GEN_20[10], _GEN_20[11]}, &{io_rw_addr[10], _GEN_20[11]}});	// @[CSR.scala:858:31, :875:83, Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29, :98:74, :114:39]
+  wire [29:0] _GEN_21 = ~(io_decode_0_inst[31:2]);	// @[pla.scala:78:21]
+  wire [9:0]  _decoded_T_20 = {io_decode_0_inst[22], _GEN_21[21], _GEN_21[22], _GEN_21[23], _GEN_21[24], _GEN_21[25], io_decode_0_inst[28], _GEN_21[27], _GEN_21[28], _GEN_21[29]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [16:0] _decoded_T_22 = {io_decode_0_inst[0], io_decode_0_inst[1], _GEN_21[0], _GEN_21[1], io_decode_0_inst[4], io_decode_0_inst[5], io_decode_0_inst[6], _GEN_21[5], _GEN_21[6], _GEN_21[7], io_decode_0_inst[25], _GEN_21[24], _GEN_21[25], io_decode_0_inst[28], _GEN_21[27], _GEN_21[28], _GEN_21[29]};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29]
+  wire [1:0]  _decoded_orMatrixOutputs_T_10 = {&{io_decode_0_inst[0], _GEN_21[20], _GEN_21[21], _GEN_21[22], _GEN_21[23], _GEN_21[24], _GEN_21[25], io_decode_0_inst[28], _GEN_21[28], _GEN_21[29]}, &{io_decode_0_inst[30], _GEN_21[29]}};	// @[Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29, :98:74]
   wire        is_counter = io_decode_0_inst[31:20] > 12'hBFF & io_decode_0_inst[31:20] < 12'hC20 | io_decode_0_inst[31:20] > 12'hC7F & io_decode_0_inst[31:20] < 12'hCA0;	// @[CSR.scala:879:27, :886:81, package.scala:205:{47,55,60}]
   wire        allow_sfence_vma = reg_mstatus_prv[1] | ~(~reg_mstatus_v & reg_mstatus_tvm);	// @[CSR.scala:410:28, :888:61, :889:{70,73,77}]
-  wire [31:0] _GEN_14 = {27'h0, io_decode_0_inst[24:20]};	// @[CSR.scala:879:27, :893:28, :894:70]
-  wire [31:0] _io_decode_0_virtual_access_illegal_T_3 = (reg_mcounteren & 32'h7) >> _GEN_14;	// @[CSR.scala:535:18, :536:32, :894:70]
-  wire [31:0] _io_decode_0_virtual_access_illegal_T_11 = (reg_scounteren & 32'h7) >> _GEN_14;	// @[CSR.scala:536:32, :539:18, :540:38, :894:70, :895:75]
-  wire [31:0] _io_decode_0_virtual_access_illegal_T_6 = 32'h0 >> _GEN_14;	// @[CSR.scala:402:47, :894:70, :896:63]
+  wire [42:0] _GEN_22 = {37'h0, io_decode_0_inst[25:20]};	// @[CSR.scala:762:37, :879:27, :893:28, :894:70]
+  wire [42:0] _io_decode_0_virtual_access_illegal_T_3 = {11'h0, reg_mcounteren} >> _GEN_22;	// @[CSR.scala:535:18, :536:32, :894:70]
+  wire [42:0] _io_decode_0_virtual_access_illegal_T_11 = {11'h0, reg_scounteren} >> _GEN_22;	// @[CSR.scala:536:32, :539:18, :540:38, :894:70, :895:75]
+  wire [42:0] _io_decode_0_virtual_access_illegal_T_6 = 43'h0 >> _GEN_22;	// @[CSR.scala:588:34, :894:70, :896:63]
   wire        _io_decode_0_fp_illegal_output = reg_mstatus_fs == 2'h0 | reg_mstatus_v | ~(reg_misa[5]);	// @[CSR.scala:410:28, :647:25, :897:{39,91,94,103}]
   wire        _io_decode_0_vector_illegal_output = reg_mstatus_vs == 2'h0 | reg_mstatus_v & reg_vsstatus_vs == 2'h0 | ~(reg_misa[21]);	// @[CSR.scala:410:28, :566:25, :647:25, :899:{43,68,87,95,98,107}]
-  wire [8:0]  _GEN_15 = ~(io_decode_0_inst[31:23]);	// @[CSR.scala:879:27, pla.scala:78:21]
-  wire [8:0]  _io_decode_0_fp_csr_T = {_GEN_15[0], _GEN_15[1], _GEN_15[2], _GEN_15[3], _GEN_15[4], _GEN_15[5], _GEN_15[6], _GEN_15[7], _GEN_15[8]};	// @[Cat.scala:33:92, pla.scala:78:21, :91:29]
+  wire [8:0]  _GEN_23 = ~(io_decode_0_inst[31:23]);	// @[CSR.scala:879:27, pla.scala:78:21]
+  wire [8:0]  _io_decode_0_fp_csr_T = {_GEN_23[0], _GEN_23[1], _GEN_23[2], _GEN_23[3], _GEN_23[4], _GEN_23[5], _GEN_23[6], _GEN_23[7], _GEN_23[8]};	// @[Cat.scala:33:92, pla.scala:78:21, :91:29]
   wire        _io_decode_0_virtual_access_illegal_T_24 = io_decode_0_inst[31:20] == 12'h180;	// @[CSR.scala:879:27, :881:93]
   wire        csr_exists =
     io_decode_0_inst[31:20] == 12'h7A0 | io_decode_0_inst[31:20] == 12'h7A1 | io_decode_0_inst[31:20] == 12'h7A2 | io_decode_0_inst[31:20] == 12'h7A3 | io_decode_0_inst[31:20] == 12'h301 | io_decode_0_inst[31:20] == 12'h300 | io_decode_0_inst[31:20] == 12'h305 | io_decode_0_inst[31:20] == 12'h344 | io_decode_0_inst[31:20] == 12'h304 | io_decode_0_inst[31:20] == 12'h340 | io_decode_0_inst[31:20] == 12'h341 | io_decode_0_inst[31:20] == 12'h343 | io_decode_0_inst[31:20] == 12'h342 | io_decode_0_inst[31:20] == 12'hF14 | io_decode_0_inst[31:20] == 12'h7B0 | io_decode_0_inst[31:20] == 12'h7B1 | io_decode_0_inst[31:20] == 12'h7B2 | io_decode_0_inst[31:20] == 12'h1 | io_decode_0_inst[31:20] == 12'h2 | io_decode_0_inst[31:20] == 12'h3 | io_decode_0_inst[31:20] == 12'h9 | io_decode_0_inst[31:20] == 12'hA | io_decode_0_inst[31:20] == 12'hF | io_decode_0_inst[31:20] == 12'h8 | io_decode_0_inst[31:20] == 12'hC21 | io_decode_0_inst[31:20] == 12'hC20 | io_decode_0_inst[31:20] == 12'hC22 | io_decode_0_inst[31:20] == 12'h320 | io_decode_0_inst[31:20] == 12'hB00 | io_decode_0_inst[31:20] == 12'hB02 | io_decode_0_inst[31:20] == 12'h323 | io_decode_0_inst[31:20] == 12'hB03 | io_decode_0_inst[31:20] == 12'hC03 | io_decode_0_inst[31:20] == 12'h324 | io_decode_0_inst[31:20] == 12'hB04 | io_decode_0_inst[31:20] == 12'hC04 | io_decode_0_inst[31:20] == 12'h325 | io_decode_0_inst[31:20] == 12'hB05 | io_decode_0_inst[31:20] == 12'hC05 | io_decode_0_inst[31:20] == 12'h326 | io_decode_0_inst[31:20] == 12'hB06 | io_decode_0_inst[31:20] == 12'hC06 | io_decode_0_inst[31:20] == 12'h327 | io_decode_0_inst[31:20] == 12'hB07 | io_decode_0_inst[31:20] == 12'hC07 | io_decode_0_inst[31:20] == 12'h328 | io_decode_0_inst[31:20] == 12'hB08 | io_decode_0_inst[31:20] == 12'hC08 | io_decode_0_inst[31:20] == 12'h329 | io_decode_0_inst[31:20] == 12'hB09 | io_decode_0_inst[31:20] == 12'hC09 | io_decode_0_inst[31:20] == 12'h32A | io_decode_0_inst[31:20] == 12'hB0A | io_decode_0_inst[31:20] == 12'hC0A | io_decode_0_inst[31:20] == 12'h32B
     | io_decode_0_inst[31:20] == 12'hB0B | io_decode_0_inst[31:20] == 12'hC0B | io_decode_0_inst[31:20] == 12'h32C | io_decode_0_inst[31:20] == 12'hB0C | io_decode_0_inst[31:20] == 12'hC0C | io_decode_0_inst[31:20] == 12'h32D | io_decode_0_inst[31:20] == 12'hB0D | io_decode_0_inst[31:20] == 12'hC0D | io_decode_0_inst[31:20] == 12'h32E | io_decode_0_inst[31:20] == 12'hB0E | io_decode_0_inst[31:20] == 12'hC0E | io_decode_0_inst[31:20] == 12'h32F | io_decode_0_inst[31:20] == 12'hB0F | io_decode_0_inst[31:20] == 12'hC0F | io_decode_0_inst[31:20] == 12'h330 | io_decode_0_inst[31:20] == 12'hB10 | io_decode_0_inst[31:20] == 12'hC10 | io_decode_0_inst[31:20] == 12'h331 | io_decode_0_inst[31:20] == 12'hB11 | io_decode_0_inst[31:20] == 12'hC11 | io_decode_0_inst[31:20] == 12'h332 | io_decode_0_inst[31:20] == 12'hB12 | io_decode_0_inst[31:20] == 12'hC12 | io_decode_0_inst[31:20] == 12'h333 | io_decode_0_inst[31:20] == 12'hB13 | io_decode_0_inst[31:20] == 12'hC13 | io_decode_0_inst[31:20] == 12'h334 | io_decode_0_inst[31:20] == 12'hB14 | io_decode_0_inst[31:20] == 12'hC14 | io_decode_0_inst[31:20] == 12'h335 | io_decode_0_inst[31:20] == 12'hB15 | io_decode_0_inst[31:20] == 12'hC15 | io_decode_0_inst[31:20] == 12'h336 | io_decode_0_inst[31:20] == 12'hB16 | io_decode_0_inst[31:20] == 12'hC16 | io_decode_0_inst[31:20] == 12'h337 | io_decode_0_inst[31:20] == 12'hB17 | io_decode_0_inst[31:20] == 12'hC17 | io_decode_0_inst[31:20] == 12'h338 | io_decode_0_inst[31:20] == 12'hB18 | io_decode_0_inst[31:20] == 12'hC18 | io_decode_0_inst[31:20] == 12'h339 | io_decode_0_inst[31:20] == 12'hB19 | io_decode_0_inst[31:20] == 12'hC19 | io_decode_0_inst[31:20] == 12'h33A | io_decode_0_inst[31:20] == 12'hB1A | io_decode_0_inst[31:20] == 12'hC1A | io_decode_0_inst[31:20] == 12'h33B | io_decode_0_inst[31:20] == 12'hB1B | io_decode_0_inst[31:20] == 12'hC1B | io_decode_0_inst[31:20] == 12'h33C | io_decode_0_inst[31:20] == 12'hB1C | io_decode_0_inst[31:20] == 12'hC1C | io_decode_0_inst[31:20] == 12'h33D | io_decode_0_inst[31:20] == 12'hB1D
-    | io_decode_0_inst[31:20] == 12'hC1D | io_decode_0_inst[31:20] == 12'h33E | io_decode_0_inst[31:20] == 12'hB1E | io_decode_0_inst[31:20] == 12'hC1E | io_decode_0_inst[31:20] == 12'h33F | io_decode_0_inst[31:20] == 12'hB1F | io_decode_0_inst[31:20] == 12'hC1F | io_decode_0_inst[31:20] == 12'h306 | io_decode_0_inst[31:20] == 12'hC00 | io_decode_0_inst[31:20] == 12'hC02 | io_decode_0_inst[31:20] == 12'h100 | io_decode_0_inst[31:20] == 12'h144 | io_decode_0_inst[31:20] == 12'h104 | io_decode_0_inst[31:20] == 12'h140 | io_decode_0_inst[31:20] == 12'h142 | io_decode_0_inst[31:20] == 12'h143 | _io_decode_0_virtual_access_illegal_T_24 | io_decode_0_inst[31:20] == 12'h141 | io_decode_0_inst[31:20] == 12'h105 | io_decode_0_inst[31:20] == 12'h106 | io_decode_0_inst[31:20] == 12'h303 | io_decode_0_inst[31:20] == 12'h302 | io_decode_0_inst[31:20] == 12'h3A0 | io_decode_0_inst[31:20] == 12'h3A2 | io_decode_0_inst[31:20] == 12'h3B0 | io_decode_0_inst[31:20] == 12'h3B1 | io_decode_0_inst[31:20] == 12'h3B2 | io_decode_0_inst[31:20] == 12'h3B3 | io_decode_0_inst[31:20] == 12'h3B4 | io_decode_0_inst[31:20] == 12'h3B5 | io_decode_0_inst[31:20] == 12'h3B6 | io_decode_0_inst[31:20] == 12'h3B7 | io_decode_0_inst[31:20] == 12'h3B8 | io_decode_0_inst[31:20] == 12'h3B9 | io_decode_0_inst[31:20] == 12'h3BA | io_decode_0_inst[31:20] == 12'h3BB | io_decode_0_inst[31:20] == 12'h3BC | io_decode_0_inst[31:20] == 12'h3BD | io_decode_0_inst[31:20] == 12'h3BE | io_decode_0_inst[31:20] == 12'h3BF | io_decode_0_inst[31:20] == 12'h7C1 | io_decode_0_inst[31:20] == 12'hF12 | io_decode_0_inst[31:20] == 12'hF11 | io_decode_0_inst[31:20] == 12'hF13;	// @[CSR.scala:879:27, :881:{93,111}, :914:25, package.scala:205:{47,60}]
+    | io_decode_0_inst[31:20] == 12'hC1D | io_decode_0_inst[31:20] == 12'h33E | io_decode_0_inst[31:20] == 12'hB1E | io_decode_0_inst[31:20] == 12'hC1E | io_decode_0_inst[31:20] == 12'h33F | io_decode_0_inst[31:20] == 12'hB1F | io_decode_0_inst[31:20] == 12'hC1F | io_decode_0_inst[31:20] == 12'hB20 | io_decode_0_inst[31:20] == 12'hB21 | io_decode_0_inst[31:20] == 12'hB22 | io_decode_0_inst[31:20] == 12'hB23 | io_decode_0_inst[31:20] == 12'hC23 | io_decode_0_inst[31:20] == 12'hB24 | io_decode_0_inst[31:20] == 12'hC24 | io_decode_0_inst[31:20] == 12'h345 | io_decode_0_inst[31:20] == 12'hB25 | io_decode_0_inst[31:20] == 12'hC25 | io_decode_0_inst[31:20] == 12'h346 | io_decode_0_inst[31:20] == 12'hB26 | io_decode_0_inst[31:20] == 12'hC26 | io_decode_0_inst[31:20] == 12'h347 | io_decode_0_inst[31:20] == 12'hB27 | io_decode_0_inst[31:20] == 12'hC27 | io_decode_0_inst[31:20] == 12'h348 | io_decode_0_inst[31:20] == 12'hB28 | io_decode_0_inst[31:20] == 12'hC28 | io_decode_0_inst[31:20] == 12'h349 | io_decode_0_inst[31:20] == 12'hB29 | io_decode_0_inst[31:20] == 12'hC29 | io_decode_0_inst[31:20] == 12'h34A | io_decode_0_inst[31:20] == 12'hB2A | io_decode_0_inst[31:20] == 12'hC2A | io_decode_0_inst[31:20] == 12'h306 | io_decode_0_inst[31:20] == 12'hC00 | io_decode_0_inst[31:20] == 12'hC02 | io_decode_0_inst[31:20] == 12'h100 | io_decode_0_inst[31:20] == 12'h144 | io_decode_0_inst[31:20] == 12'h104 | io_decode_0_inst[31:20] == 12'h140 | io_decode_0_inst[31:20] == 12'h142 | io_decode_0_inst[31:20] == 12'h143 | _io_decode_0_virtual_access_illegal_T_24 | io_decode_0_inst[31:20] == 12'h141 | io_decode_0_inst[31:20] == 12'h105 | io_decode_0_inst[31:20] == 12'h106 | io_decode_0_inst[31:20] == 12'h303 | io_decode_0_inst[31:20] == 12'h302 | io_decode_0_inst[31:20] == 12'h3A0 | io_decode_0_inst[31:20] == 12'h3A2 | io_decode_0_inst[31:20] == 12'h3B0 | io_decode_0_inst[31:20] == 12'h3B1 | io_decode_0_inst[31:20] == 12'h3B2 | io_decode_0_inst[31:20] == 12'h3B3 | io_decode_0_inst[31:20] == 12'h3B4 | io_decode_0_inst[31:20] == 12'h3B5
+    | io_decode_0_inst[31:20] == 12'h3B6 | io_decode_0_inst[31:20] == 12'h3B7 | io_decode_0_inst[31:20] == 12'h3B8 | io_decode_0_inst[31:20] == 12'h3B9 | io_decode_0_inst[31:20] == 12'h3BA | io_decode_0_inst[31:20] == 12'h3BB | io_decode_0_inst[31:20] == 12'h3BC | io_decode_0_inst[31:20] == 12'h3BD | io_decode_0_inst[31:20] == 12'h3BE | io_decode_0_inst[31:20] == 12'h3BF | io_decode_0_inst[31:20] == 12'h7C1 | io_decode_0_inst[31:20] == 12'hF12 | io_decode_0_inst[31:20] == 12'hF11 | io_decode_0_inst[31:20] == 12'hF13;	// @[CSR.scala:879:27, :881:{93,111}, :914:25, package.scala:205:{47,60}]
   wire        _io_decode_0_system_illegal_T = reg_mstatus_prv < io_decode_0_inst[29:28];	// @[CSR.scala:175:36, :410:28, :879:27, :902:42]
-  wire [5:0]  _GEN_16 = ~(io_decode_0_inst[31:26]);	// @[CSR.scala:879:27, pla.scala:78:21]
-  wire [7:0]  _GEN_17 = ~(io_decode_0_inst[31:24]);	// @[CSR.scala:879:27, pla.scala:78:21]
+  wire [5:0]  _GEN_24 = ~(io_decode_0_inst[31:26]);	// @[CSR.scala:879:27, pla.scala:78:21]
+  wire [11:0] io_decode_0_read_illegal_invInputs_1 = ~(io_decode_0_inst[31:20]);	// @[CSR.scala:879:27, pla.scala:78:21]
   wire [11:0] io_decode_0_write_flush_addr_m = io_decode_0_inst[31:20] | 12'h300;	// @[CSR.scala:879:27, :914:25]
-  wire [63:0] _GEN_18 = {60'h0, {2'h0, reg_mstatus_prv[0] & reg_mstatus_v ? 2'h2 : reg_mstatus_prv} - 4'h8};	// @[CSR.scala:410:28, :927:105, :941:{8,40,45,65}]
-  wire [63:0] cause = insn_call ? _GEN_18 : insn_break ? 64'h3 : io_cause;	// @[CSR.scala:875:83, :941:8, :942:14]
+  wire [63:0] _GEN_25 = {60'h0, {2'h0, reg_mstatus_prv[0] & reg_mstatus_v ? 2'h2 : reg_mstatus_prv} - 4'h8};	// @[CSR.scala:410:28, :927:105, :941:{8,40,45,65}]
+  wire [63:0] cause = insn_call ? _GEN_25 : insn_break ? 64'h3 : io_cause;	// @[CSR.scala:875:83, :941:8, :942:14]
   wire        _causeIsDebugTrigger_T_2 = cause[7:0] == 8'hE;	// @[CSR.scala:941:8, :943:25, :944:53]
   wire        causeIsDebugInt = cause[63] & _causeIsDebugTrigger_T_2;	// @[CSR.scala:941:8, :944:{30,39,53}]
   wire        causeIsDebugTrigger = ~(cause[63]) & _causeIsDebugTrigger_T_2;	// @[CSR.scala:941:8, :944:{30,53}, :945:{29,44}]
   wire [3:0]  _causeIsDebugBreak_T_4 = {reg_dcsr_ebreakm, 1'h0, reg_dcsr_ebreaks, reg_dcsr_ebreaku} >> reg_mstatus_prv;	// @[CSR.scala:410:28, :418:25, :946:134, Cat.scala:33:92]
   wire        trapToDebug = reg_singleStepped | causeIsDebugInt | causeIsDebugTrigger | ~(cause[63]) & insn_break & _causeIsDebugBreak_T_4[0] | reg_debug;	// @[CSR.scala:490:26, :494:30, :875:83, :941:8, :944:{30,39}, :945:44, :946:{27,56,134}, :947:119]
-  wire [63:0] _GEN_19 = {56'h0, cause[7:0]};	// @[CSR.scala:941:8, :943:25, :951:100]
-  wire [63:0] _delegate_T_3 = read_mideleg >> _GEN_19;	// @[CSR.scala:506:38, :951:100]
-  wire [63:0] _delegate_T_5 = read_medeleg >> _GEN_19;	// @[CSR.scala:510:38, :951:{100,126}]
+  wire [63:0] _GEN_26 = {56'h0, cause[7:0]};	// @[CSR.scala:941:8, :943:25, :951:100]
+  wire [63:0] _delegate_T_3 = read_mideleg >> _GEN_26;	// @[CSR.scala:506:38, :951:100]
+  wire [63:0] _delegate_T_5 = read_medeleg >> _GEN_26;	// @[CSR.scala:510:38, :951:{100,126}]
   wire        delegate = ~(reg_mstatus_prv[1]) & (cause[63] ? _delegate_T_3[0] : _delegate_T_5[0]);	// @[CSR.scala:410:28, :618:51, :941:8, :944:30, :951:{66,72,100,126}]
-  wire [63:0] _delegateVS_T_2 = 64'h0 >> _GEN_19;	// @[CSR.scala:951:100, :952:80]
-  wire [63:0] _delegateVS_T_4 = 64'h0 >> _GEN_19;	// @[CSR.scala:951:100, :952:106]
+  wire [63:0] _delegateVS_T_2 = 64'h0 >> _GEN_26;	// @[CSR.scala:951:100, :952:80]
+  wire [63:0] _delegateVS_T_4 = 64'h0 >> _GEN_26;	// @[CSR.scala:951:100, :952:106]
   wire        delegateVS = reg_mstatus_v & delegate & (cause[63] ? _delegateVS_T_2[0] : _delegateVS_T_4[0]);	// @[CSR.scala:410:28, :941:8, :944:30, :951:66, :952:{46,52,80,106}]
-  wire [39:0] _GEN_20 = delegate ? (delegateVS ? 40'h0 : {_read_stvec_T_5[38], _read_stvec_T_5}) : {8'h0, _read_mtvec_T_5};	// @[CSR.scala:951:66, :952:46, :959:{19,33}, Cat.scala:33:92, package.scala:124:38, :166:35]
+  wire [39:0] _GEN_27 = delegate ? (delegateVS ? 40'h0 : {_read_stvec_T_5[38], _read_stvec_T_5}) : {8'h0, _read_mtvec_T_5};	// @[CSR.scala:951:66, :952:46, :959:{19,33}, :1598:23, Cat.scala:33:92, package.scala:124:38, :166:35]
   wire        _exception_T = insn_call | insn_break;	// @[CSR.scala:875:83, :981:24]
   assign _io_singleStep_output = reg_dcsr_step & ~reg_debug;	// @[CSR.scala:418:25, :490:26, :909:45, :982:34]
   assign _io_status_sd_output = (&reg_mstatus_fs) | (&reg_mstatus_vs);	// @[CSR.scala:410:28, :984:{32,58,74}]
-  wire [39:0] _io_mepc_T_4 = ~(~reg_mepc | _GEN_11);	// @[CSR.scala:513:21, :1650:{26,28,31}]
-  wire [39:0] _io_sepc_T_4 = ~(~reg_sepc | _GEN_11);	// @[CSR.scala:573:21, :1650:{26,28,31}]
+  wire [39:0] _io_mepc_T_4 = ~(~reg_mepc | _GEN_19);	// @[CSR.scala:513:21, :1650:{26,28,31}]
+  wire [39:0] _io_sepc_T_4 = ~(~reg_sepc | _GEN_19);	// @[CSR.scala:573:21, :1650:{26,28,31}]
   wire        _io_trace_0_exception_output = _exception_T | io_exception;	// @[CSR.scala:981:24, :1027:43]
-  wire        _GEN_21 = delegateVS | delegate;	// @[CSR.scala:410:28, :951:66, :952:46, :1063:37, :1072:35, :1087:23]
-  wire [1:0]  _GEN_22 = {~_GEN_21, 1'h1};	// @[CSR.scala:410:28, :530:26, :1063:37, :1071:15, :1072:35, :1084:15, :1087:23, :1096:15]
-  wire        _T_435 = io_rw_addr[10] & io_rw_addr[7];	// @[CSR.scala:1139:{43,48,61}]
-  wire [1:0]  _GEN_23 = {1'h0, reg_mstatus_v ? reg_vsstatus_spp : reg_mstatus_spp};	// @[CSR.scala:410:28, :566:25, :1122:48, :1123:29, :1127:17, :1135:17, :1139:66]
-  wire [1:0]  ret_prv = io_rw_addr[9] ? (_T_435 ? reg_dcsr_prv : reg_mstatus_mpp) : _GEN_23;	// @[CSR.scala:410:28, :418:25, :1122:{43,48}, :1123:29, :1139:{48,66}, :1140:15, :1144:65]
+  wire        _GEN_28 = delegateVS | delegate;	// @[CSR.scala:410:28, :951:66, :952:46, :1063:37, :1072:35, :1087:23]
+  wire [1:0]  _GEN_29 = {~_GEN_28, 1'h1};	// @[CSR.scala:410:28, :530:26, :1063:37, :1071:15, :1072:35, :1084:15, :1087:23, :1096:15]
+  wire        _T_540 = io_rw_addr[10] & io_rw_addr[7];	// @[CSR.scala:1139:{43,48,61}]
+  wire [1:0]  _GEN_30 = {1'h0, reg_mstatus_v ? reg_vsstatus_spp : reg_mstatus_spp};	// @[CSR.scala:410:28, :566:25, :1122:48, :1123:29, :1127:17, :1135:17, :1139:66]
+  wire [1:0]  ret_prv = io_rw_addr[9] ? (_T_540 ? reg_dcsr_prv : reg_mstatus_mpp) : _GEN_30;	// @[CSR.scala:410:28, :418:25, :1122:{43,48}, :1123:29, :1139:{48,66}, :1140:15, :1144:65]
   wire        _io_csr_stall_output = reg_wfi | io_status_cease_r;	// @[CSR.scala:579:54, :1166:27, Reg.scala:35:20]
-  wire [31:0] _io_rw_rdata_T_14 = (&_decoded_decoded_T_162) ? {16'h4000, reg_dcsr_ebreakm, 1'h0, reg_dcsr_ebreaks, reg_dcsr_ebreaku, 3'h0, reg_dcsr_cause, reg_dcsr_v, 2'h0, reg_dcsr_step, reg_dcsr_prv} : 32'h0;	// @[CSR.scala:402:47, :415:44, :418:25, :669:27, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [31:0] _io_rw_rdata_T_14 = (&_decoded_decoded_T_174) ? {16'h4000, reg_dcsr_ebreakm, 1'h0, reg_dcsr_ebreaks, reg_dcsr_ebreaku, 3'h0, reg_dcsr_cause, reg_dcsr_v, 2'h0, reg_dcsr_step, reg_dcsr_prv} : 32'h0;	// @[CSR.scala:402:47, :415:44, :418:25, :669:27, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
   wire [4:0]  _io_rw_rdata_T_17 = (&_decoded_decoded_T) ? reg_fflags : 5'h0;	// @[CSR.scala:581:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
   wire [2:0]  _io_rw_rdata_T_18 = (&_decoded_decoded_T_2) ? reg_frm : 3'h0;	// @[CSR.scala:415:44, :582:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
   wire [7:0]  _io_rw_rdata_T_19 = (&_decoded_decoded_T_4) ? {reg_frm, reg_fflags} : 8'h0;	// @[CSR.scala:581:23, :582:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
   wire [1:0]  _io_rw_rdata_T_21 = (&_decoded_decoded_T_10) ? reg_vxrm : 2'h0;	// @[CSR.scala:586:40, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
   wire [2:0]  _io_rw_rdata_T_22 = (&_decoded_decoded_T_12) ? {reg_vxrm, reg_vxsat} : 3'h0;	// @[CSR.scala:415:44, :585:41, :586:40, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
   wire [6:0]  _io_rw_rdata_T_23 = (&_decoded_decoded_T_6) ? reg_vstart : 7'h0;	// @[CSR.scala:584:42, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [7:0]  _io_rw_rdata_T_25 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? reg_vconfig_vl : 8'h0;	// @[CSR.scala:583:43, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
-  wire [2:0]  _io_rw_rdata_T_27 = (&_decoded_decoded_T_48) ? reg_mcountinhibit : 3'h0;	// @[CSR.scala:415:44, :588:34, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [2:0]  _GEN_24 = (&_decoded_decoded_T_46) ? reg_mcounteren[2:0] : 3'h0;	// @[CSR.scala:415:44, :535:18, :536:32, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [2:0]  _GEN_25 = (&_decoded_decoded_T_20) ? reg_scounteren[2:0] : 3'h0;	// @[CSR.scala:415:44, :539:18, :540:38, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [29:0] _io_rw_rdata_T_134 = (&_decoded_decoded_T_122) ? reg_pmp_0_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [29:0] _io_rw_rdata_T_135 = (&_decoded_decoded_T_124) ? reg_pmp_1_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [29:0] _io_rw_rdata_T_136 = (&_decoded_decoded_T_126) ? reg_pmp_2_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [29:0] _io_rw_rdata_T_137 = (&_decoded_decoded_T_128) ? reg_pmp_3_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [29:0] _io_rw_rdata_T_138 = (&_decoded_decoded_T_130) ? reg_pmp_4_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [29:0] _io_rw_rdata_T_139 = (&_decoded_decoded_T_132) ? reg_pmp_5_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [29:0] _io_rw_rdata_T_140 = (&_decoded_decoded_T_134) ? reg_pmp_6_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [29:0] _io_rw_rdata_T_141 = (&_decoded_decoded_T_136) ? reg_pmp_7_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [14:0] _GEN_26 = ((&_decoded_decoded_T_116) ? {4'h0, io_interrupts_meip, 1'h0, mip_seip, 1'h0, io_interrupts_mtip, 1'h0, reg_mip_stip, 1'h0, io_interrupts_msip, 1'h0, reg_mip_ssip} : 15'h0) | _io_rw_rdata_T_14[15:1];	// @[CSR.scala:512:20, :604:57, :608:22, :1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
-  wire [3:0]  _GEN_27 = _GEN_26[3:0] | _io_rw_rdata_T_17[4:1];	// @[Mux.scala:27:73]
-  wire [2:0]  _GEN_28 = _GEN_26[6:4] | _io_rw_rdata_T_19[7:5];	// @[Mux.scala:27:73]
-  wire [1:0]  _GEN_29 = _GEN_27[1:0] | _io_rw_rdata_T_18[2:1] | _io_rw_rdata_T_19[2:1];	// @[Mux.scala:27:73]
-  wire [1:0]  _GEN_30 = _GEN_27[3:2] | _io_rw_rdata_T_19[4:3] | _io_rw_rdata_T_23[4:3] | _io_rw_rdata_T_25[4:3];	// @[Mux.scala:27:73]
-  wire [63:0] _GEN_31 =
-    ((&{decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value : 64'h0) | ((&_decoded_decoded_T_14) ? {_io_status_sd_output, 43'h2000, reg_mstatus_mxr, reg_mstatus_sum, 3'h0, reg_mstatus_fs, 2'h0, reg_mstatus_vs, reg_mstatus_spp, 2'h0, reg_mstatus_spie, 3'h0, reg_mstatus_sie, 1'h0} : 64'h0) | ((&_decoded_decoded_T_30) ? _GEN & sie_mask : 64'h0) | ((&_decoded_decoded_T_16) ? reg_mie & sie_mask : 64'h0) | ((&_decoded_decoded_T_22) ? reg_sscratch : 64'h0) | ((&_decoded_decoded_T_26) ? reg_scause : 64'h0) | ((&_decoded_decoded_T_28) ? {{24{reg_stval[39]}}, reg_stval} : 64'h0) | ((&_decoded_decoded_T_32) ? {reg_satp_mode, 16'h0, reg_satp_ppn} : 64'h0) | ((&_decoded_decoded_T_24) ? {{24{_T_61[39]}}, _T_61} : 64'h0) | ((&_decoded_decoded_T_18) ? read_stvec : 64'h0) | ((&_decoded_decoded_T_40) ? read_mideleg : 64'h0) | ((&_decoded_decoded_T_38) ? read_medeleg : 64'h0) | ((&_decoded_decoded_T_118) ? {reg_pmp_7_cfg_l, 2'h0, reg_pmp_7_cfg_a, reg_pmp_7_cfg_x, reg_pmp_7_cfg_w, reg_pmp_7_cfg_r, reg_pmp_6_cfg_l, 2'h0, reg_pmp_6_cfg_a, reg_pmp_6_cfg_x, reg_pmp_6_cfg_w, reg_pmp_6_cfg_r, reg_pmp_5_cfg_l, 2'h0, reg_pmp_5_cfg_a, reg_pmp_5_cfg_x, reg_pmp_5_cfg_w, reg_pmp_5_cfg_r, reg_pmp_4_cfg_l, 2'h0, reg_pmp_4_cfg_a, reg_pmp_4_cfg_x, reg_pmp_4_cfg_w, reg_pmp_4_cfg_r, reg_pmp_3_cfg_l, 2'h0, reg_pmp_3_cfg_a, reg_pmp_3_cfg_x, reg_pmp_3_cfg_w, reg_pmp_3_cfg_r, reg_pmp_2_cfg_l, 2'h0, reg_pmp_2_cfg_a, reg_pmp_2_cfg_x, reg_pmp_2_cfg_w, reg_pmp_2_cfg_r, reg_pmp_1_cfg_l, 2'h0, reg_pmp_1_cfg_a, reg_pmp_1_cfg_x, reg_pmp_1_cfg_w, reg_pmp_1_cfg_r, reg_pmp_0_cfg_l, 2'h0, reg_pmp_0_cfg_a, reg_pmp_0_cfg_x, reg_pmp_0_cfg_w, reg_pmp_0_cfg_r} : 64'h0) | ((&_decoded_decoded_T_168) ? reg_custom_0 : 64'h0)
-    | {32'h0,
-       _io_rw_rdata_T_14[31:30],
-       _io_rw_rdata_T_134[29:16] | _io_rw_rdata_T_135[29:16] | _io_rw_rdata_T_136[29:16] | _io_rw_rdata_T_137[29:16] | _io_rw_rdata_T_138[29:16] | _io_rw_rdata_T_139[29:16] | _io_rw_rdata_T_140[29:16] | _io_rw_rdata_T_141[29:16],
-       _GEN_26[14:7] | _io_rw_rdata_T_134[15:8] | _io_rw_rdata_T_135[15:8] | _io_rw_rdata_T_136[15:8] | _io_rw_rdata_T_137[15:8] | _io_rw_rdata_T_138[15:8] | _io_rw_rdata_T_139[15:8] | _io_rw_rdata_T_140[15:8] | _io_rw_rdata_T_141[15:8],
-       _GEN_28[2] | _io_rw_rdata_T_25[7] | _io_rw_rdata_T_134[7] | _io_rw_rdata_T_135[7] | _io_rw_rdata_T_136[7] | _io_rw_rdata_T_137[7] | _io_rw_rdata_T_138[7] | _io_rw_rdata_T_139[7] | _io_rw_rdata_T_140[7] | _io_rw_rdata_T_141[7],
-       _GEN_28[1:0] | _io_rw_rdata_T_23[6:5] | _io_rw_rdata_T_25[6:5] | _io_rw_rdata_T_134[6:5] | _io_rw_rdata_T_135[6:5] | _io_rw_rdata_T_136[6:5] | _io_rw_rdata_T_137[6:5] | _io_rw_rdata_T_138[6:5] | _io_rw_rdata_T_139[6:5] | _io_rw_rdata_T_140[6:5] | _io_rw_rdata_T_141[6:5],
-       _GEN_30[1] | (&{io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) | _io_rw_rdata_T_134[4] | _io_rw_rdata_T_135[4] | _io_rw_rdata_T_136[4] | _io_rw_rdata_T_137[4] | _io_rw_rdata_T_138[4] | _io_rw_rdata_T_139[4] | _io_rw_rdata_T_140[4] | _io_rw_rdata_T_141[4],
-       _GEN_30[0] | _io_rw_rdata_T_134[3] | _io_rw_rdata_T_135[3] | _io_rw_rdata_T_136[3] | _io_rw_rdata_T_137[3] | _io_rw_rdata_T_138[3] | _io_rw_rdata_T_139[3] | _io_rw_rdata_T_140[3] | _io_rw_rdata_T_141[3],
-       _GEN_29[1] | _io_rw_rdata_T_22[2] | _io_rw_rdata_T_23[2] | _io_rw_rdata_T_25[2] | _io_rw_rdata_T_27[2] | _GEN_24[2] | _GEN_25[2] | _io_rw_rdata_T_134[2] | _io_rw_rdata_T_135[2] | _io_rw_rdata_T_136[2] | _io_rw_rdata_T_137[2] | _io_rw_rdata_T_138[2] | _io_rw_rdata_T_139[2] | _io_rw_rdata_T_140[2] | _io_rw_rdata_T_141[2],
-       _GEN_29[0] | _io_rw_rdata_T_21[1] | _io_rw_rdata_T_22[1] | _io_rw_rdata_T_23[1] | _io_rw_rdata_T_25[1] | _io_rw_rdata_T_27[1] | _GEN_24[1] | _GEN_25[1] | _io_rw_rdata_T_134[1] | _io_rw_rdata_T_135[1] | _io_rw_rdata_T_136[1] | _io_rw_rdata_T_137[1] | _io_rw_rdata_T_138[1] | _io_rw_rdata_T_139[1] | _io_rw_rdata_T_140[1] | _io_rw_rdata_T_141[1],
-       (&{io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], io_rw_addr[11]}) & io_hartid | _io_rw_rdata_T_14[0] | _io_rw_rdata_T_17[0] | _io_rw_rdata_T_18[0] | _io_rw_rdata_T_19[0] | (&_decoded_decoded_T_8) & reg_vxsat | _io_rw_rdata_T_21[0] | _io_rw_rdata_T_22[0] | _io_rw_rdata_T_23[0] | _io_rw_rdata_T_25[0] | _io_rw_rdata_T_27[0] | _GEN_24[0] | _GEN_25[0] | _io_rw_rdata_T_134[0] | _io_rw_rdata_T_135[0] | _io_rw_rdata_T_136[0] | _io_rw_rdata_T_137[0] | _io_rw_rdata_T_138[0] | _io_rw_rdata_T_139[0] | _io_rw_rdata_T_140[0] | _io_rw_rdata_T_141[0] | (&{decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], io_rw_addr[11]})} | ((&{io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], io_rw_addr[11]}) ? 64'h20181004 : 64'h0);	// @[Bitwise.scala:77:12, CSR.scala:402:47, :410:28, :415:44, :501:20, :503:20, :506:38, :510:38, :574:23, :575:22, :576:25, :578:21, :585:41, :612:56, :743:18, :746:28, :747:29, :762:37, :764:58, :770:43, :793:43, :984:58, :1650:26, Cat.scala:33:92, Mux.scala:27:73, package.scala:124:38, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_24 = (&{io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_32 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_25 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_31 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_26 = (&{decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_33 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [42:0] _io_rw_rdata_T_27 = (&_decoded_decoded_T_48) ? reg_mcountinhibit : 43'h0;	// @[CSR.scala:588:34, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_31 = (&_decoded_decoded_T_186) ? value_2 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_32 = (&{io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_2 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_34 = (&_decoded_decoded_T_188) ? value_3 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_35 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_3 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_37 = (&_decoded_decoded_T_190) ? value_4 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_38 = (&{io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_4 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_40 = (&_decoded_decoded_T_192) ? value_5 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_41 = (&{decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_5 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_43 = (&_decoded_decoded_T_194) ? value_6 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_44 = (&{io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_6 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_46 = (&_decoded_decoded_T_196) ? value_7 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_47 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_7 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_49 = (&_decoded_decoded_T_198) ? value_8 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_50 = (&{io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_8 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_52 = (&_decoded_decoded_T_200) ? value_9 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_53 = (&{decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_9 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_55 = (&_decoded_decoded_T_202) ? value_10 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_56 = (&{io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_10 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_58 = (&_decoded_decoded_T_204) ? value_11 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_59 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_11 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_61 = (&_decoded_decoded_T_206) ? value_12 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_62 = (&{io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_12 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_64 = (&_decoded_decoded_T_208) ? value_13 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_65 = (&{decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_13 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_67 = (&_decoded_decoded_T_210) ? value_14 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_68 = (&{io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_14 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_70 = (&_decoded_decoded_T_212) ? value_15 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_71 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_15 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_73 = (&_decoded_decoded_T_214) ? value_16 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_74 = (&{io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_16 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_76 = (&_decoded_decoded_T_216) ? value_17 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_77 = (&{decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_17 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_79 = (&_decoded_decoded_T_218) ? value_18 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_80 = (&{io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_18 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_82 = (&_decoded_decoded_T_220) ? value_19 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_83 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_19 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_85 = (&_decoded_decoded_T_222) ? value_20 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_86 = (&{io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_20 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_88 = (&_decoded_decoded_T_224) ? value_21 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_89 = (&{decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_21 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_91 = (&_decoded_decoded_T_226) ? value_22 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_92 = (&{io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_22 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_94 = (&_decoded_decoded_T_228) ? value_23 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_95 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_23 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_97 = (&_decoded_decoded_T_230) ? value_24 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_98 = (&{io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_24 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_100 = (&_decoded_decoded_T_232) ? value_25 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_101 = (&{decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_25 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_103 = (&_decoded_decoded_T_234) ? value_26 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_104 = (&{io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_26 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_106 = (&_decoded_decoded_T_236) ? value_27 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_107 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_27 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_109 = (&_decoded_decoded_T_238) ? value_28 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_110 = (&{io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_28 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_112 = (&_decoded_decoded_T_240) ? value_29 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_113 = (&{decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_29 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_115 = (&_decoded_decoded_T_242) ? value_30 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_116 = (&{io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], io_rw_addr[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_30 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_117 = (&_decoded_decoded_T_244) ? value_31 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_118 = (&_decoded_decoded_T_246) ? value_32 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_119 = (&_decoded_decoded_T_248) ? value_33 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_120 = (&_decoded_decoded_T_250) ? value_34 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_121 = (&{io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_34 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_122 = (&_decoded_decoded_T_252) ? value_35 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_123 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_35 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_125 = (&_decoded_decoded_T_254) ? value_36 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_126 = (&{io_rw_addr[0], decoded_decoded_invInputs[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_36 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_128 = (&_decoded_decoded_T_256) ? value_37 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_129 = (&{decoded_decoded_invInputs[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_37 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_131 = (&_decoded_decoded_T_258) ? value_38 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_132 = (&{io_rw_addr[0], io_rw_addr[1], io_rw_addr[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_38 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_134 = (&_decoded_decoded_T_260) ? value_39 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_135 = (&{decoded_decoded_invInputs[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_39 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_137 = (&_decoded_decoded_T_262) ? value_40 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_138 = (&{io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_40 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [39:0] _io_rw_rdata_T_140 = (&_decoded_decoded_T_264) ? value_41 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [39:0] _io_rw_rdata_T_141 = (&{io_rw_addr[1], decoded_decoded_invInputs[2], io_rw_addr[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_41 : 40'h0;	// @[CSR.scala:1598:23, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [31:0] _GEN_31 = (&_decoded_decoded_T_46) ? reg_mcounteren : 32'h0;	// @[CSR.scala:402:47, :535:18, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [31:0] _GEN_32 = (&_decoded_decoded_T_20) ? reg_scounteren : 32'h0;	// @[CSR.scala:402:47, :539:18, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_159 = (&_decoded_decoded_T_134) ? reg_pmp_0_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_160 = (&_decoded_decoded_T_136) ? reg_pmp_1_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_161 = (&_decoded_decoded_T_138) ? reg_pmp_2_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_162 = (&_decoded_decoded_T_140) ? reg_pmp_3_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_163 = (&_decoded_decoded_T_142) ? reg_pmp_4_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_164 = (&_decoded_decoded_T_144) ? reg_pmp_5_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_165 = (&_decoded_decoded_T_146) ? reg_pmp_6_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_166 = (&_decoded_decoded_T_148) ? reg_pmp_7_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_167 = (&_decoded_decoded_T_150) ? reg_pmp_8_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_168 = (&_decoded_decoded_T_152) ? reg_pmp_9_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_169 = (&_decoded_decoded_T_154) ? reg_pmp_10_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_170 = (&_decoded_decoded_T_156) ? reg_pmp_11_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_171 = (&_decoded_decoded_T_158) ? reg_pmp_12_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_172 = (&_decoded_decoded_T_160) ? reg_pmp_13_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_173 = (&_decoded_decoded_T_162) ? reg_pmp_14_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [29:0] _io_rw_rdata_T_174 = (&_decoded_decoded_T_164) ? reg_pmp_15_addr : 30'h0;	// @[CSR.scala:501:20, Cat.scala:33:92, Mux.scala:27:73, pla.scala:98:74]
+  wire [3:0]  _GEN_33 = _io_rw_rdata_T_14[4:1] | _io_rw_rdata_T_17[4:1];	// @[Mux.scala:27:73]
+  wire [2:0]  _GEN_34 = _io_rw_rdata_T_14[7:5] | _io_rw_rdata_T_19[7:5];	// @[Mux.scala:27:73]
+  wire [1:0]  _GEN_35 = _GEN_33[1:0] | _io_rw_rdata_T_18[2:1] | _io_rw_rdata_T_19[2:1];	// @[Mux.scala:27:73]
+  wire [23:0] _GEN_36 =
+    _io_rw_rdata_T_14[31:8] | _io_rw_rdata_T_24[31:8] | _io_rw_rdata_T_25[31:8] | _io_rw_rdata_T_26[31:8] | _io_rw_rdata_T_27[31:8] | _io_rw_rdata_T_31[31:8] | _io_rw_rdata_T_32[31:8] | _io_rw_rdata_T_34[31:8] | _io_rw_rdata_T_35[31:8] | _io_rw_rdata_T_37[31:8] | _io_rw_rdata_T_38[31:8] | _io_rw_rdata_T_40[31:8] | _io_rw_rdata_T_41[31:8] | _io_rw_rdata_T_43[31:8] | _io_rw_rdata_T_44[31:8] | _io_rw_rdata_T_46[31:8] | _io_rw_rdata_T_47[31:8] | _io_rw_rdata_T_49[31:8] | _io_rw_rdata_T_50[31:8] | _io_rw_rdata_T_52[31:8] | _io_rw_rdata_T_53[31:8] | _io_rw_rdata_T_55[31:8] | _io_rw_rdata_T_56[31:8] | _io_rw_rdata_T_58[31:8] | _io_rw_rdata_T_59[31:8] | _io_rw_rdata_T_61[31:8] | _io_rw_rdata_T_62[31:8] | _io_rw_rdata_T_64[31:8] | _io_rw_rdata_T_65[31:8] | _io_rw_rdata_T_67[31:8] | _io_rw_rdata_T_68[31:8] | _io_rw_rdata_T_70[31:8] | _io_rw_rdata_T_71[31:8] | _io_rw_rdata_T_73[31:8] | _io_rw_rdata_T_74[31:8] | _io_rw_rdata_T_76[31:8] | _io_rw_rdata_T_77[31:8] | _io_rw_rdata_T_79[31:8] | _io_rw_rdata_T_80[31:8] | _io_rw_rdata_T_82[31:8] | _io_rw_rdata_T_83[31:8] | _io_rw_rdata_T_85[31:8] | _io_rw_rdata_T_86[31:8] | _io_rw_rdata_T_88[31:8] | _io_rw_rdata_T_89[31:8] | _io_rw_rdata_T_91[31:8] | _io_rw_rdata_T_92[31:8] | _io_rw_rdata_T_94[31:8] | _io_rw_rdata_T_95[31:8] | _io_rw_rdata_T_97[31:8] | _io_rw_rdata_T_98[31:8] | _io_rw_rdata_T_100[31:8] | _io_rw_rdata_T_101[31:8] | _io_rw_rdata_T_103[31:8] | _io_rw_rdata_T_104[31:8] | _io_rw_rdata_T_106[31:8] | _io_rw_rdata_T_107[31:8] | _io_rw_rdata_T_109[31:8] | _io_rw_rdata_T_110[31:8] | _io_rw_rdata_T_112[31:8] | _io_rw_rdata_T_113[31:8] | _io_rw_rdata_T_115[31:8] | _io_rw_rdata_T_116[31:8] | _io_rw_rdata_T_117[31:8] | _io_rw_rdata_T_118[31:8] | _io_rw_rdata_T_119[31:8] | _io_rw_rdata_T_120[31:8] | _io_rw_rdata_T_121[31:8] | _io_rw_rdata_T_122[31:8] | _io_rw_rdata_T_123[31:8] | _io_rw_rdata_T_125[31:8] | _io_rw_rdata_T_126[31:8] | _io_rw_rdata_T_128[31:8] | _io_rw_rdata_T_129[31:8] | _io_rw_rdata_T_131[31:8] | _io_rw_rdata_T_132[31:8] | _io_rw_rdata_T_134[31:8]
+    | _io_rw_rdata_T_135[31:8] | _io_rw_rdata_T_137[31:8] | _io_rw_rdata_T_138[31:8] | _io_rw_rdata_T_140[31:8] | _io_rw_rdata_T_141[31:8] | _GEN_31[31:8] | _GEN_32[31:8];	// @[Mux.scala:27:73]
+  wire [63:0] _GEN_37 =
+    {21'h0,
+     _io_rw_rdata_T_27[42:40],
+     _io_rw_rdata_T_24[39:32] | _io_rw_rdata_T_25[39:32] | _io_rw_rdata_T_26[39:32] | _io_rw_rdata_T_27[39:32] | _io_rw_rdata_T_31[39:32] | _io_rw_rdata_T_32[39:32] | _io_rw_rdata_T_34[39:32] | _io_rw_rdata_T_35[39:32] | _io_rw_rdata_T_37[39:32] | _io_rw_rdata_T_38[39:32] | _io_rw_rdata_T_40[39:32] | _io_rw_rdata_T_41[39:32] | _io_rw_rdata_T_43[39:32] | _io_rw_rdata_T_44[39:32] | _io_rw_rdata_T_46[39:32] | _io_rw_rdata_T_47[39:32] | _io_rw_rdata_T_49[39:32] | _io_rw_rdata_T_50[39:32] | _io_rw_rdata_T_52[39:32] | _io_rw_rdata_T_53[39:32] | _io_rw_rdata_T_55[39:32] | _io_rw_rdata_T_56[39:32] | _io_rw_rdata_T_58[39:32] | _io_rw_rdata_T_59[39:32] | _io_rw_rdata_T_61[39:32] | _io_rw_rdata_T_62[39:32] | _io_rw_rdata_T_64[39:32] | _io_rw_rdata_T_65[39:32] | _io_rw_rdata_T_67[39:32] | _io_rw_rdata_T_68[39:32] | _io_rw_rdata_T_70[39:32] | _io_rw_rdata_T_71[39:32] | _io_rw_rdata_T_73[39:32] | _io_rw_rdata_T_74[39:32] | _io_rw_rdata_T_76[39:32] | _io_rw_rdata_T_77[39:32] | _io_rw_rdata_T_79[39:32] | _io_rw_rdata_T_80[39:32] | _io_rw_rdata_T_82[39:32] | _io_rw_rdata_T_83[39:32] | _io_rw_rdata_T_85[39:32] | _io_rw_rdata_T_86[39:32] | _io_rw_rdata_T_88[39:32] | _io_rw_rdata_T_89[39:32] | _io_rw_rdata_T_91[39:32] | _io_rw_rdata_T_92[39:32] | _io_rw_rdata_T_94[39:32] | _io_rw_rdata_T_95[39:32] | _io_rw_rdata_T_97[39:32] | _io_rw_rdata_T_98[39:32] | _io_rw_rdata_T_100[39:32] | _io_rw_rdata_T_101[39:32] | _io_rw_rdata_T_103[39:32] | _io_rw_rdata_T_104[39:32] | _io_rw_rdata_T_106[39:32] | _io_rw_rdata_T_107[39:32] | _io_rw_rdata_T_109[39:32] | _io_rw_rdata_T_110[39:32] | _io_rw_rdata_T_112[39:32] | _io_rw_rdata_T_113[39:32] | _io_rw_rdata_T_115[39:32] | _io_rw_rdata_T_116[39:32] | _io_rw_rdata_T_117[39:32] | _io_rw_rdata_T_118[39:32] | _io_rw_rdata_T_119[39:32] | _io_rw_rdata_T_120[39:32] | _io_rw_rdata_T_121[39:32] | _io_rw_rdata_T_122[39:32] | _io_rw_rdata_T_123[39:32] | _io_rw_rdata_T_125[39:32] | _io_rw_rdata_T_126[39:32] | _io_rw_rdata_T_128[39:32] | _io_rw_rdata_T_129[39:32] | _io_rw_rdata_T_131[39:32]
+       | _io_rw_rdata_T_132[39:32] | _io_rw_rdata_T_134[39:32] | _io_rw_rdata_T_135[39:32] | _io_rw_rdata_T_137[39:32] | _io_rw_rdata_T_138[39:32] | _io_rw_rdata_T_140[39:32] | _io_rw_rdata_T_141[39:32],
+     _GEN_36[23:22],
+     _GEN_36[21:0] | _io_rw_rdata_T_159[29:8] | _io_rw_rdata_T_160[29:8] | _io_rw_rdata_T_161[29:8] | _io_rw_rdata_T_162[29:8] | _io_rw_rdata_T_163[29:8] | _io_rw_rdata_T_164[29:8] | _io_rw_rdata_T_165[29:8] | _io_rw_rdata_T_166[29:8] | _io_rw_rdata_T_167[29:8] | _io_rw_rdata_T_168[29:8] | _io_rw_rdata_T_169[29:8] | _io_rw_rdata_T_170[29:8] | _io_rw_rdata_T_171[29:8] | _io_rw_rdata_T_172[29:8] | _io_rw_rdata_T_173[29:8] | _io_rw_rdata_T_174[29:8],
+     _GEN_34[2] | _io_rw_rdata_T_24[7] | _io_rw_rdata_T_25[7] | _io_rw_rdata_T_26[7] | _io_rw_rdata_T_27[7] | _io_rw_rdata_T_31[7] | _io_rw_rdata_T_32[7] | _io_rw_rdata_T_34[7] | _io_rw_rdata_T_35[7] | _io_rw_rdata_T_37[7] | _io_rw_rdata_T_38[7] | _io_rw_rdata_T_40[7] | _io_rw_rdata_T_41[7] | _io_rw_rdata_T_43[7] | _io_rw_rdata_T_44[7] | _io_rw_rdata_T_46[7] | _io_rw_rdata_T_47[7] | _io_rw_rdata_T_49[7] | _io_rw_rdata_T_50[7] | _io_rw_rdata_T_52[7] | _io_rw_rdata_T_53[7] | _io_rw_rdata_T_55[7] | _io_rw_rdata_T_56[7] | _io_rw_rdata_T_58[7] | _io_rw_rdata_T_59[7] | _io_rw_rdata_T_61[7] | _io_rw_rdata_T_62[7] | _io_rw_rdata_T_64[7] | _io_rw_rdata_T_65[7] | _io_rw_rdata_T_67[7] | _io_rw_rdata_T_68[7] | _io_rw_rdata_T_70[7] | _io_rw_rdata_T_71[7] | _io_rw_rdata_T_73[7] | _io_rw_rdata_T_74[7] | _io_rw_rdata_T_76[7] | _io_rw_rdata_T_77[7] | _io_rw_rdata_T_79[7] | _io_rw_rdata_T_80[7] | _io_rw_rdata_T_82[7] | _io_rw_rdata_T_83[7] | _io_rw_rdata_T_85[7] | _io_rw_rdata_T_86[7] | _io_rw_rdata_T_88[7] | _io_rw_rdata_T_89[7] | _io_rw_rdata_T_91[7] | _io_rw_rdata_T_92[7] | _io_rw_rdata_T_94[7] | _io_rw_rdata_T_95[7] | _io_rw_rdata_T_97[7] | _io_rw_rdata_T_98[7] | _io_rw_rdata_T_100[7] | _io_rw_rdata_T_101[7] | _io_rw_rdata_T_103[7] | _io_rw_rdata_T_104[7] | _io_rw_rdata_T_106[7] | _io_rw_rdata_T_107[7] | _io_rw_rdata_T_109[7] | _io_rw_rdata_T_110[7] | _io_rw_rdata_T_112[7] | _io_rw_rdata_T_113[7] | _io_rw_rdata_T_115[7] | _io_rw_rdata_T_116[7] | _io_rw_rdata_T_117[7] | _io_rw_rdata_T_118[7] | _io_rw_rdata_T_119[7] | _io_rw_rdata_T_120[7] | _io_rw_rdata_T_121[7] | _io_rw_rdata_T_122[7] | _io_rw_rdata_T_123[7] | _io_rw_rdata_T_125[7] | _io_rw_rdata_T_126[7] | _io_rw_rdata_T_128[7] | _io_rw_rdata_T_129[7] | _io_rw_rdata_T_131[7] | _io_rw_rdata_T_132[7] | _io_rw_rdata_T_134[7] | _io_rw_rdata_T_135[7] | _io_rw_rdata_T_137[7] | _io_rw_rdata_T_138[7] | _io_rw_rdata_T_140[7] | _io_rw_rdata_T_141[7] | _GEN_31[7] | _GEN_32[7] | _io_rw_rdata_T_159[7] | _io_rw_rdata_T_160[7] | _io_rw_rdata_T_161[7] | _io_rw_rdata_T_162[7]
+       | _io_rw_rdata_T_163[7] | _io_rw_rdata_T_164[7] | _io_rw_rdata_T_165[7] | _io_rw_rdata_T_166[7] | _io_rw_rdata_T_167[7] | _io_rw_rdata_T_168[7] | _io_rw_rdata_T_169[7] | _io_rw_rdata_T_170[7] | _io_rw_rdata_T_171[7] | _io_rw_rdata_T_172[7] | _io_rw_rdata_T_173[7] | _io_rw_rdata_T_174[7],
+     _GEN_34[1:0] | _io_rw_rdata_T_23[6:5] | _io_rw_rdata_T_24[6:5] | _io_rw_rdata_T_25[6:5] | _io_rw_rdata_T_26[6:5] | _io_rw_rdata_T_27[6:5] | _io_rw_rdata_T_31[6:5] | _io_rw_rdata_T_32[6:5] | _io_rw_rdata_T_34[6:5] | _io_rw_rdata_T_35[6:5] | _io_rw_rdata_T_37[6:5] | _io_rw_rdata_T_38[6:5] | _io_rw_rdata_T_40[6:5] | _io_rw_rdata_T_41[6:5] | _io_rw_rdata_T_43[6:5] | _io_rw_rdata_T_44[6:5] | _io_rw_rdata_T_46[6:5] | _io_rw_rdata_T_47[6:5] | _io_rw_rdata_T_49[6:5] | _io_rw_rdata_T_50[6:5] | _io_rw_rdata_T_52[6:5] | _io_rw_rdata_T_53[6:5] | _io_rw_rdata_T_55[6:5] | _io_rw_rdata_T_56[6:5] | _io_rw_rdata_T_58[6:5] | _io_rw_rdata_T_59[6:5] | _io_rw_rdata_T_61[6:5] | _io_rw_rdata_T_62[6:5] | _io_rw_rdata_T_64[6:5] | _io_rw_rdata_T_65[6:5] | _io_rw_rdata_T_67[6:5] | _io_rw_rdata_T_68[6:5] | _io_rw_rdata_T_70[6:5] | _io_rw_rdata_T_71[6:5] | _io_rw_rdata_T_73[6:5] | _io_rw_rdata_T_74[6:5] | _io_rw_rdata_T_76[6:5] | _io_rw_rdata_T_77[6:5] | _io_rw_rdata_T_79[6:5] | _io_rw_rdata_T_80[6:5] | _io_rw_rdata_T_82[6:5] | _io_rw_rdata_T_83[6:5] | _io_rw_rdata_T_85[6:5] | _io_rw_rdata_T_86[6:5] | _io_rw_rdata_T_88[6:5] | _io_rw_rdata_T_89[6:5] | _io_rw_rdata_T_91[6:5] | _io_rw_rdata_T_92[6:5] | _io_rw_rdata_T_94[6:5] | _io_rw_rdata_T_95[6:5] | _io_rw_rdata_T_97[6:5] | _io_rw_rdata_T_98[6:5] | _io_rw_rdata_T_100[6:5] | _io_rw_rdata_T_101[6:5] | _io_rw_rdata_T_103[6:5] | _io_rw_rdata_T_104[6:5] | _io_rw_rdata_T_106[6:5] | _io_rw_rdata_T_107[6:5] | _io_rw_rdata_T_109[6:5] | _io_rw_rdata_T_110[6:5] | _io_rw_rdata_T_112[6:5] | _io_rw_rdata_T_113[6:5] | _io_rw_rdata_T_115[6:5] | _io_rw_rdata_T_116[6:5] | _io_rw_rdata_T_117[6:5] | _io_rw_rdata_T_118[6:5] | _io_rw_rdata_T_119[6:5] | _io_rw_rdata_T_120[6:5] | _io_rw_rdata_T_121[6:5] | _io_rw_rdata_T_122[6:5] | _io_rw_rdata_T_123[6:5] | _io_rw_rdata_T_125[6:5] | _io_rw_rdata_T_126[6:5] | _io_rw_rdata_T_128[6:5] | _io_rw_rdata_T_129[6:5] | _io_rw_rdata_T_131[6:5] | _io_rw_rdata_T_132[6:5] | _io_rw_rdata_T_134[6:5] | _io_rw_rdata_T_135[6:5] | _io_rw_rdata_T_137[6:5] | _io_rw_rdata_T_138[6:5]
+       | _io_rw_rdata_T_140[6:5] | _io_rw_rdata_T_141[6:5] | _GEN_31[6:5] | _GEN_32[6:5] | _io_rw_rdata_T_159[6:5] | _io_rw_rdata_T_160[6:5] | _io_rw_rdata_T_161[6:5] | _io_rw_rdata_T_162[6:5] | _io_rw_rdata_T_163[6:5] | _io_rw_rdata_T_164[6:5] | _io_rw_rdata_T_165[6:5] | _io_rw_rdata_T_166[6:5] | _io_rw_rdata_T_167[6:5] | _io_rw_rdata_T_168[6:5] | _io_rw_rdata_T_169[6:5] | _io_rw_rdata_T_170[6:5] | _io_rw_rdata_T_171[6:5] | _io_rw_rdata_T_172[6:5] | _io_rw_rdata_T_173[6:5] | _io_rw_rdata_T_174[6:5],
+     _GEN_33[3:2] | _io_rw_rdata_T_19[4:3] | _io_rw_rdata_T_23[4:3] | _io_rw_rdata_T_24[4:3] | _io_rw_rdata_T_25[4:3] | _io_rw_rdata_T_26[4:3] | _io_rw_rdata_T_27[4:3] | _io_rw_rdata_T_31[4:3] | _io_rw_rdata_T_32[4:3] | _io_rw_rdata_T_34[4:3] | _io_rw_rdata_T_35[4:3] | _io_rw_rdata_T_37[4:3] | _io_rw_rdata_T_38[4:3] | _io_rw_rdata_T_40[4:3] | _io_rw_rdata_T_41[4:3] | _io_rw_rdata_T_43[4:3] | _io_rw_rdata_T_44[4:3] | _io_rw_rdata_T_46[4:3] | _io_rw_rdata_T_47[4:3] | _io_rw_rdata_T_49[4:3] | _io_rw_rdata_T_50[4:3] | _io_rw_rdata_T_52[4:3] | _io_rw_rdata_T_53[4:3] | _io_rw_rdata_T_55[4:3] | _io_rw_rdata_T_56[4:3] | _io_rw_rdata_T_58[4:3] | _io_rw_rdata_T_59[4:3] | _io_rw_rdata_T_61[4:3] | _io_rw_rdata_T_62[4:3] | _io_rw_rdata_T_64[4:3] | _io_rw_rdata_T_65[4:3] | _io_rw_rdata_T_67[4:3] | _io_rw_rdata_T_68[4:3] | _io_rw_rdata_T_70[4:3] | _io_rw_rdata_T_71[4:3] | _io_rw_rdata_T_73[4:3] | _io_rw_rdata_T_74[4:3] | _io_rw_rdata_T_76[4:3] | _io_rw_rdata_T_77[4:3] | _io_rw_rdata_T_79[4:3] | _io_rw_rdata_T_80[4:3] | _io_rw_rdata_T_82[4:3] | _io_rw_rdata_T_83[4:3] | _io_rw_rdata_T_85[4:3] | _io_rw_rdata_T_86[4:3] | _io_rw_rdata_T_88[4:3] | _io_rw_rdata_T_89[4:3] | _io_rw_rdata_T_91[4:3] | _io_rw_rdata_T_92[4:3] | _io_rw_rdata_T_94[4:3] | _io_rw_rdata_T_95[4:3] | _io_rw_rdata_T_97[4:3] | _io_rw_rdata_T_98[4:3] | _io_rw_rdata_T_100[4:3] | _io_rw_rdata_T_101[4:3] | _io_rw_rdata_T_103[4:3] | _io_rw_rdata_T_104[4:3] | _io_rw_rdata_T_106[4:3] | _io_rw_rdata_T_107[4:3] | _io_rw_rdata_T_109[4:3] | _io_rw_rdata_T_110[4:3] | _io_rw_rdata_T_112[4:3] | _io_rw_rdata_T_113[4:3] | _io_rw_rdata_T_115[4:3] | _io_rw_rdata_T_116[4:3] | _io_rw_rdata_T_117[4:3] | _io_rw_rdata_T_118[4:3] | _io_rw_rdata_T_119[4:3] | _io_rw_rdata_T_120[4:3] | _io_rw_rdata_T_121[4:3] | _io_rw_rdata_T_122[4:3] | _io_rw_rdata_T_123[4:3] | _io_rw_rdata_T_125[4:3] | _io_rw_rdata_T_126[4:3] | _io_rw_rdata_T_128[4:3] | _io_rw_rdata_T_129[4:3] | _io_rw_rdata_T_131[4:3] | _io_rw_rdata_T_132[4:3] | _io_rw_rdata_T_134[4:3] | _io_rw_rdata_T_135[4:3] | _io_rw_rdata_T_137[4:3]
+       | _io_rw_rdata_T_138[4:3] | _io_rw_rdata_T_140[4:3] | _io_rw_rdata_T_141[4:3] | _GEN_31[4:3] | _GEN_32[4:3] | _io_rw_rdata_T_159[4:3] | _io_rw_rdata_T_160[4:3] | _io_rw_rdata_T_161[4:3] | _io_rw_rdata_T_162[4:3] | _io_rw_rdata_T_163[4:3] | _io_rw_rdata_T_164[4:3] | _io_rw_rdata_T_165[4:3] | _io_rw_rdata_T_166[4:3] | _io_rw_rdata_T_167[4:3] | _io_rw_rdata_T_168[4:3] | _io_rw_rdata_T_169[4:3] | _io_rw_rdata_T_170[4:3] | _io_rw_rdata_T_171[4:3] | _io_rw_rdata_T_172[4:3] | _io_rw_rdata_T_173[4:3] | _io_rw_rdata_T_174[4:3],
+     _GEN_35[1] | _io_rw_rdata_T_22[2] | _io_rw_rdata_T_23[2] | _io_rw_rdata_T_24[2] | _io_rw_rdata_T_25[2] | _io_rw_rdata_T_26[2] | _io_rw_rdata_T_27[2] | _io_rw_rdata_T_31[2] | _io_rw_rdata_T_32[2] | _io_rw_rdata_T_34[2] | _io_rw_rdata_T_35[2] | _io_rw_rdata_T_37[2] | _io_rw_rdata_T_38[2] | _io_rw_rdata_T_40[2] | _io_rw_rdata_T_41[2] | _io_rw_rdata_T_43[2] | _io_rw_rdata_T_44[2] | _io_rw_rdata_T_46[2] | _io_rw_rdata_T_47[2] | _io_rw_rdata_T_49[2] | _io_rw_rdata_T_50[2] | _io_rw_rdata_T_52[2] | _io_rw_rdata_T_53[2] | _io_rw_rdata_T_55[2] | _io_rw_rdata_T_56[2] | _io_rw_rdata_T_58[2] | _io_rw_rdata_T_59[2] | _io_rw_rdata_T_61[2] | _io_rw_rdata_T_62[2] | _io_rw_rdata_T_64[2] | _io_rw_rdata_T_65[2] | _io_rw_rdata_T_67[2] | _io_rw_rdata_T_68[2] | _io_rw_rdata_T_70[2] | _io_rw_rdata_T_71[2] | _io_rw_rdata_T_73[2] | _io_rw_rdata_T_74[2] | _io_rw_rdata_T_76[2] | _io_rw_rdata_T_77[2] | _io_rw_rdata_T_79[2] | _io_rw_rdata_T_80[2] | _io_rw_rdata_T_82[2] | _io_rw_rdata_T_83[2] | _io_rw_rdata_T_85[2] | _io_rw_rdata_T_86[2] | _io_rw_rdata_T_88[2] | _io_rw_rdata_T_89[2] | _io_rw_rdata_T_91[2] | _io_rw_rdata_T_92[2] | _io_rw_rdata_T_94[2] | _io_rw_rdata_T_95[2] | _io_rw_rdata_T_97[2] | _io_rw_rdata_T_98[2] | _io_rw_rdata_T_100[2] | _io_rw_rdata_T_101[2] | _io_rw_rdata_T_103[2] | _io_rw_rdata_T_104[2] | _io_rw_rdata_T_106[2] | _io_rw_rdata_T_107[2] | _io_rw_rdata_T_109[2] | _io_rw_rdata_T_110[2] | _io_rw_rdata_T_112[2] | _io_rw_rdata_T_113[2] | _io_rw_rdata_T_115[2] | _io_rw_rdata_T_116[2] | _io_rw_rdata_T_117[2] | _io_rw_rdata_T_118[2] | _io_rw_rdata_T_119[2] | _io_rw_rdata_T_120[2] | _io_rw_rdata_T_121[2] | _io_rw_rdata_T_122[2] | _io_rw_rdata_T_123[2] | _io_rw_rdata_T_125[2] | _io_rw_rdata_T_126[2] | _io_rw_rdata_T_128[2] | _io_rw_rdata_T_129[2] | _io_rw_rdata_T_131[2] | _io_rw_rdata_T_132[2] | _io_rw_rdata_T_134[2] | _io_rw_rdata_T_135[2] | _io_rw_rdata_T_137[2] | _io_rw_rdata_T_138[2] | _io_rw_rdata_T_140[2] | _io_rw_rdata_T_141[2] | _GEN_31[2] | _GEN_32[2] | _io_rw_rdata_T_159[2] | _io_rw_rdata_T_160[2]
+       | _io_rw_rdata_T_161[2] | _io_rw_rdata_T_162[2] | _io_rw_rdata_T_163[2] | _io_rw_rdata_T_164[2] | _io_rw_rdata_T_165[2] | _io_rw_rdata_T_166[2] | _io_rw_rdata_T_167[2] | _io_rw_rdata_T_168[2] | _io_rw_rdata_T_169[2] | _io_rw_rdata_T_170[2] | _io_rw_rdata_T_171[2] | _io_rw_rdata_T_172[2] | _io_rw_rdata_T_173[2] | _io_rw_rdata_T_174[2],
+     _GEN_35[0] | _io_rw_rdata_T_21[1] | _io_rw_rdata_T_22[1] | _io_rw_rdata_T_23[1] | _io_rw_rdata_T_24[1] | _io_rw_rdata_T_25[1] | _io_rw_rdata_T_26[1] | _io_rw_rdata_T_27[1] | _io_rw_rdata_T_31[1] | _io_rw_rdata_T_32[1] | _io_rw_rdata_T_34[1] | _io_rw_rdata_T_35[1] | _io_rw_rdata_T_37[1] | _io_rw_rdata_T_38[1] | _io_rw_rdata_T_40[1] | _io_rw_rdata_T_41[1] | _io_rw_rdata_T_43[1] | _io_rw_rdata_T_44[1] | _io_rw_rdata_T_46[1] | _io_rw_rdata_T_47[1] | _io_rw_rdata_T_49[1] | _io_rw_rdata_T_50[1] | _io_rw_rdata_T_52[1] | _io_rw_rdata_T_53[1] | _io_rw_rdata_T_55[1] | _io_rw_rdata_T_56[1] | _io_rw_rdata_T_58[1] | _io_rw_rdata_T_59[1] | _io_rw_rdata_T_61[1] | _io_rw_rdata_T_62[1] | _io_rw_rdata_T_64[1] | _io_rw_rdata_T_65[1] | _io_rw_rdata_T_67[1] | _io_rw_rdata_T_68[1] | _io_rw_rdata_T_70[1] | _io_rw_rdata_T_71[1] | _io_rw_rdata_T_73[1] | _io_rw_rdata_T_74[1] | _io_rw_rdata_T_76[1] | _io_rw_rdata_T_77[1] | _io_rw_rdata_T_79[1] | _io_rw_rdata_T_80[1] | _io_rw_rdata_T_82[1] | _io_rw_rdata_T_83[1] | _io_rw_rdata_T_85[1] | _io_rw_rdata_T_86[1] | _io_rw_rdata_T_88[1] | _io_rw_rdata_T_89[1] | _io_rw_rdata_T_91[1] | _io_rw_rdata_T_92[1] | _io_rw_rdata_T_94[1] | _io_rw_rdata_T_95[1] | _io_rw_rdata_T_97[1] | _io_rw_rdata_T_98[1] | _io_rw_rdata_T_100[1] | _io_rw_rdata_T_101[1] | _io_rw_rdata_T_103[1] | _io_rw_rdata_T_104[1] | _io_rw_rdata_T_106[1] | _io_rw_rdata_T_107[1] | _io_rw_rdata_T_109[1] | _io_rw_rdata_T_110[1] | _io_rw_rdata_T_112[1] | _io_rw_rdata_T_113[1] | _io_rw_rdata_T_115[1] | _io_rw_rdata_T_116[1] | _io_rw_rdata_T_117[1] | _io_rw_rdata_T_118[1] | _io_rw_rdata_T_119[1] | _io_rw_rdata_T_120[1] | _io_rw_rdata_T_121[1] | _io_rw_rdata_T_122[1] | _io_rw_rdata_T_123[1] | _io_rw_rdata_T_125[1] | _io_rw_rdata_T_126[1] | _io_rw_rdata_T_128[1] | _io_rw_rdata_T_129[1] | _io_rw_rdata_T_131[1] | _io_rw_rdata_T_132[1] | _io_rw_rdata_T_134[1] | _io_rw_rdata_T_135[1] | _io_rw_rdata_T_137[1] | _io_rw_rdata_T_138[1] | _io_rw_rdata_T_140[1] | _io_rw_rdata_T_141[1] | _GEN_31[1] | _GEN_32[1] | _io_rw_rdata_T_159[1]
+       | _io_rw_rdata_T_160[1] | _io_rw_rdata_T_161[1] | _io_rw_rdata_T_162[1] | _io_rw_rdata_T_163[1] | _io_rw_rdata_T_164[1] | _io_rw_rdata_T_165[1] | _io_rw_rdata_T_166[1] | _io_rw_rdata_T_167[1] | _io_rw_rdata_T_168[1] | _io_rw_rdata_T_169[1] | _io_rw_rdata_T_170[1] | _io_rw_rdata_T_171[1] | _io_rw_rdata_T_172[1] | _io_rw_rdata_T_173[1] | _io_rw_rdata_T_174[1],
+     (&{io_rw_addr[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], io_rw_addr[11]}) & io_hartid | _io_rw_rdata_T_14[0] | _io_rw_rdata_T_17[0] | _io_rw_rdata_T_18[0] | _io_rw_rdata_T_19[0] | (&_decoded_decoded_T_8) & reg_vxsat | _io_rw_rdata_T_21[0] | _io_rw_rdata_T_22[0] | _io_rw_rdata_T_23[0] | _io_rw_rdata_T_24[0] | _io_rw_rdata_T_25[0] | _io_rw_rdata_T_26[0] | _io_rw_rdata_T_27[0] | _io_rw_rdata_T_31[0] | _io_rw_rdata_T_32[0] | _io_rw_rdata_T_34[0] | _io_rw_rdata_T_35[0] | _io_rw_rdata_T_37[0] | _io_rw_rdata_T_38[0] | _io_rw_rdata_T_40[0] | _io_rw_rdata_T_41[0] | _io_rw_rdata_T_43[0] | _io_rw_rdata_T_44[0] | _io_rw_rdata_T_46[0] | _io_rw_rdata_T_47[0] | _io_rw_rdata_T_49[0] | _io_rw_rdata_T_50[0] | _io_rw_rdata_T_52[0] | _io_rw_rdata_T_53[0] | _io_rw_rdata_T_55[0] | _io_rw_rdata_T_56[0] | _io_rw_rdata_T_58[0] | _io_rw_rdata_T_59[0] | _io_rw_rdata_T_61[0] | _io_rw_rdata_T_62[0] | _io_rw_rdata_T_64[0] | _io_rw_rdata_T_65[0] | _io_rw_rdata_T_67[0] | _io_rw_rdata_T_68[0] | _io_rw_rdata_T_70[0] | _io_rw_rdata_T_71[0] | _io_rw_rdata_T_73[0] | _io_rw_rdata_T_74[0] | _io_rw_rdata_T_76[0] | _io_rw_rdata_T_77[0] | _io_rw_rdata_T_79[0] | _io_rw_rdata_T_80[0] | _io_rw_rdata_T_82[0] | _io_rw_rdata_T_83[0] | _io_rw_rdata_T_85[0] | _io_rw_rdata_T_86[0] | _io_rw_rdata_T_88[0] | _io_rw_rdata_T_89[0] | _io_rw_rdata_T_91[0] | _io_rw_rdata_T_92[0] | _io_rw_rdata_T_94[0] | _io_rw_rdata_T_95[0] | _io_rw_rdata_T_97[0] | _io_rw_rdata_T_98[0] | _io_rw_rdata_T_100[0] | _io_rw_rdata_T_101[0] | _io_rw_rdata_T_103[0] | _io_rw_rdata_T_104[0] | _io_rw_rdata_T_106[0] | _io_rw_rdata_T_107[0] | _io_rw_rdata_T_109[0] | _io_rw_rdata_T_110[0] | _io_rw_rdata_T_112[0] | _io_rw_rdata_T_113[0] | _io_rw_rdata_T_115[0] | _io_rw_rdata_T_116[0] | _io_rw_rdata_T_117[0] | _io_rw_rdata_T_118[0] | _io_rw_rdata_T_119[0] | _io_rw_rdata_T_120[0] | _io_rw_rdata_T_121[0] | _io_rw_rdata_T_122[0] | _io_rw_rdata_T_123[0]
+       | _io_rw_rdata_T_125[0] | _io_rw_rdata_T_126[0] | _io_rw_rdata_T_128[0] | _io_rw_rdata_T_129[0] | _io_rw_rdata_T_131[0] | _io_rw_rdata_T_132[0] | _io_rw_rdata_T_134[0] | _io_rw_rdata_T_135[0] | _io_rw_rdata_T_137[0] | _io_rw_rdata_T_138[0] | _io_rw_rdata_T_140[0] | _io_rw_rdata_T_141[0] | _GEN_31[0] | _GEN_32[0] | _io_rw_rdata_T_159[0] | _io_rw_rdata_T_160[0] | _io_rw_rdata_T_161[0] | _io_rw_rdata_T_162[0] | _io_rw_rdata_T_163[0] | _io_rw_rdata_T_164[0] | _io_rw_rdata_T_165[0] | _io_rw_rdata_T_166[0] | _io_rw_rdata_T_167[0] | _io_rw_rdata_T_168[0] | _io_rw_rdata_T_169[0] | _io_rw_rdata_T_170[0] | _io_rw_rdata_T_171[0] | _io_rw_rdata_T_172[0] | _io_rw_rdata_T_173[0] | _io_rw_rdata_T_174[0] | (&{decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], io_rw_addr[11]})};	// @[CSR.scala:585:41, Cat.scala:33:92, Mux.scala:27:73, pla.scala:78:21, :90:45, :91:29, :98:74]
+  wire [63:0] _GEN_38 =
+    ((&_decoded_decoded_T_88) ? reg_hpmevent_19 : 64'h0) | ((&_decoded_decoded_T_90) ? reg_hpmevent_20 : 64'h0) | ((&_decoded_decoded_T_92) ? reg_hpmevent_21 : 64'h0) | ((&_decoded_decoded_T_94) ? reg_hpmevent_22 : 64'h0) | ((&_decoded_decoded_T_96) ? reg_hpmevent_23 : 64'h0) | ((&_decoded_decoded_T_98) ? reg_hpmevent_24 : 64'h0) | ((&_decoded_decoded_T_100) ? reg_hpmevent_25 : 64'h0) | ((&_decoded_decoded_T_102) ? reg_hpmevent_26 : 64'h0) | ((&_decoded_decoded_T_104) ? reg_hpmevent_27 : 64'h0) | ((&_decoded_decoded_T_106) ? reg_hpmevent_28 : 64'h0) | ((&_decoded_decoded_T_118) ? reg_hpmevent_34 : 64'h0) | ((&_decoded_decoded_T_120) ? reg_hpmevent_35 : 64'h0) | ((&_decoded_decoded_T_122) ? reg_hpmevent_36 : 64'h0) | ((&_decoded_decoded_T_124) ? reg_hpmevent_37 : 64'h0) | ((&_decoded_decoded_T_126) ? reg_hpmevent_38 : 64'h0) | ((&_decoded_decoded_T_128) ? reg_hpmevent_39 : 64'h0) | ((&{decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_1 : 64'h0) | ((&{decoded_decoded_invInputs[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value : 64'h0) | ((&_decoded_decoded_T_14) ? {_io_status_sd_output, 43'h2000, reg_mstatus_mxr, reg_mstatus_sum, 3'h0, reg_mstatus_fs, 2'h0, reg_mstatus_vs, reg_mstatus_spp, 2'h0, reg_mstatus_spie, 3'h0, reg_mstatus_sie, 1'h0} : 64'h0) | ((&_decoded_decoded_T_30) ? _GEN & sie_mask : 64'h0) | ((&_decoded_decoded_T_16) ? reg_mie & sie_mask : 64'h0) | ((&_decoded_decoded_T_22) ? reg_sscratch : 64'h0) | ((&_decoded_decoded_T_26) ? reg_scause : 64'h0)
+    | ((&_decoded_decoded_T_28) ? {{24{reg_stval[39]}}, reg_stval} : 64'h0) | ((&_decoded_decoded_T_32) ? {reg_satp_mode, 16'h0, reg_satp_ppn} : 64'h0) | ((&_decoded_decoded_T_24) ? {{24{_T_141[39]}}, _T_141} : 64'h0) | ((&_decoded_decoded_T_18) ? read_stvec : 64'h0) | ((&_decoded_decoded_T_40) ? read_mideleg : 64'h0) | ((&_decoded_decoded_T_38) ? read_medeleg : 64'h0) | ((&_decoded_decoded_T_130) ? {reg_pmp_7_cfg_l, 2'h0, reg_pmp_7_cfg_a, reg_pmp_7_cfg_x, reg_pmp_7_cfg_w, reg_pmp_7_cfg_r, reg_pmp_6_cfg_l, 2'h0, reg_pmp_6_cfg_a, reg_pmp_6_cfg_x, reg_pmp_6_cfg_w, reg_pmp_6_cfg_r, reg_pmp_5_cfg_l, 2'h0, reg_pmp_5_cfg_a, reg_pmp_5_cfg_x, reg_pmp_5_cfg_w, reg_pmp_5_cfg_r, reg_pmp_4_cfg_l, 2'h0, reg_pmp_4_cfg_a, reg_pmp_4_cfg_x, reg_pmp_4_cfg_w, reg_pmp_4_cfg_r, reg_pmp_3_cfg_l, 2'h0, reg_pmp_3_cfg_a, reg_pmp_3_cfg_x, reg_pmp_3_cfg_w, reg_pmp_3_cfg_r, reg_pmp_2_cfg_l, 2'h0, reg_pmp_2_cfg_a, reg_pmp_2_cfg_x, reg_pmp_2_cfg_w, reg_pmp_2_cfg_r, reg_pmp_1_cfg_l, 2'h0, reg_pmp_1_cfg_a, reg_pmp_1_cfg_x, reg_pmp_1_cfg_w, reg_pmp_1_cfg_r, reg_pmp_0_cfg_l, 2'h0, reg_pmp_0_cfg_a, reg_pmp_0_cfg_x, reg_pmp_0_cfg_w, reg_pmp_0_cfg_r} : 64'h0) | ((&_decoded_decoded_T_132) ? {reg_pmp_15_cfg_l, 2'h0, reg_pmp_15_cfg_a, reg_pmp_15_cfg_x, reg_pmp_15_cfg_w, reg_pmp_15_cfg_r, reg_pmp_14_cfg_l, 2'h0, reg_pmp_14_cfg_a, reg_pmp_14_cfg_x, reg_pmp_14_cfg_w, reg_pmp_14_cfg_r, reg_pmp_13_cfg_l, 2'h0, reg_pmp_13_cfg_a, reg_pmp_13_cfg_x, reg_pmp_13_cfg_w, reg_pmp_13_cfg_r, reg_pmp_12_cfg_l, 2'h0, reg_pmp_12_cfg_a, reg_pmp_12_cfg_x, reg_pmp_12_cfg_w, reg_pmp_12_cfg_r, reg_pmp_11_cfg_l, 2'h0, reg_pmp_11_cfg_a, reg_pmp_11_cfg_x, reg_pmp_11_cfg_w, reg_pmp_11_cfg_r, reg_pmp_10_cfg_l, 2'h0, reg_pmp_10_cfg_a, reg_pmp_10_cfg_x, reg_pmp_10_cfg_w, reg_pmp_10_cfg_r, reg_pmp_9_cfg_l, 2'h0, reg_pmp_9_cfg_a, reg_pmp_9_cfg_x, reg_pmp_9_cfg_w, reg_pmp_9_cfg_r, reg_pmp_8_cfg_l, 2'h0, reg_pmp_8_cfg_a, reg_pmp_8_cfg_x, reg_pmp_8_cfg_w, reg_pmp_8_cfg_r} : 64'h0) | ((&_decoded_decoded_T_180) ? reg_custom_0 : 64'h0) | _GEN_37
+    | ((&{io_rw_addr[0], io_rw_addr[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], io_rw_addr[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], io_rw_addr[8], io_rw_addr[9], io_rw_addr[10], io_rw_addr[11]}) ? 64'h20181004 : 64'h0);	// @[Bitwise.scala:77:12, CSR.scala:410:28, :415:44, :501:20, :503:20, :506:38, :510:38, :574:23, :575:22, :576:25, :578:21, :593:50, :612:56, :743:18, :746:28, :747:29, :762:37, :764:58, :770:43, :793:43, :984:58, :1628:9, :1650:26, Cat.scala:33:92, Mux.scala:27:73, package.scala:124:38, pla.scala:78:21, :90:45, :91:29, :98:74]
   assign _io_rw_rdata_WIRE =
-    ((&_decoded_decoded_T_156) ? {4'h2, reg_bp_0_control_dmode, 46'h40000000000, reg_bp_0_control_action, reg_bp_0_control_chain, 2'h0, reg_bp_0_control_tmatch, reg_bp_0_control_m, 1'h0, reg_bp_0_control_s, reg_bp_0_control_u, reg_bp_0_control_x, reg_bp_0_control_w, reg_bp_0_control_r} : 64'h0) | ((&_decoded_decoded_T_158) ? {{25{reg_bp_0_address[38]}}, reg_bp_0_address} : 64'h0) | ((&_decoded_decoded_T_36) ? reg_misa : 64'h0) | ((&_decoded_decoded_T_34) ? {_io_status_sd_output, 23'h0, reg_mstatus_mpv, reg_mstatus_gva, 15'h1400, reg_mstatus_tsr, reg_mstatus_tw, reg_mstatus_tvm, reg_mstatus_mxr, reg_mstatus_sum, reg_mstatus_mprv, 2'h0, reg_mstatus_fs, reg_mstatus_mpp, reg_mstatus_vs, reg_mstatus_spp, reg_mstatus_mpie, 1'h0, reg_mstatus_spie, 1'h0, reg_mstatus_mie, 1'h0, reg_mstatus_sie, 1'h0} : 64'h0) | ((&_decoded_decoded_T_44) ? read_mtvec : 64'h0) | ((&_decoded_decoded_T_42) ? reg_mie : 64'h0) | ((&_decoded_decoded_T_108) ? reg_mscratch : 64'h0) | ((&_decoded_decoded_T_110) ? {{24{_T_30[39]}}, _T_30} : 64'h0) | ((&_decoded_decoded_T_114) ? {{24{reg_mtval[39]}}, reg_mtval} : 64'h0) | ((&_decoded_decoded_T_112) ? reg_mcause : 64'h0) | ((&_decoded_decoded_T_164) ? {{24{_T_44[39]}}, _T_44} : 64'h0) | ((&_decoded_decoded_T_166) ? reg_dscratch0 : 64'h0) | ((&{io_rw_addr[0], decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], io_rw_addr[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? {reg_vconfig_vtype_vill, 55'h0, reg_vconfig_vtype_vma, reg_vconfig_vtype_vta, reg_vconfig_vtype_vsew, reg_vconfig_vtype_vlmul_sign, reg_vconfig_vtype_vlmul_mag} : 64'h0) | ((&_decoded_decoded_T_170) ? value_1 : 64'h0) | ((&_decoded_decoded_T_172) ? value : 64'h0)
-    | ((&{decoded_decoded_invInputs[1], decoded_decoded_invInputs[2], decoded_decoded_invInputs[3], decoded_decoded_invInputs[4], decoded_decoded_invInputs[5], decoded_decoded_invInputs[6], decoded_decoded_invInputs[7], decoded_decoded_invInputs[8], decoded_decoded_invInputs[9], io_rw_addr[10], io_rw_addr[11]}) ? value_1 : 64'h0) | _GEN_31;	// @[Bitwise.scala:77:12, CSR.scala:410:28, :492:26, :500:19, :503:20, :514:27, :515:22, :517:25, :583:43, :647:25, :648:32, :654:48, :700:41, :984:58, :1475:67, :1650:26, Cat.scala:33:92, Mux.scala:27:73, :47:70, package.scala:124:38, :155:13, pla.scala:78:21, :90:45, :91:29, :98:74]
+    ((&_decoded_decoded_T_168) ? {4'h2, reg_bp_0_control_dmode, 46'h40000000000, reg_bp_0_control_action, reg_bp_0_control_chain, 2'h0, reg_bp_0_control_tmatch, reg_bp_0_control_m, 1'h0, reg_bp_0_control_s, reg_bp_0_control_u, reg_bp_0_control_x, reg_bp_0_control_w, reg_bp_0_control_r} : 64'h0) | ((&_decoded_decoded_T_170) ? {{25{reg_bp_0_address[38]}}, reg_bp_0_address} : 64'h0) | ((&_decoded_decoded_T_36) ? reg_misa : 64'h0) | ((&_decoded_decoded_T_34) ? {_io_status_sd_output, 23'h0, reg_mstatus_mpv, reg_mstatus_gva, 15'h1400, reg_mstatus_tsr, reg_mstatus_tw, reg_mstatus_tvm, reg_mstatus_mxr, reg_mstatus_sum, reg_mstatus_mprv, 2'h0, reg_mstatus_fs, reg_mstatus_mpp, reg_mstatus_vs, reg_mstatus_spp, reg_mstatus_mpie, 1'h0, reg_mstatus_spie, 1'h0, reg_mstatus_mie, 1'h0, reg_mstatus_sie, 1'h0} : 64'h0) | ((&_decoded_decoded_T_44) ? read_mtvec : 64'h0) | ((&_decoded_decoded_T_116) ? reg_hpmevent_33 : 64'h0) | ((&_decoded_decoded_T_42) ? reg_mie : 64'h0) | ((&_decoded_decoded_T_108) ? reg_hpmevent_29 : 64'h0) | ((&_decoded_decoded_T_110) ? reg_hpmevent_30 : 64'h0) | ((&_decoded_decoded_T_114) ? reg_hpmevent_32 : 64'h0) | ((&_decoded_decoded_T_112) ? reg_hpmevent_31 : 64'h0) | ((&_decoded_decoded_T_176) ? {{24{_T_124[39]}}, _T_124} : 64'h0) | ((&_decoded_decoded_T_178) ? reg_dscratch0 : 64'h0) | ((&_decoded_decoded_T_182) ? value_1 : 64'h0) | ((&_decoded_decoded_T_184) ? value : 64'h0) | ((&_decoded_decoded_T_50) ? reg_hpmevent_0 : 64'h0) | ((&_decoded_decoded_T_52) ? reg_hpmevent_1 : 64'h0) | ((&_decoded_decoded_T_54) ? reg_hpmevent_2 : 64'h0) | ((&_decoded_decoded_T_56) ? reg_hpmevent_3 : 64'h0) | ((&_decoded_decoded_T_58) ? reg_hpmevent_4 : 64'h0) | ((&_decoded_decoded_T_60) ? reg_hpmevent_5 : 64'h0) | ((&_decoded_decoded_T_62) ? reg_hpmevent_6 : 64'h0) | ((&_decoded_decoded_T_64) ? reg_hpmevent_7 : 64'h0) | ((&_decoded_decoded_T_66) ? reg_hpmevent_8 : 64'h0) | ((&_decoded_decoded_T_68) ? reg_hpmevent_9 : 64'h0) | ((&_decoded_decoded_T_70) ? reg_hpmevent_10 : 64'h0)
+    | ((&_decoded_decoded_T_72) ? reg_hpmevent_11 : 64'h0) | ((&_decoded_decoded_T_74) ? reg_hpmevent_12 : 64'h0) | ((&_decoded_decoded_T_76) ? reg_hpmevent_13 : 64'h0) | ((&_decoded_decoded_T_78) ? reg_hpmevent_14 : 64'h0) | ((&_decoded_decoded_T_80) ? reg_hpmevent_15 : 64'h0) | ((&_decoded_decoded_T_82) ? reg_hpmevent_16 : 64'h0) | ((&_decoded_decoded_T_84) ? reg_hpmevent_17 : 64'h0) | ((&_decoded_decoded_T_86) ? reg_hpmevent_18 : 64'h0) | _GEN_38;	// @[Bitwise.scala:77:12, CSR.scala:410:28, :492:26, :500:19, :503:20, :593:50, :647:25, :648:32, :654:48, :984:58, :1475:67, :1650:26, Cat.scala:33:92, Mux.scala:27:73, :47:70, package.scala:124:38, :155:13, pla.scala:98:74]
   wire        csr_wen = io_rw_cmd == 3'h6 | (&io_rw_cmd) | io_rw_cmd == 3'h5;	// @[Mux.scala:47:70, package.scala:16:47, :73:59]
   wire        set_vs_dirty = io_vector_set_vstart_valid | (csr_wen ? (&_decoded_decoded_T_12) | (&_decoded_decoded_T_8) | (&_decoded_decoded_T_10) | (&_decoded_decoded_T_6) | io_vector_set_vxsat | io_vector_set_vs_dirty : io_vector_set_vxsat | io_vector_set_vs_dirty);	// @[CSR.scala:1196:33, :1221:26, :1223:20, :1229:18, :1515:{40,55}, :1516:{40,55}, :1517:{40,55}, :1518:40, :1519:22, :1532:33, :1533:20, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
   wire [6:0]  nextSmall_1 = {1'h0, small_1} + {6'h0, ~_io_csr_stall_output};	// @[CSR.scala:592:56, :1166:27, Counters.scala:45:41, :46:33]
@@ -568,9 +1102,9 @@ module CSRFile(
       large_1 <= 58'h0;	// @[Counters.scala:50:31]
     end
     else begin
-      reg_wfi <= ~((|{_GEN_0[11], _GEN_0[9], _GEN_0[7], _GEN_0[5], _GEN_0[3], _GEN_0[1]}) | io_interrupts_debug | _io_trace_0_exception_output) & (system_insn & (&{io_rw_addr[2], _GEN_12[3], _GEN_12[4], _GEN_12[5], _GEN_12[6], _GEN_12[7], io_rw_addr[8], _GEN_12[9], _GEN_12[10], _GEN_12[11]}) & ~_io_singleStep_output & ~reg_debug | reg_wfi);	// @[CSR.scala:490:26, :579:54, :612:56, :624:36, :858:31, :909:45, :982:34, :1027:43, :1030:{36,51,61}, :1031:{28,55,69,79}, Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29, :98:74]
-      if (csr_wen & (&_decoded_decoded_T_170)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
-        small_1 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, Counters.scala:45:41, :67:11]
+      reg_wfi <= ~((|{_GEN_0[11], _GEN_0[9], _GEN_0[7], _GEN_0[5], _GEN_0[3], _GEN_0[1]}) | io_interrupts_debug | _io_trace_0_exception_output) & (system_insn & (&{io_rw_addr[2], _GEN_20[3], _GEN_20[4], _GEN_20[5], _GEN_20[6], _GEN_20[7], io_rw_addr[8], _GEN_20[9], _GEN_20[10], _GEN_20[11]}) & ~_io_singleStep_output & ~reg_debug | reg_wfi);	// @[CSR.scala:490:26, :579:54, :612:56, :624:36, :858:31, :909:45, :982:34, :1027:43, :1030:{36,51,61}, :1031:{28,55,69,79}, Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29, :98:74]
+      if (csr_wen & (&_decoded_decoded_T_182)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+        small_1 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:41, :67:11]
         large_1 <= _reg_bp_0_control_WIRE_1[63:6];	// @[CSR.scala:1628:39, Counters.scala:50:31, :68:28]
       end
       else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
@@ -583,34 +1117,86 @@ module CSRFile(
       end
     end
   end // always @(posedge)
-  wire [47:0] _GEN_32 = ((io_rw_cmd[1] ? {reg_bp_0_control_dmode, 46'h40000000000, reg_bp_0_control_action} : 48'h0) | io_rw_wdata[59:12]) & ~((&(io_rw_cmd[1:0])) ? io_rw_wdata[59:12] : 48'h0);	// @[CSR.scala:500:19, :1475:67, :1628:{9,13,30,39,41,45,49,55}]
-  wire        dMode = _GEN_32[47] & reg_debug;	// @[CSR.scala:490:26, :1475:96, :1476:38, :1628:39]
+  wire [47:0] _GEN_39 = ((io_rw_cmd[1] ? {reg_bp_0_control_dmode, 46'h40000000000, reg_bp_0_control_action} : 48'h0) | io_rw_wdata[59:12]) & ~((&(io_rw_cmd[1:0])) ? io_rw_wdata[59:12] : 48'h0);	// @[CSR.scala:500:19, :1475:67, :1628:{9,13,30,39,41,45,49,55}]
+  wire        dMode = _GEN_39[47] & reg_debug;	// @[CSR.scala:490:26, :1475:96, :1476:38, :1628:39]
   wire [6:0]  nextSmall = {1'h0, small_0} + {6'h0, io_retire};	// @[Counters.scala:45:41, :46:33]
-  wire        _GEN_33 = insn_ret & ~(io_rw_addr[9]) & ~reg_mstatus_v;	// @[CSR.scala:410:28, :875:83, :888:94, :1042:20, :1120:19, :1122:{32,43,48}, :1123:29, :1124:25]
-  wire        _GEN_34 = ~(io_rw_addr[9]) | _T_435;	// @[CSR.scala:1042:20, :1122:{32,43,48}, :1139:{48,66}, :1144:65]
-  wire        _GEN_35 = ~insn_ret | _GEN_34;	// @[CSR.scala:875:83, :1042:20, :1120:19, :1122:48, :1139:66, :1144:65]
+  wire        _GEN_40 = insn_ret & ~(io_rw_addr[9]) & ~reg_mstatus_v;	// @[CSR.scala:410:28, :875:83, :888:94, :1042:20, :1120:19, :1122:{32,43,48}, :1123:29, :1124:25]
+  wire        _GEN_41 = ~(io_rw_addr[9]) | _T_540;	// @[CSR.scala:1042:20, :1122:{32,43,48}, :1139:{48,66}, :1144:65]
+  wire        _GEN_42 = ~insn_ret | _GEN_41;	// @[CSR.scala:875:83, :1042:20, :1120:19, :1122:48, :1139:66, :1144:65]
+  wire [6:0]  nextSmall_2 = {1'h0, small_2} + {6'h0, io_counters_0_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_3 = {1'h0, small_3} + {6'h0, io_counters_1_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_4 = {1'h0, small_4} + {6'h0, io_counters_2_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_5 = {1'h0, small_5} + {6'h0, io_counters_3_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_6 = {1'h0, small_6} + {6'h0, io_counters_4_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_7 = {1'h0, small_7} + {6'h0, io_counters_5_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_8 = {1'h0, small_8} + {6'h0, io_counters_6_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_9 = {1'h0, small_9} + {6'h0, io_counters_7_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_10 = {1'h0, small_10} + {6'h0, io_counters_8_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_11 = {1'h0, small_11} + {6'h0, io_counters_9_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_12 = {1'h0, small_12} + {6'h0, io_counters_10_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_13 = {1'h0, small_13} + {6'h0, io_counters_11_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_14 = {1'h0, small_14} + {6'h0, io_counters_12_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_15 = {1'h0, small_15} + {6'h0, io_counters_13_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_16 = {1'h0, small_16} + {6'h0, io_counters_14_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_17 = {1'h0, small_17} + {6'h0, io_counters_15_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_18 = {1'h0, small_18} + {6'h0, io_counters_16_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_19 = {1'h0, small_19} + {6'h0, io_counters_17_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_20 = {1'h0, small_20} + {6'h0, io_counters_18_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_21 = {1'h0, small_21} + {6'h0, io_counters_19_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_22 = {1'h0, small_22} + {6'h0, io_counters_20_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_23 = {1'h0, small_23} + {6'h0, io_counters_21_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_24 = {1'h0, small_24} + {6'h0, io_counters_22_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_25 = {1'h0, small_25} + {6'h0, io_counters_23_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_26 = {1'h0, small_26} + {6'h0, io_counters_24_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_27 = {1'h0, small_27} + {6'h0, io_counters_25_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_28 = {1'h0, small_28} + {6'h0, io_counters_26_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_29 = {1'h0, small_29} + {6'h0, io_counters_27_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_30 = {1'h0, small_30} + {6'h0, io_counters_28_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_31 = {1'h0, small_31} + {6'h0, io_counters_29_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_32 = {1'h0, small_32} + {6'h0, io_counters_30_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_33 = {1'h0, small_33} + {6'h0, io_counters_31_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_34 = {1'h0, small_34} + {6'h0, io_counters_32_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_35 = {1'h0, small_35} + {6'h0, io_counters_33_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_36 = {1'h0, small_36} + {6'h0, io_counters_34_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_37 = {1'h0, small_37} + {6'h0, io_counters_35_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_38 = {1'h0, small_38} + {6'h0, io_counters_36_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_39 = {1'h0, small_39} + {6'h0, io_counters_37_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_40 = {1'h0, small_40} + {6'h0, io_counters_38_inc};	// @[Counters.scala:45:69, :46:33]
+  wire [6:0]  nextSmall_41 = {1'h0, small_41} + {6'h0, io_counters_39_inc};	// @[Counters.scala:45:69, :46:33]
   wire [39:0] _epc_T_1 = ~io_pc | 40'h1;	// @[CSR.scala:1649:{28,31}]
-  wire        _GEN_36 = _io_trace_0_exception_output & trapToDebug & ~reg_debug;	// @[CSR.scala:490:26, :909:45, :947:119, :1027:43, :1042:20, :1043:24, :1044:25, :1046:19]
-  wire        _GEN_37 = ~_io_trace_0_exception_output | trapToDebug | ~delegateVS;	// @[CSR.scala:566:25, :947:119, :952:46, :1027:43, :1042:20, :1043:24, :1053:31]
-  wire        _GEN_38 = trapToDebug | delegateVS;	// @[CSR.scala:556:28, :947:119, :952:46, :1043:24, :1053:31, :1063:37, :1072:35]
-  wire        _GEN_39 = ~_io_trace_0_exception_output | _GEN_38 | ~delegate;	// @[CSR.scala:556:28, :566:25, :573:21, :951:66, :1027:43, :1042:20, :1043:24, :1053:31, :1063:37, :1072:35]
-  wire        _GEN_40 = ~_io_trace_0_exception_output | trapToDebug | _GEN_21;	// @[CSR.scala:410:28, :566:25, :947:119, :1027:43, :1042:20, :1043:24, :1063:37, :1072:35, :1087:23]
-  wire [8:0]  _GEN_41 = ((io_rw_cmd[1] ? {reg_mip_seip, 3'h0, reg_mip_stip, 3'h0, reg_mip_ssip} : 9'h0) | io_rw_wdata[9:1]) & ~((&(io_rw_cmd[1:0])) ? io_rw_wdata[9:1] : 9'h0);	// @[CSR.scala:415:44, :512:20, :1276:59, :1628:{9,13,30,39,41,45,49,55}, Mux.scala:27:73]
-  wire [39:0] _GEN_42 = ~(_reg_bp_0_control_WIRE_1[39:0]) | 40'h1;	// @[CSR.scala:1628:39, :1649:{28,31}]
-  wire        _GEN_43 = csr_wen & (&_decoded_decoded_T_32) & (_reg_bp_0_control_WIRE_1[63:60] == 4'h0 | _reg_bp_0_control_WIRE_1[63:60] == 4'h8);	// @[CSR.scala:578:21, :1229:18, :1358:38, :1360:40, :1361:67, :1362:27, :1598:23, :1628:39, Cat.scala:33:92, Mux.scala:47:70, package.scala:16:47, :73:59, pla.scala:98:74]
-  wire        _T_1960 = ~reg_bp_0_control_dmode | reg_debug;	// @[CSR.scala:490:26, :500:19, :1456:{39,57}]
-  wire        _GEN_44 = csr_wen & _T_1960 & (&_decoded_decoded_T_156);	// @[CSR.scala:500:19, :1229:18, :1456:{57,72}, :1468:44, :1469:24, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-  wire        _GEN_45 = csr_wen & (&_decoded_decoded_T_118) & ~reg_pmp_0_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-  wire        _GEN_46 = csr_wen & (&_decoded_decoded_T_118) & ~reg_pmp_1_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-  wire        _GEN_47 = csr_wen & (&_decoded_decoded_T_118) & ~reg_pmp_2_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-  wire        _GEN_48 = csr_wen & (&_decoded_decoded_T_118) & ~reg_pmp_3_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-  wire        _GEN_49 = csr_wen & (&_decoded_decoded_T_118) & ~reg_pmp_4_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-  wire        _GEN_50 = csr_wen & (&_decoded_decoded_T_118) & ~reg_pmp_5_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-  wire        _GEN_51 = csr_wen & (&_decoded_decoded_T_118) & ~reg_pmp_6_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-  wire        _GEN_52 = csr_wen & (&_decoded_decoded_T_118) & ~reg_pmp_7_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-  wire        _GEN_53 = _GEN_39 & reg_mstatus_sie;	// @[CSR.scala:410:28, :573:21, :1042:20, :1043:24]
-  wire        _GEN_54 = _GEN_33 | (_GEN_39 ? reg_mstatus_spie : reg_mstatus_sie);	// @[CSR.scala:410:28, :573:21, :1042:20, :1043:24, :1120:19, :1122:48, :1123:29, :1124:25, :1125:26]
-  wire        _GEN_55 = ~_GEN_33 & (_GEN_39 ? reg_mstatus_spp : reg_mstatus_prv[0]);	// @[CSR.scala:410:28, :573:21, :1042:20, :1043:24, :1065:24, :1120:19, :1122:48, :1123:29, :1124:25, :1126:25]
+  wire        _GEN_43 = _io_trace_0_exception_output & trapToDebug & ~reg_debug;	// @[CSR.scala:490:26, :909:45, :947:119, :1027:43, :1042:20, :1043:24, :1044:25, :1046:19]
+  wire        _GEN_44 = ~_io_trace_0_exception_output | trapToDebug | ~delegateVS;	// @[CSR.scala:566:25, :947:119, :952:46, :1027:43, :1042:20, :1043:24, :1053:31]
+  wire        _GEN_45 = trapToDebug | delegateVS;	// @[CSR.scala:556:28, :947:119, :952:46, :1043:24, :1053:31, :1063:37, :1072:35]
+  wire        _GEN_46 = ~_io_trace_0_exception_output | _GEN_45 | ~delegate;	// @[CSR.scala:556:28, :566:25, :573:21, :951:66, :1027:43, :1042:20, :1043:24, :1053:31, :1063:37, :1072:35]
+  wire        _GEN_47 = ~_io_trace_0_exception_output | trapToDebug | _GEN_28;	// @[CSR.scala:410:28, :566:25, :947:119, :1027:43, :1042:20, :1043:24, :1063:37, :1072:35, :1087:23]
+  wire [8:0]  _GEN_48 = ((io_rw_cmd[1] ? {reg_mip_seip, 3'h0, reg_mip_stip, 3'h0, reg_mip_ssip} : 9'h0) | io_rw_wdata[9:1]) & ~((&(io_rw_cmd[1:0])) ? io_rw_wdata[9:1] : 9'h0);	// @[CSR.scala:415:44, :512:20, :1276:59, :1628:{9,13,30,39,41,45,49,55}]
+  wire        _GEN_49 = csr_wen & (&_decoded_decoded_T_116);	// @[CSR.scala:512:20, :1229:18, :1271:35, :1279:22, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire [39:0] _GEN_50 = ~(_reg_bp_0_control_WIRE_1[39:0]) | 40'h1;	// @[CSR.scala:1628:39, :1649:{28,31}]
+  wire        _GEN_51 = csr_wen & (&_decoded_decoded_T_110);	// @[CSR.scala:1042:20, :1229:18, :1287:{40,51}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_52 = csr_wen & (&_decoded_decoded_T_108);	// @[CSR.scala:517:25, :1229:18, :1288:{40,55}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_53 = csr_wen & (&_decoded_decoded_T_114);	// @[CSR.scala:1042:20, :1229:18, :1292:{40,52}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_54 = csr_wen & (&_decoded_decoded_T_32) & (_reg_bp_0_control_WIRE_1[63:60] == 4'h0 | _reg_bp_0_control_WIRE_1[63:60] == 4'h8);	// @[CSR.scala:578:21, :1229:18, :1358:38, :1360:40, :1361:67, :1362:27, :1598:23, :1628:39, Cat.scala:33:92, Mux.scala:47:70, package.scala:16:47, :73:59, pla.scala:98:74]
+  wire        _T_2753 = ~reg_bp_0_control_dmode | reg_debug;	// @[CSR.scala:490:26, :500:19, :1456:{39,57}]
+  wire        _GEN_55 = csr_wen & _T_2753 & (&_decoded_decoded_T_168);	// @[CSR.scala:500:19, :1229:18, :1456:{57,72}, :1468:44, :1469:24, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_56 = csr_wen & (&_decoded_decoded_T_130) & ~reg_pmp_0_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_57 = csr_wen & (&_decoded_decoded_T_130) & ~reg_pmp_1_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_58 = csr_wen & (&_decoded_decoded_T_130) & ~reg_pmp_2_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_59 = csr_wen & (&_decoded_decoded_T_130) & ~reg_pmp_3_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_60 = csr_wen & (&_decoded_decoded_T_130) & ~reg_pmp_4_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_61 = csr_wen & (&_decoded_decoded_T_130) & ~reg_pmp_5_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_62 = csr_wen & (&_decoded_decoded_T_130) & ~reg_pmp_6_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_63 = csr_wen & (&_decoded_decoded_T_130) & ~reg_pmp_7_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_64 = csr_wen & (&_decoded_decoded_T_132) & ~reg_pmp_8_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_65 = csr_wen & (&_decoded_decoded_T_132) & ~reg_pmp_9_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_66 = csr_wen & (&_decoded_decoded_T_132) & ~reg_pmp_10_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_67 = csr_wen & (&_decoded_decoded_T_132) & ~reg_pmp_11_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_68 = csr_wen & (&_decoded_decoded_T_132) & ~reg_pmp_12_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_69 = csr_wen & (&_decoded_decoded_T_132) & ~reg_pmp_13_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_70 = csr_wen & (&_decoded_decoded_T_132) & ~reg_pmp_14_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_71 = csr_wen & (&_decoded_decoded_T_132) & ~reg_pmp_15_cfg_l;	// @[CSR.scala:501:20, :1229:18, :1488:{60,76}, :1490:17, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+  wire        _GEN_72 = _GEN_46 & reg_mstatus_sie;	// @[CSR.scala:410:28, :573:21, :1042:20, :1043:24]
+  wire        _GEN_73 = _GEN_40 | (_GEN_46 ? reg_mstatus_spie : reg_mstatus_sie);	// @[CSR.scala:410:28, :573:21, :1042:20, :1043:24, :1120:19, :1122:48, :1123:29, :1124:25, :1125:26]
+  wire        _GEN_74 = ~_GEN_40 & (_GEN_46 ? reg_mstatus_spp : reg_mstatus_prv[0]);	// @[CSR.scala:410:28, :573:21, :1042:20, :1043:24, :1065:24, :1120:19, :1122:48, :1123:29, :1124:25, :1126:25]
   always @(posedge clock) begin
     if (reset) begin
       reg_mstatus_prv <= 2'h3;	// @[CSR.scala:403:21, :410:28]
@@ -660,6 +1246,22 @@ module CSRFile(
       reg_pmp_6_cfg_a <= 2'h0;	// @[CSR.scala:501:20]
       reg_pmp_7_cfg_l <= 1'h0;	// @[CSR.scala:501:20]
       reg_pmp_7_cfg_a <= 2'h0;	// @[CSR.scala:501:20]
+      reg_pmp_8_cfg_l <= 1'h0;	// @[CSR.scala:501:20]
+      reg_pmp_8_cfg_a <= 2'h0;	// @[CSR.scala:501:20]
+      reg_pmp_9_cfg_l <= 1'h0;	// @[CSR.scala:501:20]
+      reg_pmp_9_cfg_a <= 2'h0;	// @[CSR.scala:501:20]
+      reg_pmp_10_cfg_l <= 1'h0;	// @[CSR.scala:501:20]
+      reg_pmp_10_cfg_a <= 2'h0;	// @[CSR.scala:501:20]
+      reg_pmp_11_cfg_l <= 1'h0;	// @[CSR.scala:501:20]
+      reg_pmp_11_cfg_a <= 2'h0;	// @[CSR.scala:501:20]
+      reg_pmp_12_cfg_l <= 1'h0;	// @[CSR.scala:501:20]
+      reg_pmp_12_cfg_a <= 2'h0;	// @[CSR.scala:501:20]
+      reg_pmp_13_cfg_l <= 1'h0;	// @[CSR.scala:501:20]
+      reg_pmp_13_cfg_a <= 2'h0;	// @[CSR.scala:501:20]
+      reg_pmp_14_cfg_l <= 1'h0;	// @[CSR.scala:501:20]
+      reg_pmp_14_cfg_a <= 2'h0;	// @[CSR.scala:501:20]
+      reg_pmp_15_cfg_l <= 1'h0;	// @[CSR.scala:501:20]
+      reg_pmp_15_cfg_a <= 2'h0;	// @[CSR.scala:501:20]
       reg_mcause <= 64'h0;	// @[CSR.scala:514:27]
       reg_mtvec <= 32'h0;	// @[CSR.scala:402:47, :520:31]
       reg_hstatus_spvp <= 1'h0;	// @[CSR.scala:556:28]
@@ -671,25 +1273,65 @@ module CSRFile(
       reg_vconfig_vtype_vsew <= 3'h0;	// @[CSR.scala:415:44, :583:43]
       reg_vconfig_vtype_vlmul_sign <= 1'h0;	// @[CSR.scala:583:43]
       reg_vconfig_vtype_vlmul_mag <= 2'h0;	// @[CSR.scala:583:43]
-      reg_mcountinhibit <= 3'h0;	// @[CSR.scala:415:44, :588:34]
+      reg_mcountinhibit <= 43'h0;	// @[CSR.scala:588:34]
       small_0 <= 6'h0;	// @[Counters.scala:45:41]
       large_0 <= 58'h0;	// @[Counters.scala:50:31]
+      reg_hpmevent_0 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_1 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_2 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_3 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_4 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_5 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_6 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_7 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_8 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_9 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_10 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_11 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_12 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_13 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_14 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_15 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_16 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_17 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_18 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_19 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_20 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_21 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_22 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_23 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_24 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_25 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_26 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_27 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_28 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_29 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_30 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_31 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_32 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_33 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_34 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_35 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_36 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_37 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_38 <= 64'h0;	// @[CSR.scala:593:50]
+      reg_hpmevent_39 <= 64'h0;	// @[CSR.scala:593:50]
       reg_misa <= 64'h8000000000B4112D;	// @[CSR.scala:647:25]
       reg_custom_0 <= 64'h208;	// @[CSR.scala:793:43]
       io_status_cease_r <= 1'h0;	// @[Reg.scala:35:20]
     end
     else begin
-      if ((insn_ret ? ret_prv : _io_trace_0_exception_output ? (trapToDebug ? (reg_debug ? reg_mstatus_prv : 2'h3) : _GEN_22) : reg_mstatus_prv) == 2'h2)	// @[CSR.scala:403:21, :410:28, :412:28, :490:26, :875:83, :947:119, :1027:43, :1042:20, :1043:24, :1044:25, :1051:17, :1053:31, :1063:37, :1071:15, :1072:35, :1084:15, :1096:15, :1120:19, :1122:48, :1123:29, :1139:66, :1159:13, :1632:35]
+      if ((insn_ret ? ret_prv : _io_trace_0_exception_output ? (trapToDebug ? (reg_debug ? reg_mstatus_prv : 2'h3) : _GEN_29) : reg_mstatus_prv) == 2'h2)	// @[CSR.scala:403:21, :410:28, :412:28, :490:26, :875:83, :947:119, :1027:43, :1042:20, :1043:24, :1044:25, :1051:17, :1053:31, :1063:37, :1071:15, :1072:35, :1084:15, :1096:15, :1120:19, :1122:48, :1123:29, :1139:66, :1159:13, :1632:35]
         reg_mstatus_prv <= 2'h0;	// @[CSR.scala:410:28]
       else if (insn_ret) begin	// @[CSR.scala:875:83]
         if (io_rw_addr[9]) begin	// @[CSR.scala:1122:43]
-          if (_T_435)	// @[CSR.scala:1139:48]
+          if (_T_540)	// @[CSR.scala:1139:48]
             reg_mstatus_prv <= reg_dcsr_prv;	// @[CSR.scala:410:28, :418:25]
           else	// @[CSR.scala:1139:48]
             reg_mstatus_prv <= reg_mstatus_mpp;	// @[CSR.scala:410:28]
         end
         else	// @[CSR.scala:1122:43]
-          reg_mstatus_prv <= _GEN_23;	// @[CSR.scala:410:28, :1122:48, :1123:29, :1139:66]
+          reg_mstatus_prv <= _GEN_30;	// @[CSR.scala:410:28, :1122:48, :1123:29, :1139:66]
       end
       else if (_io_trace_0_exception_output) begin	// @[CSR.scala:1027:43]
         if (trapToDebug) begin	// @[CSR.scala:947:119]
@@ -699,11 +1341,11 @@ module CSRFile(
             reg_mstatus_prv <= 2'h3;	// @[CSR.scala:403:21, :410:28]
         end
         else	// @[CSR.scala:947:119]
-          reg_mstatus_prv <= _GEN_22;	// @[CSR.scala:410:28, :1063:37, :1071:15, :1072:35, :1084:15, :1096:15]
+          reg_mstatus_prv <= _GEN_29;	// @[CSR.scala:410:28, :1063:37, :1071:15, :1072:35, :1084:15, :1096:15]
       end
       reg_mstatus_v <= ~insn_ret & (_io_trace_0_exception_output ? (trapToDebug ? reg_debug & reg_mstatus_v : delegateVS) : reg_mstatus_v);	// @[CSR.scala:410:28, :490:26, :875:83, :947:119, :952:46, :1027:43, :1042:20, :1043:24, :1044:25, :1045:23, :1053:31, :1120:19, :1122:48]
-      reg_mstatus_mpv <= _GEN_35 & (_GEN_40 ? reg_mstatus_mpv : reg_mstatus_v);	// @[CSR.scala:410:28, :1042:20, :1043:24, :1120:19, :1122:48]
-      if (_GEN_40) begin	// @[CSR.scala:410:28, :1042:20, :1043:24]
+      reg_mstatus_mpv <= _GEN_42 & (_GEN_47 ? reg_mstatus_mpv : reg_mstatus_v);	// @[CSR.scala:410:28, :1042:20, :1043:24, :1120:19, :1122:48]
+      if (_GEN_47) begin	// @[CSR.scala:410:28, :1042:20, :1043:24]
       end
       else	// @[CSR.scala:410:28, :1042:20, :1043:24]
         reg_mstatus_gva <= io_gva;	// @[CSR.scala:410:28]
@@ -721,18 +1363,18 @@ module CSRFile(
       end
       else begin	// @[CSR.scala:1120:19, :1229:18, :1233:39, :1235:23]
         reg_mstatus_mprv <= ~(insn_ret & ~(ret_prv[1])) & reg_mstatus_mprv;	// @[CSR.scala:410:28, :875:83, :1120:19, :1122:48, :1123:29, :1139:66, :1160:{34,46}, :1161:24]
-        if (_GEN_35) begin	// @[CSR.scala:1042:20, :1120:19, :1122:48]
-          if (_GEN_40) begin	// @[CSR.scala:410:28, :1042:20, :1043:24]
+        if (_GEN_42) begin	// @[CSR.scala:1042:20, :1120:19, :1122:48]
+          if (_GEN_47) begin	// @[CSR.scala:410:28, :1042:20, :1043:24]
           end
           else	// @[CSR.scala:410:28, :1042:20, :1043:24]
             reg_mstatus_mpp <= reg_mstatus_prv;	// @[CSR.scala:410:28]
-          reg_mstatus_mie <= _GEN_40 & reg_mstatus_mie;	// @[CSR.scala:410:28, :1042:20, :1043:24]
+          reg_mstatus_mie <= _GEN_47 & reg_mstatus_mie;	// @[CSR.scala:410:28, :1042:20, :1043:24]
         end
         else begin	// @[CSR.scala:1042:20, :1120:19, :1122:48]
           reg_mstatus_mpp <= 2'h0;	// @[CSR.scala:410:28]
           reg_mstatus_mie <= reg_mstatus_mpie;	// @[CSR.scala:410:28]
         end
-        reg_mstatus_mpie <= insn_ret & ~_GEN_34 | (_GEN_40 ? reg_mstatus_mpie : reg_mstatus_mie);	// @[CSR.scala:410:28, :875:83, :1042:20, :1043:24, :1120:19, :1122:48, :1139:66, :1144:65]
+        reg_mstatus_mpie <= insn_ret & ~_GEN_41 | (_GEN_47 ? reg_mstatus_mpie : reg_mstatus_mie);	// @[CSR.scala:410:28, :875:83, :1042:20, :1043:24, :1120:19, :1122:48, :1139:66, :1144:65]
       end
       if (csr_wen) begin	// @[package.scala:73:59]
         if (&_decoded_decoded_T_14) begin	// @[Cat.scala:33:92, pla.scala:98:74]
@@ -756,25 +1398,25 @@ module CSRFile(
         else begin	// @[pla.scala:98:74]
           if (set_vs_dirty)	// @[CSR.scala:1229:18, :1532:33, :1533:20]
             reg_mstatus_vs <= 2'h3;	// @[CSR.scala:403:21, :410:28]
-          reg_mstatus_spp <= _GEN_55;	// @[CSR.scala:410:28, :1042:20, :1120:19, :1122:48, :1123:29, :1126:25]
-          reg_mstatus_spie <= _GEN_54;	// @[CSR.scala:410:28, :1042:20, :1120:19, :1122:48, :1123:29, :1125:26]
-          if (_GEN_33)	// @[CSR.scala:1042:20, :1120:19, :1122:48, :1123:29, :1124:25]
+          reg_mstatus_spp <= _GEN_74;	// @[CSR.scala:410:28, :1042:20, :1120:19, :1122:48, :1123:29, :1126:25]
+          reg_mstatus_spie <= _GEN_73;	// @[CSR.scala:410:28, :1042:20, :1120:19, :1122:48, :1123:29, :1125:26]
+          if (_GEN_40)	// @[CSR.scala:1042:20, :1120:19, :1122:48, :1123:29, :1124:25]
             reg_mstatus_sie <= reg_mstatus_spie;	// @[CSR.scala:410:28]
           else	// @[CSR.scala:1042:20, :1120:19, :1122:48, :1123:29, :1124:25]
-            reg_mstatus_sie <= _GEN_53;	// @[CSR.scala:410:28, :1042:20, :1043:24]
+            reg_mstatus_sie <= _GEN_72;	// @[CSR.scala:410:28, :1042:20, :1043:24]
         end
       end
       else begin	// @[package.scala:73:59]
         if (set_vs_dirty)	// @[CSR.scala:1229:18, :1532:33, :1533:20]
           reg_mstatus_vs <= 2'h3;	// @[CSR.scala:403:21, :410:28]
-        reg_mstatus_spp <= _GEN_55;	// @[CSR.scala:410:28, :1042:20, :1120:19, :1122:48, :1123:29, :1126:25]
-        reg_mstatus_spie <= _GEN_54;	// @[CSR.scala:410:28, :1042:20, :1120:19, :1122:48, :1123:29, :1125:26]
-        if (_GEN_33)	// @[CSR.scala:1042:20, :1120:19, :1122:48, :1123:29, :1124:25]
+        reg_mstatus_spp <= _GEN_74;	// @[CSR.scala:410:28, :1042:20, :1120:19, :1122:48, :1123:29, :1126:25]
+        reg_mstatus_spie <= _GEN_73;	// @[CSR.scala:410:28, :1042:20, :1120:19, :1122:48, :1123:29, :1125:26]
+        if (_GEN_40)	// @[CSR.scala:1042:20, :1120:19, :1122:48, :1123:29, :1124:25]
           reg_mstatus_sie <= reg_mstatus_spie;	// @[CSR.scala:410:28]
         else	// @[CSR.scala:1042:20, :1120:19, :1122:48, :1123:29, :1124:25]
-          reg_mstatus_sie <= _GEN_53;	// @[CSR.scala:410:28, :1042:20, :1043:24]
+          reg_mstatus_sie <= _GEN_72;	// @[CSR.scala:410:28, :1042:20, :1043:24]
       end
-      if (csr_wen & (&_decoded_decoded_T_162)) begin	// @[CSR.scala:418:25, :1229:18, :1326:38, :1328:23, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+      if (csr_wen & (&_decoded_decoded_T_174)) begin	// @[CSR.scala:418:25, :1229:18, :1326:38, :1328:23, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
         reg_dcsr_ebreakm <= _reg_bp_0_control_WIRE_1[15];	// @[CSR.scala:418:25, :1327:38, :1628:39]
         reg_dcsr_ebreaks <= _reg_bp_0_control_WIRE_1[13];	// @[CSR.scala:418:25, :1327:38, :1628:39]
         reg_dcsr_ebreaku <= _reg_bp_0_control_WIRE_1[12];	// @[CSR.scala:418:25, :1327:38, :1628:39]
@@ -784,72 +1426,106 @@ module CSRFile(
         else	// @[CSR.scala:1632:35]
           reg_dcsr_prv <= _reg_bp_0_control_WIRE_1[1:0];	// @[CSR.scala:418:25, :1327:38, :1628:39]
       end
-      else if (_GEN_36)	// @[CSR.scala:490:26, :1042:20, :1043:24, :1044:25, :1046:19]
+      else if (_GEN_43)	// @[CSR.scala:490:26, :1042:20, :1043:24, :1044:25, :1046:19]
         reg_dcsr_prv <= reg_mstatus_prv;	// @[CSR.scala:410:28, :418:25]
-      if (_GEN_36) begin	// @[CSR.scala:490:26, :1042:20, :1043:24, :1044:25, :1046:19]
+      if (_GEN_43) begin	// @[CSR.scala:490:26, :1042:20, :1043:24, :1044:25, :1046:19]
         if (reg_singleStepped)	// @[CSR.scala:494:30]
           reg_dcsr_cause <= 3'h4;	// @[CSR.scala:418:25, :648:32]
         else	// @[CSR.scala:494:30]
           reg_dcsr_cause <= {1'h0, causeIsDebugInt ? 2'h3 : causeIsDebugTrigger ? 2'h2 : 2'h1};	// @[CSR.scala:403:21, :418:25, :944:39, :945:44, :1048:{30,58,90}]
         reg_dcsr_v <= reg_mstatus_v;	// @[CSR.scala:410:28, :418:25]
       end
-      reg_debug <= (~insn_ret | ~(io_rw_addr[9]) | ~_T_435) & (_GEN_36 | reg_debug);	// @[CSR.scala:490:26, :875:83, :1042:20, :1043:24, :1044:25, :1046:19, :1120:19, :1122:{43,48}, :1139:{48,66}, :1142:17]
-      if (_GEN_44) begin	// @[CSR.scala:500:19, :1229:18, :1456:72, :1468:44, :1469:24]
+      reg_debug <= (~insn_ret | ~(io_rw_addr[9]) | ~_T_540) & (_GEN_43 | reg_debug);	// @[CSR.scala:490:26, :875:83, :1042:20, :1043:24, :1044:25, :1046:19, :1120:19, :1122:{43,48}, :1139:{48,66}, :1142:17]
+      if (_GEN_55) begin	// @[CSR.scala:500:19, :1229:18, :1456:72, :1468:44, :1469:24]
         reg_bp_0_control_dmode <= dMode;	// @[CSR.scala:500:19, :1476:38]
-        reg_bp_0_control_action <= dMode & _GEN_32[0];	// @[CSR.scala:500:19, :1475:96, :1476:38, :1478:{51,71,120}, :1628:39]
+        reg_bp_0_control_action <= dMode & _GEN_39[0];	// @[CSR.scala:500:19, :1475:96, :1476:38, :1478:{51,71,120}, :1628:39]
         reg_bp_0_control_x <= _reg_bp_0_control_WIRE_1[2];	// @[CSR.scala:500:19, :1469:41, :1628:39]
         reg_bp_0_control_w <= _reg_bp_0_control_WIRE_1[1];	// @[CSR.scala:500:19, :1469:41, :1628:39]
         reg_bp_0_control_r <= _reg_bp_0_control_WIRE_1[0];	// @[CSR.scala:500:19, :1469:41, :1628:39]
       end
-      if (_GEN_45) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      if (_GEN_56) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
         reg_pmp_0_cfg_l <= _reg_bp_0_control_WIRE_1[7];	// @[CSR.scala:501:20, :1489:73, :1628:39]
         reg_pmp_0_cfg_a <= _reg_bp_0_control_WIRE_1[4:3];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       end
-      if (_GEN_46) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      if (_GEN_57) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
         reg_pmp_1_cfg_l <= _reg_bp_0_control_WIRE_1[15];	// @[CSR.scala:501:20, :1489:73, :1628:39]
         reg_pmp_1_cfg_a <= _reg_bp_0_control_WIRE_1[12:11];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       end
-      if (_GEN_47) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      if (_GEN_58) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
         reg_pmp_2_cfg_l <= _reg_bp_0_control_WIRE_1[23];	// @[CSR.scala:501:20, :1489:73, :1628:39]
         reg_pmp_2_cfg_a <= _reg_bp_0_control_WIRE_1[20:19];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       end
-      if (_GEN_48) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      if (_GEN_59) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
         reg_pmp_3_cfg_l <= _reg_bp_0_control_WIRE_1[31];	// @[CSR.scala:501:20, :1489:73, :1628:39]
         reg_pmp_3_cfg_a <= _reg_bp_0_control_WIRE_1[28:27];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       end
-      if (_GEN_49) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      if (_GEN_60) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
         reg_pmp_4_cfg_l <= _reg_bp_0_control_WIRE_1[39];	// @[CSR.scala:501:20, :1489:73, :1628:39]
         reg_pmp_4_cfg_a <= _reg_bp_0_control_WIRE_1[36:35];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       end
-      if (_GEN_50) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      if (_GEN_61) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
         reg_pmp_5_cfg_l <= _reg_bp_0_control_WIRE_1[47];	// @[CSR.scala:501:20, :1489:73, :1628:39]
         reg_pmp_5_cfg_a <= _reg_bp_0_control_WIRE_1[44:43];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       end
-      if (_GEN_51) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      if (_GEN_62) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
         reg_pmp_6_cfg_l <= _reg_bp_0_control_WIRE_1[55];	// @[CSR.scala:501:20, :1489:73, :1628:39]
         reg_pmp_6_cfg_a <= _reg_bp_0_control_WIRE_1[52:51];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       end
-      if (_GEN_52) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      if (_GEN_63) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
         reg_pmp_7_cfg_l <= _reg_bp_0_control_WIRE_1[63];	// @[CSR.scala:501:20, :1489:73, :1628:39]
         reg_pmp_7_cfg_a <= _reg_bp_0_control_WIRE_1[60:59];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       end
-      if (csr_wen & (&_decoded_decoded_T_112))	// @[CSR.scala:1042:20, :1229:18, :1291:{40,53}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+      if (_GEN_64) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+        reg_pmp_8_cfg_l <= _reg_bp_0_control_WIRE_1[7];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+        reg_pmp_8_cfg_a <= _reg_bp_0_control_WIRE_1[4:3];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      end
+      if (_GEN_65) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+        reg_pmp_9_cfg_l <= _reg_bp_0_control_WIRE_1[15];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+        reg_pmp_9_cfg_a <= _reg_bp_0_control_WIRE_1[12:11];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      end
+      if (_GEN_66) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+        reg_pmp_10_cfg_l <= _reg_bp_0_control_WIRE_1[23];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+        reg_pmp_10_cfg_a <= _reg_bp_0_control_WIRE_1[20:19];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      end
+      if (_GEN_67) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+        reg_pmp_11_cfg_l <= _reg_bp_0_control_WIRE_1[31];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+        reg_pmp_11_cfg_a <= _reg_bp_0_control_WIRE_1[28:27];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      end
+      if (_GEN_68) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+        reg_pmp_12_cfg_l <= _reg_bp_0_control_WIRE_1[39];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+        reg_pmp_12_cfg_a <= _reg_bp_0_control_WIRE_1[36:35];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      end
+      if (_GEN_69) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+        reg_pmp_13_cfg_l <= _reg_bp_0_control_WIRE_1[47];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+        reg_pmp_13_cfg_a <= _reg_bp_0_control_WIRE_1[44:43];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      end
+      if (_GEN_70) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+        reg_pmp_14_cfg_l <= _reg_bp_0_control_WIRE_1[55];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+        reg_pmp_14_cfg_a <= _reg_bp_0_control_WIRE_1[52:51];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      end
+      if (_GEN_71) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+        reg_pmp_15_cfg_l <= _reg_bp_0_control_WIRE_1[63];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+        reg_pmp_15_cfg_a <= _reg_bp_0_control_WIRE_1[60:59];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      end
+      if (csr_wen & (&_decoded_decoded_T_112)) begin	// @[CSR.scala:1042:20, :1229:18, :1291:{40,53}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
         reg_mcause <= _reg_bp_0_control_WIRE_1 & 64'h800000000000000F;	// @[CSR.scala:514:27, :1291:62, :1628:39]
-      else if (_GEN_40) begin	// @[CSR.scala:410:28, :1042:20, :1043:24]
+        reg_hpmevent_31 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      end
+      else if (_GEN_47) begin	// @[CSR.scala:410:28, :1042:20, :1043:24]
       end
       else if (insn_call)	// @[CSR.scala:875:83]
-        reg_mcause <= _GEN_18;	// @[CSR.scala:514:27, :941:8]
+        reg_mcause <= _GEN_25;	// @[CSR.scala:514:27, :941:8]
       else if (insn_break)	// @[CSR.scala:875:83]
         reg_mcause <= 64'h3;	// @[CSR.scala:514:27, :942:14]
       else	// @[CSR.scala:875:83]
         reg_mcause <= io_cause;	// @[CSR.scala:514:27]
       if (csr_wen & (&_decoded_decoded_T_44))	// @[CSR.scala:520:31, :1229:18, :1290:{40,52}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
         reg_mtvec <= _reg_bp_0_control_WIRE_1[31:0];	// @[CSR.scala:520:31, :1290:52, :1628:39]
-      if (~_io_trace_0_exception_output | _GEN_38 | ~(delegate & reg_mstatus_v)) begin	// @[CSR.scala:410:28, :556:28, :566:25, :951:66, :1027:43, :1042:20, :1043:24, :1053:31, :1063:37, :1072:35, :1074:{24,30}]
+      if (~_io_trace_0_exception_output | _GEN_45 | ~(delegate & reg_mstatus_v)) begin	// @[CSR.scala:410:28, :556:28, :566:25, :951:66, :1027:43, :1042:20, :1043:24, :1053:31, :1063:37, :1072:35, :1074:{24,30}]
       end
       else	// @[CSR.scala:556:28, :1042:20, :1043:24]
         reg_hstatus_spvp <= reg_mstatus_prv[0];	// @[CSR.scala:410:28, :556:28, :927:105]
-      if (_GEN_43)	// @[CSR.scala:578:21, :1229:18, :1358:38, :1361:67, :1362:27]
+      if (_GEN_54)	// @[CSR.scala:578:21, :1229:18, :1358:38, :1361:67, :1362:27]
         reg_satp_mode <= {_reg_bp_0_control_WIRE_1[63], 3'h0};	// @[CSR.scala:415:44, :578:21, :1360:40, :1362:44, :1628:39]
       if (io_vector_set_vconfig_valid) begin
         reg_vconfig_vl <= io_vector_set_vconfig_bits_vl;	// @[CSR.scala:583:43]
@@ -861,9 +1537,9 @@ module CSRFile(
         reg_vconfig_vtype_vlmul_mag <= io_vector_set_vconfig_bits_vtype_vlmul_mag;	// @[CSR.scala:583:43]
       end
       if (csr_wen & (&_decoded_decoded_T_48))	// @[CSR.scala:588:34, :1229:18, :1311:{47,67}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-        reg_mcountinhibit <= _reg_bp_0_control_WIRE_1[2:0] & 3'h5;	// @[CSR.scala:588:34, :1311:76, :1628:39, Mux.scala:47:70]
-      if (csr_wen & (&_decoded_decoded_T_172)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
-        small_0 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, Counters.scala:45:41, :67:11]
+        reg_mcountinhibit <= _reg_bp_0_control_WIRE_1[42:0] & 43'h7FFFFFFFFFD;	// @[CSR.scala:588:34, :1311:{76,78}, :1628:39]
+      if (csr_wen & (&_decoded_decoded_T_184)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+        small_0 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:41, :67:11]
         large_0 <= _reg_bp_0_control_WIRE_1[63:6];	// @[CSR.scala:1628:39, Counters.scala:50:31, :68:28]
       end
       else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
@@ -874,84 +1550,218 @@ module CSRFile(
         if (nextSmall[6] & ~(reg_mcountinhibit[2]))	// @[CSR.scala:588:34, :590:75, Counters.scala:46:33, :47:9, :51:{20,33}]
           large_0 <= large_0 + 58'h1;	// @[Counters.scala:50:31, :51:55]
       end
+      if (csr_wen & (&_decoded_decoded_T_50))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_0 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_52))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_1 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_54))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_2 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_56))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_3 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_58))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_4 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_60))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_5 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_62))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_6 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_64))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_7 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_66))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_8 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_68))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_9 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_70))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_10 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_72))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_11 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_74))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_12 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_76))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_13 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_78))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_14 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_80))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_15 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_82))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_16 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_84))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_17 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_86))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_18 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_88))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_19 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_90))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_20 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_92))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_21 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_94))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_22 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_96))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_23 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_98))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_24 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_100))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_25 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_102))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_26 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_104))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_27 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_106))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_28 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (_GEN_52)	// @[CSR.scala:517:25, :1229:18, :1288:{40,55}]
+        reg_hpmevent_29 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (_GEN_51)	// @[CSR.scala:1042:20, :1229:18, :1287:{40,51}]
+        reg_hpmevent_30 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (_GEN_53)	// @[CSR.scala:1042:20, :1229:18, :1292:{40,52}]
+        reg_hpmevent_32 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (_GEN_49)	// @[CSR.scala:512:20, :1229:18, :1271:35, :1279:22]
+        reg_hpmevent_33 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_118))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_34 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_120))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_35 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_122))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_36 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_124))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_37 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_126))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_38 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
+      if (csr_wen & (&_decoded_decoded_T_128))	// @[CSR.scala:593:50, :1229:18, :1308:{45,49}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+        reg_hpmevent_39 <= _reg_bp_0_control_WIRE_1 & 64'h3FFFF03;	// @[CSR.scala:593:50, :1628:39, Events.scala:34:14]
       if (csr_wen & (&_decoded_decoded_T_36) & (~(io_pc[1]) | _reg_bp_0_control_WIRE_1[2]))	// @[CSR.scala:647:25, :1229:18, :1262:36, :1266:{35,41,45,53,66}, :1268:20, :1628:39, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
         reg_misa <= ~(~_reg_bp_0_control_WIRE_1 | {60'h0, ~(_reg_bp_0_control_WIRE_1[5]), 3'h0}) & 64'h20102D | reg_misa & 64'hFFFFFFFFFFDFEFD2;	// @[CSR.scala:415:44, :647:25, :941:8, :1264:20, :1268:{23,25,32,35,55,62,73,75}, :1628:39]
-      if (csr_wen & (&_decoded_decoded_T_168))	// @[CSR.scala:793:43, :1229:18, :1503:35, :1504:13, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+      if (csr_wen & (&_decoded_decoded_T_180))	// @[CSR.scala:793:43, :1229:18, :1503:35, :1504:13, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
         reg_custom_0 <= _reg_bp_0_control_WIRE_1 & 64'h208 | reg_custom_0 & 64'hFFFFFFFFFFFFFDF7;	// @[CSR.scala:793:43, :1504:{23,31,38,40}, :1628:39]
-      io_status_cease_r <= system_insn & (&{io_rw_addr[2], _GEN_12[3], _GEN_12[4], _GEN_12[5], _GEN_12[6], _GEN_12[7], io_rw_addr[8], io_rw_addr[9], _GEN_12[10], _GEN_12[11]}) | io_status_cease_r;	// @[CSR.scala:858:31, :875:83, Cat.scala:33:92, Reg.scala:35:20, :36:{18,22}, pla.scala:78:21, :90:45, :91:29, :98:74]
+      io_status_cease_r <= system_insn & (&{io_rw_addr[2], _GEN_20[3], _GEN_20[4], _GEN_20[5], _GEN_20[6], _GEN_20[7], io_rw_addr[8], io_rw_addr[9], _GEN_20[10], _GEN_20[11]}) | io_status_cease_r;	// @[CSR.scala:858:31, :875:83, Cat.scala:33:92, Reg.scala:35:20, :36:{18,22}, pla.scala:78:21, :90:45, :91:29, :98:74]
     end
-    if (csr_wen & (&_decoded_decoded_T_164))	// @[CSR.scala:1042:20, :1229:18, :1335:{42,52}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-      reg_dpc <= ~_GEN_42;	// @[CSR.scala:491:20, :1649:{26,31}]
-    else if (_GEN_36)	// @[CSR.scala:490:26, :1042:20, :1043:24, :1044:25, :1046:19]
+    if (csr_wen & (&_decoded_decoded_T_176))	// @[CSR.scala:1042:20, :1229:18, :1335:{42,52}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+      reg_dpc <= ~_GEN_50;	// @[CSR.scala:491:20, :1649:{26,31}]
+    else if (_GEN_43)	// @[CSR.scala:490:26, :1042:20, :1043:24, :1044:25, :1046:19]
       reg_dpc <= ~_epc_T_1;	// @[CSR.scala:491:20, :1649:{26,31}]
-    if (csr_wen & (&_decoded_decoded_T_166))	// @[CSR.scala:492:26, :1229:18, :1336:{43,59}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+    if (csr_wen & (&_decoded_decoded_T_178))	// @[CSR.scala:492:26, :1229:18, :1336:{43,59}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
       reg_dscratch0 <= _reg_bp_0_control_WIRE_1;	// @[CSR.scala:492:26, :1628:39]
     reg_singleStepped <= _io_singleStep_output & (io_retire | _io_trace_0_exception_output | reg_singleStepped);	// @[CSR.scala:494:30, :982:34, :1027:43, :1034:{36,56}, :1035:{25,45}]
-    reg_bp_0_control_chain <= ~(reset | _GEN_44) & reg_bp_0_control_chain;	// @[CSR.scala:500:19, :1229:18, :1456:72, :1468:44, :1469:24, :1479:30, :1584:25, :1587:17]
-    if (_GEN_44) begin	// @[CSR.scala:500:19, :1229:18, :1456:72, :1468:44, :1469:24]
+    reg_bp_0_control_chain <= ~(reset | _GEN_55) & reg_bp_0_control_chain;	// @[CSR.scala:500:19, :1229:18, :1456:72, :1468:44, :1469:24, :1479:30, :1584:25, :1587:17]
+    if (_GEN_55) begin	// @[CSR.scala:500:19, :1229:18, :1456:72, :1468:44, :1469:24]
       reg_bp_0_control_tmatch <= _reg_bp_0_control_WIRE_1[8:7];	// @[CSR.scala:500:19, :1469:41, :1628:39]
       reg_bp_0_control_m <= _reg_bp_0_control_WIRE_1[6];	// @[CSR.scala:500:19, :1469:41, :1628:39]
       reg_bp_0_control_s <= _reg_bp_0_control_WIRE_1[4];	// @[CSR.scala:500:19, :1469:41, :1628:39]
       reg_bp_0_control_u <= _reg_bp_0_control_WIRE_1[3];	// @[CSR.scala:500:19, :1469:41, :1628:39]
     end
-    if (csr_wen & _T_1960 & (&_decoded_decoded_T_158))	// @[CSR.scala:500:19, :1229:18, :1456:{57,72}, :1457:{44,57}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+    if (csr_wen & _T_2753 & (&_decoded_decoded_T_170))	// @[CSR.scala:500:19, :1229:18, :1456:{57,72}, :1457:{44,57}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
       reg_bp_0_address <= _reg_bp_0_control_WIRE_1[38:0];	// @[CSR.scala:500:19, :1371:54, :1628:39]
-    if (_GEN_45) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+    if (_GEN_56) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
       reg_pmp_0_cfg_x <= _reg_bp_0_control_WIRE_1[2];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       reg_pmp_0_cfg_w <= _reg_bp_0_control_WIRE_1[1] & _reg_bp_0_control_WIRE_1[0];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
       reg_pmp_0_cfg_r <= _reg_bp_0_control_WIRE_1[0];	// @[CSR.scala:501:20, :1489:73, :1628:39]
     end
-    if (csr_wen & (&_decoded_decoded_T_122) & ~(reg_pmp_0_cfg_l | reg_pmp_1_cfg_l & ~(reg_pmp_1_cfg_a[1]) & reg_pmp_1_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+    if (csr_wen & (&_decoded_decoded_T_134) & ~(reg_pmp_0_cfg_l | reg_pmp_1_cfg_l & ~(reg_pmp_1_cfg_a[1]) & reg_pmp_1_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
       reg_pmp_0_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
-    if (_GEN_46) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+    if (_GEN_57) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
       reg_pmp_1_cfg_x <= _reg_bp_0_control_WIRE_1[10];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       reg_pmp_1_cfg_w <= _reg_bp_0_control_WIRE_1[9] & _reg_bp_0_control_WIRE_1[8];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
       reg_pmp_1_cfg_r <= _reg_bp_0_control_WIRE_1[8];	// @[CSR.scala:501:20, :1489:73, :1628:39]
     end
-    if (csr_wen & (&_decoded_decoded_T_124) & ~(reg_pmp_1_cfg_l | reg_pmp_2_cfg_l & ~(reg_pmp_2_cfg_a[1]) & reg_pmp_2_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+    if (csr_wen & (&_decoded_decoded_T_136) & ~(reg_pmp_1_cfg_l | reg_pmp_2_cfg_l & ~(reg_pmp_2_cfg_a[1]) & reg_pmp_2_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
       reg_pmp_1_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
-    if (_GEN_47) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+    if (_GEN_58) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
       reg_pmp_2_cfg_x <= _reg_bp_0_control_WIRE_1[18];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       reg_pmp_2_cfg_w <= _reg_bp_0_control_WIRE_1[17] & _reg_bp_0_control_WIRE_1[16];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
       reg_pmp_2_cfg_r <= _reg_bp_0_control_WIRE_1[16];	// @[CSR.scala:501:20, :1489:73, :1628:39]
     end
-    if (csr_wen & (&_decoded_decoded_T_126) & ~(reg_pmp_2_cfg_l | reg_pmp_3_cfg_l & ~(reg_pmp_3_cfg_a[1]) & reg_pmp_3_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+    if (csr_wen & (&_decoded_decoded_T_138) & ~(reg_pmp_2_cfg_l | reg_pmp_3_cfg_l & ~(reg_pmp_3_cfg_a[1]) & reg_pmp_3_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
       reg_pmp_2_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
-    if (_GEN_48) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+    if (_GEN_59) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
       reg_pmp_3_cfg_x <= _reg_bp_0_control_WIRE_1[26];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       reg_pmp_3_cfg_w <= _reg_bp_0_control_WIRE_1[25] & _reg_bp_0_control_WIRE_1[24];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
       reg_pmp_3_cfg_r <= _reg_bp_0_control_WIRE_1[24];	// @[CSR.scala:501:20, :1489:73, :1628:39]
     end
-    if (csr_wen & (&_decoded_decoded_T_128) & ~(reg_pmp_3_cfg_l | reg_pmp_4_cfg_l & ~(reg_pmp_4_cfg_a[1]) & reg_pmp_4_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+    if (csr_wen & (&_decoded_decoded_T_140) & ~(reg_pmp_3_cfg_l | reg_pmp_4_cfg_l & ~(reg_pmp_4_cfg_a[1]) & reg_pmp_4_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
       reg_pmp_3_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
-    if (_GEN_49) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+    if (_GEN_60) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
       reg_pmp_4_cfg_x <= _reg_bp_0_control_WIRE_1[34];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       reg_pmp_4_cfg_w <= _reg_bp_0_control_WIRE_1[33] & _reg_bp_0_control_WIRE_1[32];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
       reg_pmp_4_cfg_r <= _reg_bp_0_control_WIRE_1[32];	// @[CSR.scala:501:20, :1489:73, :1628:39]
     end
-    if (csr_wen & (&_decoded_decoded_T_130) & ~(reg_pmp_4_cfg_l | reg_pmp_5_cfg_l & ~(reg_pmp_5_cfg_a[1]) & reg_pmp_5_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+    if (csr_wen & (&_decoded_decoded_T_142) & ~(reg_pmp_4_cfg_l | reg_pmp_5_cfg_l & ~(reg_pmp_5_cfg_a[1]) & reg_pmp_5_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
       reg_pmp_4_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
-    if (_GEN_50) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+    if (_GEN_61) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
       reg_pmp_5_cfg_x <= _reg_bp_0_control_WIRE_1[42];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       reg_pmp_5_cfg_w <= _reg_bp_0_control_WIRE_1[41] & _reg_bp_0_control_WIRE_1[40];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
       reg_pmp_5_cfg_r <= _reg_bp_0_control_WIRE_1[40];	// @[CSR.scala:501:20, :1489:73, :1628:39]
     end
-    if (csr_wen & (&_decoded_decoded_T_132) & ~(reg_pmp_5_cfg_l | reg_pmp_6_cfg_l & ~(reg_pmp_6_cfg_a[1]) & reg_pmp_6_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+    if (csr_wen & (&_decoded_decoded_T_144) & ~(reg_pmp_5_cfg_l | reg_pmp_6_cfg_l & ~(reg_pmp_6_cfg_a[1]) & reg_pmp_6_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
       reg_pmp_5_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
-    if (_GEN_51) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+    if (_GEN_62) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
       reg_pmp_6_cfg_x <= _reg_bp_0_control_WIRE_1[50];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       reg_pmp_6_cfg_w <= _reg_bp_0_control_WIRE_1[49] & _reg_bp_0_control_WIRE_1[48];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
       reg_pmp_6_cfg_r <= _reg_bp_0_control_WIRE_1[48];	// @[CSR.scala:501:20, :1489:73, :1628:39]
     end
-    if (csr_wen & (&_decoded_decoded_T_134) & ~(reg_pmp_6_cfg_l | reg_pmp_7_cfg_l & ~(reg_pmp_7_cfg_a[1]) & reg_pmp_7_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+    if (csr_wen & (&_decoded_decoded_T_146) & ~(reg_pmp_6_cfg_l | reg_pmp_7_cfg_l & ~(reg_pmp_7_cfg_a[1]) & reg_pmp_7_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
       reg_pmp_6_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
-    if (_GEN_52) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+    if (_GEN_63) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
       reg_pmp_7_cfg_x <= _reg_bp_0_control_WIRE_1[58];	// @[CSR.scala:501:20, :1489:73, :1628:39]
       reg_pmp_7_cfg_w <= _reg_bp_0_control_WIRE_1[57] & _reg_bp_0_control_WIRE_1[56];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
       reg_pmp_7_cfg_r <= _reg_bp_0_control_WIRE_1[56];	// @[CSR.scala:501:20, :1489:73, :1628:39]
     end
-    if (csr_wen & (&_decoded_decoded_T_136) & ~(reg_pmp_7_cfg_l | reg_pmp_7_cfg_l & ~(reg_pmp_7_cfg_a[1]) & reg_pmp_7_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+    if (csr_wen & (&_decoded_decoded_T_148) & ~(reg_pmp_7_cfg_l | reg_pmp_8_cfg_l & ~(reg_pmp_8_cfg_a[1]) & reg_pmp_8_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
       reg_pmp_7_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
+    if (_GEN_64) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      reg_pmp_8_cfg_x <= _reg_bp_0_control_WIRE_1[2];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      reg_pmp_8_cfg_w <= _reg_bp_0_control_WIRE_1[1] & _reg_bp_0_control_WIRE_1[0];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
+      reg_pmp_8_cfg_r <= _reg_bp_0_control_WIRE_1[0];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+    end
+    if (csr_wen & (&_decoded_decoded_T_150) & ~(reg_pmp_8_cfg_l | reg_pmp_9_cfg_l & ~(reg_pmp_9_cfg_a[1]) & reg_pmp_9_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+      reg_pmp_8_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
+    if (_GEN_65) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      reg_pmp_9_cfg_x <= _reg_bp_0_control_WIRE_1[10];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      reg_pmp_9_cfg_w <= _reg_bp_0_control_WIRE_1[9] & _reg_bp_0_control_WIRE_1[8];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
+      reg_pmp_9_cfg_r <= _reg_bp_0_control_WIRE_1[8];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+    end
+    if (csr_wen & (&_decoded_decoded_T_152) & ~(reg_pmp_9_cfg_l | reg_pmp_10_cfg_l & ~(reg_pmp_10_cfg_a[1]) & reg_pmp_10_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+      reg_pmp_9_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
+    if (_GEN_66) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      reg_pmp_10_cfg_x <= _reg_bp_0_control_WIRE_1[18];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      reg_pmp_10_cfg_w <= _reg_bp_0_control_WIRE_1[17] & _reg_bp_0_control_WIRE_1[16];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
+      reg_pmp_10_cfg_r <= _reg_bp_0_control_WIRE_1[16];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+    end
+    if (csr_wen & (&_decoded_decoded_T_154) & ~(reg_pmp_10_cfg_l | reg_pmp_11_cfg_l & ~(reg_pmp_11_cfg_a[1]) & reg_pmp_11_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+      reg_pmp_10_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
+    if (_GEN_67) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      reg_pmp_11_cfg_x <= _reg_bp_0_control_WIRE_1[26];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      reg_pmp_11_cfg_w <= _reg_bp_0_control_WIRE_1[25] & _reg_bp_0_control_WIRE_1[24];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
+      reg_pmp_11_cfg_r <= _reg_bp_0_control_WIRE_1[24];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+    end
+    if (csr_wen & (&_decoded_decoded_T_156) & ~(reg_pmp_11_cfg_l | reg_pmp_12_cfg_l & ~(reg_pmp_12_cfg_a[1]) & reg_pmp_12_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+      reg_pmp_11_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
+    if (_GEN_68) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      reg_pmp_12_cfg_x <= _reg_bp_0_control_WIRE_1[34];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      reg_pmp_12_cfg_w <= _reg_bp_0_control_WIRE_1[33] & _reg_bp_0_control_WIRE_1[32];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
+      reg_pmp_12_cfg_r <= _reg_bp_0_control_WIRE_1[32];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+    end
+    if (csr_wen & (&_decoded_decoded_T_158) & ~(reg_pmp_12_cfg_l | reg_pmp_13_cfg_l & ~(reg_pmp_13_cfg_a[1]) & reg_pmp_13_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+      reg_pmp_12_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
+    if (_GEN_69) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      reg_pmp_13_cfg_x <= _reg_bp_0_control_WIRE_1[42];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      reg_pmp_13_cfg_w <= _reg_bp_0_control_WIRE_1[41] & _reg_bp_0_control_WIRE_1[40];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
+      reg_pmp_13_cfg_r <= _reg_bp_0_control_WIRE_1[40];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+    end
+    if (csr_wen & (&_decoded_decoded_T_160) & ~(reg_pmp_13_cfg_l | reg_pmp_14_cfg_l & ~(reg_pmp_14_cfg_a[1]) & reg_pmp_14_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+      reg_pmp_13_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
+    if (_GEN_70) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      reg_pmp_14_cfg_x <= _reg_bp_0_control_WIRE_1[50];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      reg_pmp_14_cfg_w <= _reg_bp_0_control_WIRE_1[49] & _reg_bp_0_control_WIRE_1[48];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
+      reg_pmp_14_cfg_r <= _reg_bp_0_control_WIRE_1[48];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+    end
+    if (csr_wen & (&_decoded_decoded_T_162) & ~(reg_pmp_14_cfg_l | reg_pmp_15_cfg_l & ~(reg_pmp_15_cfg_a[1]) & reg_pmp_15_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+      reg_pmp_14_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
+    if (_GEN_71) begin	// @[CSR.scala:501:20, :1229:18, :1488:76, :1490:17]
+      reg_pmp_15_cfg_x <= _reg_bp_0_control_WIRE_1[58];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+      reg_pmp_15_cfg_w <= _reg_bp_0_control_WIRE_1[57] & _reg_bp_0_control_WIRE_1[56];	// @[CSR.scala:501:20, :1489:73, :1492:31, :1628:39]
+      reg_pmp_15_cfg_r <= _reg_bp_0_control_WIRE_1[56];	// @[CSR.scala:501:20, :1489:73, :1628:39]
+    end
+    if (csr_wen & (&_decoded_decoded_T_164) & ~(reg_pmp_15_cfg_l | reg_pmp_15_cfg_l & ~(reg_pmp_15_cfg_a[1]) & reg_pmp_15_cfg_a[0]))	// @[CSR.scala:501:20, :1229:18, :1497:{48,71}, :1498:18, Cat.scala:33:92, PMP.scala:45:20, :46:26, :47:13, :49:{44,62}, package.scala:73:59, pla.scala:98:74]
+      reg_pmp_15_addr <= _reg_bp_0_control_WIRE_1[29:0];	// @[CSR.scala:501:20, :1498:18, :1628:39]
     if (csr_wen) begin	// @[package.scala:73:59]
       if (&_decoded_decoded_T_16)	// @[Cat.scala:33:92, pla.scala:98:74]
         reg_mie <= reg_mie & ~sie_mask | _reg_bp_0_control_WIRE_1 & sie_mask;	// @[CSR.scala:503:20, :743:18, :1368:{64,66,77,86}, :1628:39]
@@ -960,11 +1770,11 @@ module CSRFile(
       if (&_decoded_decoded_T_30)	// @[Cat.scala:33:92, pla.scala:98:74]
         reg_mip_ssip <= reg_mip_ssip & ~(reg_mideleg[1]) | _reg_bp_0_control_WIRE_1[1] & reg_mideleg[1];	// @[CSR.scala:505:18, :506:38, :512:20, :1355:{34,36,51,60}, :1628:39]
       else if (&_decoded_decoded_T_116)	// @[Cat.scala:33:92, pla.scala:98:74]
-        reg_mip_ssip <= _GEN_41[0];	// @[CSR.scala:512:20, :1276:88, :1628:39]
+        reg_mip_ssip <= _GEN_48[0];	// @[CSR.scala:512:20, :1276:88, :1628:39]
       if (&_decoded_decoded_T_4)	// @[Cat.scala:33:92, pla.scala:98:74]
         reg_frm <= _reg_bp_0_control_WIRE_1[7:5];	// @[CSR.scala:582:20, :1322:{17,26}, :1628:39]
       else if (&_decoded_decoded_T_2)	// @[Cat.scala:33:92, pla.scala:98:74]
-        reg_frm <= _reg_bp_0_control_WIRE_1[2:0];	// @[CSR.scala:582:20, :1628:39]
+        reg_frm <= _reg_bp_0_control_WIRE_1[2:0];	// @[CSR.scala:582:20, :1318:74, :1628:39]
       if (&_decoded_decoded_T_12)	// @[Cat.scala:33:92, pla.scala:98:74]
         reg_vxrm <= _reg_bp_0_control_WIRE_1[2:1];	// @[CSR.scala:586:40, :1521:{22,31}, :1628:39]
       else if (&_decoded_decoded_T_10)	// @[Cat.scala:33:92, pla.scala:98:74]
@@ -974,25 +1784,25 @@ module CSRFile(
       reg_mideleg <= _reg_bp_0_control_WIRE_1;	// @[CSR.scala:505:18, :1628:39]
     if (csr_wen & (&_decoded_decoded_T_38))	// @[CSR.scala:509:18, :1229:18, :1375:{42,56}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
       reg_medeleg <= _reg_bp_0_control_WIRE_1;	// @[CSR.scala:509:18, :1628:39]
-    if (csr_wen & (&_decoded_decoded_T_116)) begin	// @[CSR.scala:512:20, :1229:18, :1271:35, :1279:22, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-      reg_mip_seip <= _GEN_41[8];	// @[CSR.scala:512:20, :1276:88, :1628:39]
-      reg_mip_stip <= _GEN_41[4];	// @[CSR.scala:512:20, :1276:88, :1628:39]
+    if (_GEN_49) begin	// @[CSR.scala:512:20, :1229:18, :1271:35, :1279:22]
+      reg_mip_seip <= _GEN_48[8];	// @[CSR.scala:512:20, :1276:88, :1628:39]
+      reg_mip_stip <= _GEN_48[4];	// @[CSR.scala:512:20, :1276:88, :1628:39]
     end
-    if (csr_wen & (&_decoded_decoded_T_110))	// @[CSR.scala:1042:20, :1229:18, :1287:{40,51}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-      reg_mepc <= ~_GEN_42;	// @[CSR.scala:513:21, :1649:{26,31}]
-    else if (_GEN_40) begin	// @[CSR.scala:410:28, :1042:20, :1043:24]
+    if (_GEN_51)	// @[CSR.scala:1042:20, :1229:18, :1287:{40,51}]
+      reg_mepc <= ~_GEN_50;	// @[CSR.scala:513:21, :1649:{26,31}]
+    else if (_GEN_47) begin	// @[CSR.scala:410:28, :1042:20, :1043:24]
     end
     else	// @[CSR.scala:410:28, :1042:20, :1043:24]
       reg_mepc <= ~_epc_T_1;	// @[CSR.scala:513:21, :1649:{26,31}]
-    if (csr_wen & (&_decoded_decoded_T_114))	// @[CSR.scala:1042:20, :1229:18, :1292:{40,52}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+    if (_GEN_53)	// @[CSR.scala:1042:20, :1229:18, :1292:{40,52}]
       reg_mtval <= _reg_bp_0_control_WIRE_1[39:0];	// @[CSR.scala:515:22, :1628:39]
-    else if (_GEN_40) begin	// @[CSR.scala:410:28, :1042:20, :1043:24]
+    else if (_GEN_47) begin	// @[CSR.scala:410:28, :1042:20, :1043:24]
     end
     else if (insn_break)	// @[CSR.scala:875:83]
       reg_mtval <= ~_epc_T_1;	// @[CSR.scala:515:22, :1649:{26,31}]
     else	// @[CSR.scala:875:83]
       reg_mtval <= io_tval;	// @[CSR.scala:515:22]
-    if (csr_wen & (&_decoded_decoded_T_108))	// @[CSR.scala:517:25, :1229:18, :1288:{40,55}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
+    if (_GEN_52)	// @[CSR.scala:517:25, :1229:18, :1288:{40,55}]
       reg_mscratch <= _reg_bp_0_control_WIRE_1;	// @[CSR.scala:517:25, :1628:39]
     if (csr_wen & (&_decoded_decoded_T_46))	// @[CSR.scala:535:18, :1229:18, :1450:{44,61}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
       reg_mcounteren <= _reg_bp_0_control_WIRE_1[31:0];	// @[CSR.scala:535:18, :1290:52, :1628:39]
@@ -1000,30 +1810,30 @@ module CSRFile(
       reg_scounteren <= _reg_bp_0_control_WIRE_1[31:0];	// @[CSR.scala:539:18, :1290:52, :1628:39]
     if (set_vs_dirty & reg_mstatus_v)	// @[CSR.scala:410:28, :566:25, :1198:25, :1200:{28,46}, :1229:18, :1532:33, :1533:20]
       reg_vsstatus_vs <= 2'h3;	// @[CSR.scala:403:21, :566:25]
-    reg_vsstatus_spp <= (~(insn_ret & ~(io_rw_addr[9])) | ~reg_mstatus_v) & (_GEN_37 ? reg_vsstatus_spp : reg_mstatus_prv[0]);	// @[CSR.scala:410:28, :566:25, :875:83, :888:94, :1042:20, :1043:24, :1065:24, :1120:19, :1122:{32,43,48}, :1123:29]
-    if (_GEN_37) begin	// @[CSR.scala:566:25, :1042:20, :1043:24]
+    reg_vsstatus_spp <= (~(insn_ret & ~(io_rw_addr[9])) | ~reg_mstatus_v) & (_GEN_44 ? reg_vsstatus_spp : reg_mstatus_prv[0]);	// @[CSR.scala:410:28, :566:25, :875:83, :888:94, :1042:20, :1043:24, :1065:24, :1120:19, :1122:{32,43,48}, :1123:29]
+    if (_GEN_44) begin	// @[CSR.scala:566:25, :1042:20, :1043:24]
     end
     else	// @[CSR.scala:566:25, :1042:20, :1043:24]
       reg_vsepc <= ~_epc_T_1;	// @[CSR.scala:568:22, :1649:{26,31}]
     if (csr_wen & (&_decoded_decoded_T_24))	// @[CSR.scala:1042:20, :1229:18, :1370:{42,53}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
-      reg_sepc <= ~_GEN_42;	// @[CSR.scala:573:21, :1649:{26,31}]
-    else if (_GEN_39) begin	// @[CSR.scala:573:21, :1042:20, :1043:24]
+      reg_sepc <= ~_GEN_50;	// @[CSR.scala:573:21, :1649:{26,31}]
+    else if (_GEN_46) begin	// @[CSR.scala:573:21, :1042:20, :1043:24]
     end
     else	// @[CSR.scala:573:21, :1042:20, :1043:24]
       reg_sepc <= ~_epc_T_1;	// @[CSR.scala:573:21, :1649:{26,31}]
     if (csr_wen & (&_decoded_decoded_T_26))	// @[CSR.scala:1042:20, :1229:18, :1372:{42,55}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
       reg_scause <= _reg_bp_0_control_WIRE_1 & 64'h800000000000001F;	// @[CSR.scala:574:23, :1372:64, :1628:39]
-    else if (_GEN_39) begin	// @[CSR.scala:573:21, :1042:20, :1043:24]
+    else if (_GEN_46) begin	// @[CSR.scala:573:21, :1042:20, :1043:24]
     end
     else if (insn_call)	// @[CSR.scala:875:83]
-      reg_scause <= _GEN_18;	// @[CSR.scala:574:23, :941:8]
+      reg_scause <= _GEN_25;	// @[CSR.scala:574:23, :941:8]
     else if (insn_break)	// @[CSR.scala:875:83]
       reg_scause <= 64'h3;	// @[CSR.scala:574:23, :942:14]
     else	// @[CSR.scala:875:83]
       reg_scause <= io_cause;	// @[CSR.scala:574:23]
     if (csr_wen & (&_decoded_decoded_T_28))	// @[CSR.scala:1042:20, :1229:18, :1373:{42,54}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
       reg_stval <= _reg_bp_0_control_WIRE_1[39:0];	// @[CSR.scala:575:22, :1628:39]
-    else if (_GEN_39) begin	// @[CSR.scala:573:21, :1042:20, :1043:24]
+    else if (_GEN_46) begin	// @[CSR.scala:573:21, :1042:20, :1043:24]
     end
     else if (insn_break)	// @[CSR.scala:875:83]
       reg_stval <= ~_epc_T_1;	// @[CSR.scala:575:22, :1649:{26,31}]
@@ -1033,7 +1843,7 @@ module CSRFile(
       reg_sscratch <= _reg_bp_0_control_WIRE_1;	// @[CSR.scala:576:25, :1628:39]
     if (csr_wen & (&_decoded_decoded_T_18))	// @[CSR.scala:577:22, :1229:18, :1371:{42,54}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
       reg_stvec <= _reg_bp_0_control_WIRE_1[38:0];	// @[CSR.scala:577:22, :1371:54, :1628:39]
-    if (_GEN_43)	// @[CSR.scala:578:21, :1229:18, :1358:38, :1361:67, :1362:27]
+    if (_GEN_54)	// @[CSR.scala:578:21, :1229:18, :1358:38, :1361:67, :1362:27]
       reg_satp_ppn <= {24'h0, _reg_bp_0_control_WIRE_1[19:0]};	// @[Bitwise.scala:77:12, CSR.scala:578:21, :1363:{26,41}, :1628:39]
     if (csr_wen & ((&_decoded_decoded_T_4) | (&_decoded_decoded_T)))	// @[CSR.scala:1215:30, :1229:18, :1317:40, :1319:38, :1321:20, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
       reg_fflags <= _reg_bp_0_control_WIRE_1[4:0];	// @[CSR.scala:581:23, :1317:77, :1628:39]
@@ -1043,15 +1853,495 @@ module CSRFile(
       reg_vxsat <= _reg_bp_0_control_WIRE_1[0];	// @[CSR.scala:585:41, :1517:80, :1628:39]
     else	// @[CSR.scala:1221:26, :1229:18, :1518:40]
       reg_vxsat <= io_vector_set_vxsat | reg_vxsat;	// @[CSR.scala:585:41, :1221:26, :1222:21]
+    if (csr_wen & (&_decoded_decoded_T_186)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_2 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_2 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[3]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_2 <= nextSmall_2[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_2[6] & ~(reg_mcountinhibit[3]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_2 <= large_2 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_188)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_3 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_3 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[4]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_3 <= nextSmall_3[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_3[6] & ~(reg_mcountinhibit[4]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_3 <= large_3 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_190)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_4 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_4 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[5]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_4 <= nextSmall_4[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_4[6] & ~(reg_mcountinhibit[5]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_4 <= large_4 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_192)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_5 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_5 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[6]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_5 <= nextSmall_5[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_5[6] & ~(reg_mcountinhibit[6]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_5 <= large_5 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_194)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_6 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_6 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[7]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_6 <= nextSmall_6[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_6[6] & ~(reg_mcountinhibit[7]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_6 <= large_6 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_196)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_7 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_7 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[8]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_7 <= nextSmall_7[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_7[6] & ~(reg_mcountinhibit[8]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_7 <= large_7 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_198)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_8 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_8 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[9]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_8 <= nextSmall_8[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_8[6] & ~(reg_mcountinhibit[9]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_8 <= large_8 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_200)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_9 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_9 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[10]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_9 <= nextSmall_9[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_9[6] & ~(reg_mcountinhibit[10]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_9 <= large_9 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_202)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_10 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_10 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[11]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_10 <= nextSmall_10[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_10[6] & ~(reg_mcountinhibit[11]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_10 <= large_10 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_204)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_11 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_11 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[12]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_11 <= nextSmall_11[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_11[6] & ~(reg_mcountinhibit[12]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_11 <= large_11 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_206)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_12 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_12 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[13]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_12 <= nextSmall_12[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_12[6] & ~(reg_mcountinhibit[13]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_12 <= large_12 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_208)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_13 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_13 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[14]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_13 <= nextSmall_13[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_13[6] & ~(reg_mcountinhibit[14]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_13 <= large_13 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_210)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_14 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_14 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[15]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_14 <= nextSmall_14[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_14[6] & ~(reg_mcountinhibit[15]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_14 <= large_14 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_212)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_15 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_15 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[16]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_15 <= nextSmall_15[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_15[6] & ~(reg_mcountinhibit[16]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_15 <= large_15 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_214)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_16 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_16 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[17]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_16 <= nextSmall_16[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_16[6] & ~(reg_mcountinhibit[17]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_16 <= large_16 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_216)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_17 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_17 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[18]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_17 <= nextSmall_17[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_17[6] & ~(reg_mcountinhibit[18]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_17 <= large_17 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_218)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_18 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_18 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[19]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_18 <= nextSmall_18[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_18[6] & ~(reg_mcountinhibit[19]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_18 <= large_18 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_220)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_19 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_19 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[20]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_19 <= nextSmall_19[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_19[6] & ~(reg_mcountinhibit[20]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_19 <= large_19 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_222)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_20 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_20 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[21]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_20 <= nextSmall_20[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_20[6] & ~(reg_mcountinhibit[21]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_20 <= large_20 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_224)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_21 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_21 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[22]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_21 <= nextSmall_21[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_21[6] & ~(reg_mcountinhibit[22]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_21 <= large_21 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_226)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_22 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_22 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[23]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_22 <= nextSmall_22[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_22[6] & ~(reg_mcountinhibit[23]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_22 <= large_22 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_228)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_23 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_23 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[24]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_23 <= nextSmall_23[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_23[6] & ~(reg_mcountinhibit[24]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_23 <= large_23 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_230)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_24 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_24 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[25]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_24 <= nextSmall_24[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_24[6] & ~(reg_mcountinhibit[25]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_24 <= large_24 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_232)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_25 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_25 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[26]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_25 <= nextSmall_25[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_25[6] & ~(reg_mcountinhibit[26]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_25 <= large_25 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_234)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_26 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_26 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[27]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_26 <= nextSmall_26[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_26[6] & ~(reg_mcountinhibit[27]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_26 <= large_26 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_236)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_27 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_27 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[28]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_27 <= nextSmall_27[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_27[6] & ~(reg_mcountinhibit[28]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_27 <= large_27 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_238)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_28 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_28 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[29]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_28 <= nextSmall_28[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_28[6] & ~(reg_mcountinhibit[29]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_28 <= large_28 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_240)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_29 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_29 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[30]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_29 <= nextSmall_29[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_29[6] & ~(reg_mcountinhibit[30]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_29 <= large_29 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_242)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_30 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_30 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[31]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_30 <= nextSmall_30[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_30[6] & ~(reg_mcountinhibit[31]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_30 <= large_30 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_244)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_31 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_31 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[32]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_31 <= nextSmall_31[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_31[6] & ~(reg_mcountinhibit[32]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_31 <= large_31 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_246)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_32 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_32 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[33]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_32 <= nextSmall_32[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_32[6] & ~(reg_mcountinhibit[33]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_32 <= large_32 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_248)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_33 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_33 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[34]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_33 <= nextSmall_33[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_33[6] & ~(reg_mcountinhibit[34]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_33 <= large_33 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_250)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_34 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_34 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[35]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_34 <= nextSmall_34[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_34[6] & ~(reg_mcountinhibit[35]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_34 <= large_34 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_252)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_35 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_35 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[36]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_35 <= nextSmall_35[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_35[6] & ~(reg_mcountinhibit[36]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_35 <= large_35 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_254)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_36 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_36 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[37]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_36 <= nextSmall_36[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_36[6] & ~(reg_mcountinhibit[37]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_36 <= large_36 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_256)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_37 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_37 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[38]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_37 <= nextSmall_37[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_37[6] & ~(reg_mcountinhibit[38]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_37 <= large_37 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_258)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_38 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_38 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[39]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_38 <= nextSmall_38[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_38[6] & ~(reg_mcountinhibit[39]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_38 <= large_38 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_260)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_39 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_39 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[40]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_39 <= nextSmall_39[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_39[6] & ~(reg_mcountinhibit[40]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_39 <= large_39 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_262)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_40 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_40 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[41]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_40 <= nextSmall_40[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_40[6] & ~(reg_mcountinhibit[41]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_40 <= large_40 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
+    if (csr_wen & (&_decoded_decoded_T_264)) begin	// @[CSR.scala:1229:18, :1646:31, Cat.scala:33:92, Counters.scala:47:19, :67:11, package.scala:73:59, pla.scala:98:74]
+      small_41 <= _reg_bp_0_control_WIRE_1[5:0];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:45:69, :67:11]
+      large_41 <= _reg_bp_0_control_WIRE_1[39:6];	// @[CSR.scala:1628:39, :1646:45, Counters.scala:50:69, :68:28]
+    end
+    else begin	// @[CSR.scala:1229:18, :1646:31, Counters.scala:47:19, :67:11]
+      if (reg_mcountinhibit[42]) begin	// @[CSR.scala:588:34, :596:80]
+      end
+      else	// @[CSR.scala:596:80]
+        small_41 <= nextSmall_41[5:0];	// @[Counters.scala:45:69, :46:33, :47:27]
+      if (nextSmall_41[6] & ~(reg_mcountinhibit[42]))	// @[CSR.scala:588:34, :596:80, Counters.scala:46:33, :47:9, :51:{20,33}]
+        large_41 <= large_41 + 34'h1;	// @[Counters.scala:50:69, :51:55]
+    end
     if (io_vector_set_vstart_valid)
       reg_vstart <= 7'h0;	// @[CSR.scala:584:42]
     else if (csr_wen & (&_decoded_decoded_T_6))	// @[CSR.scala:584:42, :1229:18, :1515:{40,81}, Cat.scala:33:92, package.scala:73:59, pla.scala:98:74]
       reg_vstart <= _reg_bp_0_control_WIRE_1[6:0];	// @[CSR.scala:584:42, :1515:81, :1628:39]
   end // always @(posedge)
   `ifndef SYNTHESIS
-    wire  [2:0]  _T_278 = {1'h0, {1'h0, insn_ret} + {1'h0, insn_call}} + {1'h0, {1'h0, insn_break} + {1'h0, io_exception}};	// @[Bitwise.scala:51:90, CSR.scala:875:83]
+    wire  [2:0]  _T_383 = {1'h0, {1'h0, insn_ret} + {1'h0, insn_call}} + {1'h0, {1'h0, insn_break} + {1'h0, io_exception}};	// @[Bitwise.scala:51:90, CSR.scala:875:83]
     always @(posedge clock) begin	// @[CSR.scala:1028:9]
-      if (~reset & (|(_T_278[2:1]))) begin	// @[Bitwise.scala:51:90, CSR.scala:1028:{9,79}]
+      if (~reset & (|(_T_383[2:1]))) begin	// @[Bitwise.scala:51:90, CSR.scala:1028:{9,79}]
         if (`ASSERT_VERBOSE_COND_)	// @[CSR.scala:1028:9]
           $error("Assertion failed: these conditions must be mutually exclusive\n    at CSR.scala:1028 assert(PopCount(insn_ret :: insn_call :: insn_break :: io.exception :: Nil) <= 1.U, \"these conditions must be mutually exclusive\")\n");	// @[CSR.scala:1028:9]
         if (`STOP_COND_)	// @[CSR.scala:1028:9]
@@ -1179,6 +2469,147 @@ module CSRFile(
     logic [31:0] _RANDOM_97;
     logic [31:0] _RANDOM_98;
     logic [31:0] _RANDOM_99;
+    logic [31:0] _RANDOM_100;
+    logic [31:0] _RANDOM_101;
+    logic [31:0] _RANDOM_102;
+    logic [31:0] _RANDOM_103;
+    logic [31:0] _RANDOM_104;
+    logic [31:0] _RANDOM_105;
+    logic [31:0] _RANDOM_106;
+    logic [31:0] _RANDOM_107;
+    logic [31:0] _RANDOM_108;
+    logic [31:0] _RANDOM_109;
+    logic [31:0] _RANDOM_110;
+    logic [31:0] _RANDOM_111;
+    logic [31:0] _RANDOM_112;
+    logic [31:0] _RANDOM_113;
+    logic [31:0] _RANDOM_114;
+    logic [31:0] _RANDOM_115;
+    logic [31:0] _RANDOM_116;
+    logic [31:0] _RANDOM_117;
+    logic [31:0] _RANDOM_118;
+    logic [31:0] _RANDOM_119;
+    logic [31:0] _RANDOM_120;
+    logic [31:0] _RANDOM_121;
+    logic [31:0] _RANDOM_122;
+    logic [31:0] _RANDOM_123;
+    logic [31:0] _RANDOM_124;
+    logic [31:0] _RANDOM_125;
+    logic [31:0] _RANDOM_126;
+    logic [31:0] _RANDOM_127;
+    logic [31:0] _RANDOM_128;
+    logic [31:0] _RANDOM_129;
+    logic [31:0] _RANDOM_130;
+    logic [31:0] _RANDOM_131;
+    logic [31:0] _RANDOM_132;
+    logic [31:0] _RANDOM_133;
+    logic [31:0] _RANDOM_134;
+    logic [31:0] _RANDOM_135;
+    logic [31:0] _RANDOM_136;
+    logic [31:0] _RANDOM_137;
+    logic [31:0] _RANDOM_138;
+    logic [31:0] _RANDOM_139;
+    logic [31:0] _RANDOM_140;
+    logic [31:0] _RANDOM_141;
+    logic [31:0] _RANDOM_142;
+    logic [31:0] _RANDOM_143;
+    logic [31:0] _RANDOM_144;
+    logic [31:0] _RANDOM_145;
+    logic [31:0] _RANDOM_146;
+    logic [31:0] _RANDOM_147;
+    logic [31:0] _RANDOM_148;
+    logic [31:0] _RANDOM_149;
+    logic [31:0] _RANDOM_150;
+    logic [31:0] _RANDOM_151;
+    logic [31:0] _RANDOM_152;
+    logic [31:0] _RANDOM_153;
+    logic [31:0] _RANDOM_154;
+    logic [31:0] _RANDOM_155;
+    logic [31:0] _RANDOM_156;
+    logic [31:0] _RANDOM_157;
+    logic [31:0] _RANDOM_158;
+    logic [31:0] _RANDOM_159;
+    logic [31:0] _RANDOM_160;
+    logic [31:0] _RANDOM_161;
+    logic [31:0] _RANDOM_162;
+    logic [31:0] _RANDOM_163;
+    logic [31:0] _RANDOM_164;
+    logic [31:0] _RANDOM_165;
+    logic [31:0] _RANDOM_166;
+    logic [31:0] _RANDOM_167;
+    logic [31:0] _RANDOM_168;
+    logic [31:0] _RANDOM_169;
+    logic [31:0] _RANDOM_170;
+    logic [31:0] _RANDOM_171;
+    logic [31:0] _RANDOM_172;
+    logic [31:0] _RANDOM_173;
+    logic [31:0] _RANDOM_174;
+    logic [31:0] _RANDOM_175;
+    logic [31:0] _RANDOM_176;
+    logic [31:0] _RANDOM_177;
+    logic [31:0] _RANDOM_178;
+    logic [31:0] _RANDOM_179;
+    logic [31:0] _RANDOM_180;
+    logic [31:0] _RANDOM_181;
+    logic [31:0] _RANDOM_182;
+    logic [31:0] _RANDOM_183;
+    logic [31:0] _RANDOM_184;
+    logic [31:0] _RANDOM_185;
+    logic [31:0] _RANDOM_186;
+    logic [31:0] _RANDOM_187;
+    logic [31:0] _RANDOM_188;
+    logic [31:0] _RANDOM_189;
+    logic [31:0] _RANDOM_190;
+    logic [31:0] _RANDOM_191;
+    logic [31:0] _RANDOM_192;
+    logic [31:0] _RANDOM_193;
+    logic [31:0] _RANDOM_194;
+    logic [31:0] _RANDOM_195;
+    logic [31:0] _RANDOM_196;
+    logic [31:0] _RANDOM_197;
+    logic [31:0] _RANDOM_198;
+    logic [31:0] _RANDOM_199;
+    logic [31:0] _RANDOM_200;
+    logic [31:0] _RANDOM_201;
+    logic [31:0] _RANDOM_202;
+    logic [31:0] _RANDOM_203;
+    logic [31:0] _RANDOM_204;
+    logic [31:0] _RANDOM_205;
+    logic [31:0] _RANDOM_206;
+    logic [31:0] _RANDOM_207;
+    logic [31:0] _RANDOM_208;
+    logic [31:0] _RANDOM_209;
+    logic [31:0] _RANDOM_210;
+    logic [31:0] _RANDOM_211;
+    logic [31:0] _RANDOM_212;
+    logic [31:0] _RANDOM_213;
+    logic [31:0] _RANDOM_214;
+    logic [31:0] _RANDOM_215;
+    logic [31:0] _RANDOM_216;
+    logic [31:0] _RANDOM_217;
+    logic [31:0] _RANDOM_218;
+    logic [31:0] _RANDOM_219;
+    logic [31:0] _RANDOM_220;
+    logic [31:0] _RANDOM_221;
+    logic [31:0] _RANDOM_222;
+    logic [31:0] _RANDOM_223;
+    logic [31:0] _RANDOM_224;
+    logic [31:0] _RANDOM_225;
+    logic [31:0] _RANDOM_226;
+    logic [31:0] _RANDOM_227;
+    logic [31:0] _RANDOM_228;
+    logic [31:0] _RANDOM_229;
+    logic [31:0] _RANDOM_230;
+    logic [31:0] _RANDOM_231;
+    logic [31:0] _RANDOM_232;
+    logic [31:0] _RANDOM_233;
+    logic [31:0] _RANDOM_234;
+    logic [31:0] _RANDOM_235;
+    logic [31:0] _RANDOM_236;
+    logic [31:0] _RANDOM_237;
+    logic [31:0] _RANDOM_238;
+    logic [31:0] _RANDOM_239;
+    logic [31:0] _RANDOM_240;
     initial begin
       `ifdef INIT_RANDOM_PROLOG_
         `INIT_RANDOM_PROLOG_
@@ -1284,6 +2715,147 @@ module CSRFile(
         _RANDOM_97 = `RANDOM;
         _RANDOM_98 = `RANDOM;
         _RANDOM_99 = `RANDOM;
+        _RANDOM_100 = `RANDOM;
+        _RANDOM_101 = `RANDOM;
+        _RANDOM_102 = `RANDOM;
+        _RANDOM_103 = `RANDOM;
+        _RANDOM_104 = `RANDOM;
+        _RANDOM_105 = `RANDOM;
+        _RANDOM_106 = `RANDOM;
+        _RANDOM_107 = `RANDOM;
+        _RANDOM_108 = `RANDOM;
+        _RANDOM_109 = `RANDOM;
+        _RANDOM_110 = `RANDOM;
+        _RANDOM_111 = `RANDOM;
+        _RANDOM_112 = `RANDOM;
+        _RANDOM_113 = `RANDOM;
+        _RANDOM_114 = `RANDOM;
+        _RANDOM_115 = `RANDOM;
+        _RANDOM_116 = `RANDOM;
+        _RANDOM_117 = `RANDOM;
+        _RANDOM_118 = `RANDOM;
+        _RANDOM_119 = `RANDOM;
+        _RANDOM_120 = `RANDOM;
+        _RANDOM_121 = `RANDOM;
+        _RANDOM_122 = `RANDOM;
+        _RANDOM_123 = `RANDOM;
+        _RANDOM_124 = `RANDOM;
+        _RANDOM_125 = `RANDOM;
+        _RANDOM_126 = `RANDOM;
+        _RANDOM_127 = `RANDOM;
+        _RANDOM_128 = `RANDOM;
+        _RANDOM_129 = `RANDOM;
+        _RANDOM_130 = `RANDOM;
+        _RANDOM_131 = `RANDOM;
+        _RANDOM_132 = `RANDOM;
+        _RANDOM_133 = `RANDOM;
+        _RANDOM_134 = `RANDOM;
+        _RANDOM_135 = `RANDOM;
+        _RANDOM_136 = `RANDOM;
+        _RANDOM_137 = `RANDOM;
+        _RANDOM_138 = `RANDOM;
+        _RANDOM_139 = `RANDOM;
+        _RANDOM_140 = `RANDOM;
+        _RANDOM_141 = `RANDOM;
+        _RANDOM_142 = `RANDOM;
+        _RANDOM_143 = `RANDOM;
+        _RANDOM_144 = `RANDOM;
+        _RANDOM_145 = `RANDOM;
+        _RANDOM_146 = `RANDOM;
+        _RANDOM_147 = `RANDOM;
+        _RANDOM_148 = `RANDOM;
+        _RANDOM_149 = `RANDOM;
+        _RANDOM_150 = `RANDOM;
+        _RANDOM_151 = `RANDOM;
+        _RANDOM_152 = `RANDOM;
+        _RANDOM_153 = `RANDOM;
+        _RANDOM_154 = `RANDOM;
+        _RANDOM_155 = `RANDOM;
+        _RANDOM_156 = `RANDOM;
+        _RANDOM_157 = `RANDOM;
+        _RANDOM_158 = `RANDOM;
+        _RANDOM_159 = `RANDOM;
+        _RANDOM_160 = `RANDOM;
+        _RANDOM_161 = `RANDOM;
+        _RANDOM_162 = `RANDOM;
+        _RANDOM_163 = `RANDOM;
+        _RANDOM_164 = `RANDOM;
+        _RANDOM_165 = `RANDOM;
+        _RANDOM_166 = `RANDOM;
+        _RANDOM_167 = `RANDOM;
+        _RANDOM_168 = `RANDOM;
+        _RANDOM_169 = `RANDOM;
+        _RANDOM_170 = `RANDOM;
+        _RANDOM_171 = `RANDOM;
+        _RANDOM_172 = `RANDOM;
+        _RANDOM_173 = `RANDOM;
+        _RANDOM_174 = `RANDOM;
+        _RANDOM_175 = `RANDOM;
+        _RANDOM_176 = `RANDOM;
+        _RANDOM_177 = `RANDOM;
+        _RANDOM_178 = `RANDOM;
+        _RANDOM_179 = `RANDOM;
+        _RANDOM_180 = `RANDOM;
+        _RANDOM_181 = `RANDOM;
+        _RANDOM_182 = `RANDOM;
+        _RANDOM_183 = `RANDOM;
+        _RANDOM_184 = `RANDOM;
+        _RANDOM_185 = `RANDOM;
+        _RANDOM_186 = `RANDOM;
+        _RANDOM_187 = `RANDOM;
+        _RANDOM_188 = `RANDOM;
+        _RANDOM_189 = `RANDOM;
+        _RANDOM_190 = `RANDOM;
+        _RANDOM_191 = `RANDOM;
+        _RANDOM_192 = `RANDOM;
+        _RANDOM_193 = `RANDOM;
+        _RANDOM_194 = `RANDOM;
+        _RANDOM_195 = `RANDOM;
+        _RANDOM_196 = `RANDOM;
+        _RANDOM_197 = `RANDOM;
+        _RANDOM_198 = `RANDOM;
+        _RANDOM_199 = `RANDOM;
+        _RANDOM_200 = `RANDOM;
+        _RANDOM_201 = `RANDOM;
+        _RANDOM_202 = `RANDOM;
+        _RANDOM_203 = `RANDOM;
+        _RANDOM_204 = `RANDOM;
+        _RANDOM_205 = `RANDOM;
+        _RANDOM_206 = `RANDOM;
+        _RANDOM_207 = `RANDOM;
+        _RANDOM_208 = `RANDOM;
+        _RANDOM_209 = `RANDOM;
+        _RANDOM_210 = `RANDOM;
+        _RANDOM_211 = `RANDOM;
+        _RANDOM_212 = `RANDOM;
+        _RANDOM_213 = `RANDOM;
+        _RANDOM_214 = `RANDOM;
+        _RANDOM_215 = `RANDOM;
+        _RANDOM_216 = `RANDOM;
+        _RANDOM_217 = `RANDOM;
+        _RANDOM_218 = `RANDOM;
+        _RANDOM_219 = `RANDOM;
+        _RANDOM_220 = `RANDOM;
+        _RANDOM_221 = `RANDOM;
+        _RANDOM_222 = `RANDOM;
+        _RANDOM_223 = `RANDOM;
+        _RANDOM_224 = `RANDOM;
+        _RANDOM_225 = `RANDOM;
+        _RANDOM_226 = `RANDOM;
+        _RANDOM_227 = `RANDOM;
+        _RANDOM_228 = `RANDOM;
+        _RANDOM_229 = `RANDOM;
+        _RANDOM_230 = `RANDOM;
+        _RANDOM_231 = `RANDOM;
+        _RANDOM_232 = `RANDOM;
+        _RANDOM_233 = `RANDOM;
+        _RANDOM_234 = `RANDOM;
+        _RANDOM_235 = `RANDOM;
+        _RANDOM_236 = `RANDOM;
+        _RANDOM_237 = `RANDOM;
+        _RANDOM_238 = `RANDOM;
+        _RANDOM_239 = `RANDOM;
+        _RANDOM_240 = `RANDOM;
         reg_mstatus_prv = _RANDOM_1[7:6];	// @[CSR.scala:410:28]
         reg_mstatus_v = _RANDOM_1[8];	// @[CSR.scala:410:28]
         reg_mstatus_mpv = _RANDOM_2[1];	// @[CSR.scala:410:28]
@@ -1372,51 +2944,219 @@ module CSRFile(
         reg_pmp_7_cfg_w = _RANDOM_25[24];	// @[CSR.scala:501:20]
         reg_pmp_7_cfg_r = _RANDOM_25[25];	// @[CSR.scala:501:20]
         reg_pmp_7_addr = {_RANDOM_25[31:26], _RANDOM_26[23:0]};	// @[CSR.scala:501:20]
-        reg_mie = {_RANDOM_26[31:24], _RANDOM_27, _RANDOM_28[23:0]};	// @[CSR.scala:501:20, :503:20]
-        reg_mideleg = {_RANDOM_28[31:24], _RANDOM_29, _RANDOM_30[23:0]};	// @[CSR.scala:503:20, :505:18]
-        reg_medeleg = {_RANDOM_30[31:24], _RANDOM_31, _RANDOM_32[23:0]};	// @[CSR.scala:505:18, :509:18]
-        reg_mip_seip = _RANDOM_32[30];	// @[CSR.scala:509:18, :512:20]
-        reg_mip_stip = _RANDOM_33[2];	// @[CSR.scala:512:20]
-        reg_mip_ssip = _RANDOM_33[6];	// @[CSR.scala:512:20]
-        reg_mepc = {_RANDOM_33[31:8], _RANDOM_34[15:0]};	// @[CSR.scala:512:20, :513:21]
-        reg_mcause = {_RANDOM_34[31:16], _RANDOM_35, _RANDOM_36[15:0]};	// @[CSR.scala:513:21, :514:27]
-        reg_mtval = {_RANDOM_36[31:16], _RANDOM_37[23:0]};	// @[CSR.scala:514:27, :515:22]
-        reg_mscratch = {_RANDOM_39, _RANDOM_40};	// @[CSR.scala:517:25]
-        reg_mtvec = _RANDOM_41;	// @[CSR.scala:520:31]
-        reg_mcounteren = {_RANDOM_47[31:22], _RANDOM_48[21:0]};	// @[CSR.scala:535:18]
-        reg_scounteren = {_RANDOM_48[31:22], _RANDOM_49[21:0]};	// @[CSR.scala:535:18, :539:18]
-        reg_hstatus_spvp = _RANDOM_56[13];	// @[CSR.scala:556:28]
-        reg_vsstatus_vs = _RANDOM_64[5:4];	// @[CSR.scala:566:25]
-        reg_vsstatus_spp = _RANDOM_64[6];	// @[CSR.scala:566:25]
-        reg_vsepc = {_RANDOM_66[31:15], _RANDOM_67[22:0]};	// @[CSR.scala:568:22]
-        reg_sepc = {_RANDOM_72[31], _RANDOM_73, _RANDOM_74[6:0]};	// @[CSR.scala:573:21]
-        reg_scause = {_RANDOM_74[31:7], _RANDOM_75, _RANDOM_76[6:0]};	// @[CSR.scala:573:21, :574:23]
-        reg_stval = {_RANDOM_76[31:7], _RANDOM_77[14:0]};	// @[CSR.scala:574:23, :575:22]
-        reg_sscratch = {_RANDOM_77[31:15], _RANDOM_78, _RANDOM_79[14:0]};	// @[CSR.scala:575:22, :576:25]
-        reg_stvec = {_RANDOM_79[31:15], _RANDOM_80[21:0]};	// @[CSR.scala:576:25, :577:22]
-        reg_satp_mode = _RANDOM_80[25:22];	// @[CSR.scala:577:22, :578:21]
-        reg_satp_ppn = {_RANDOM_81[31:10], _RANDOM_82[21:0]};	// @[CSR.scala:578:21]
-        reg_wfi = _RANDOM_82[22];	// @[CSR.scala:578:21, :579:54]
-        reg_fflags = _RANDOM_82[27:23];	// @[CSR.scala:578:21, :581:23]
-        reg_frm = _RANDOM_82[30:28];	// @[CSR.scala:578:21, :582:20]
-        reg_vconfig_vl = {_RANDOM_82[31], _RANDOM_83[6:0]};	// @[CSR.scala:578:21, :583:43]
-        reg_vconfig_vtype_vill = _RANDOM_83[7];	// @[CSR.scala:583:43]
-        reg_vconfig_vtype_vma = _RANDOM_84[31];	// @[CSR.scala:583:43]
-        reg_vconfig_vtype_vta = _RANDOM_85[0];	// @[CSR.scala:583:43]
-        reg_vconfig_vtype_vsew = _RANDOM_85[3:1];	// @[CSR.scala:583:43]
-        reg_vconfig_vtype_vlmul_sign = _RANDOM_85[4];	// @[CSR.scala:583:43]
-        reg_vconfig_vtype_vlmul_mag = _RANDOM_85[6:5];	// @[CSR.scala:583:43]
-        reg_vstart = _RANDOM_85[13:7];	// @[CSR.scala:583:43, :584:42]
-        reg_vxsat = _RANDOM_85[14];	// @[CSR.scala:583:43, :585:41]
-        reg_vxrm = _RANDOM_85[16:15];	// @[CSR.scala:583:43, :586:40]
-        reg_mcountinhibit = _RANDOM_85[19:17];	// @[CSR.scala:583:43, :588:34]
-        small_0 = _RANDOM_85[25:20];	// @[CSR.scala:583:43, Counters.scala:45:41]
-        large_0 = {_RANDOM_85[31:26], _RANDOM_86, _RANDOM_87[19:0]};	// @[CSR.scala:583:43, Counters.scala:50:31]
-        small_1 = _RANDOM_87[25:20];	// @[Counters.scala:45:41, :50:31]
-        large_1 = {_RANDOM_87[31:26], _RANDOM_88, _RANDOM_89[19:0]};	// @[Counters.scala:50:31]
-        reg_misa = {_RANDOM_89[31:20], _RANDOM_90, _RANDOM_91[19:0]};	// @[CSR.scala:647:25, Counters.scala:50:31]
-        reg_custom_0 = {_RANDOM_91[31:20], _RANDOM_92, _RANDOM_93[19:0]};	// @[CSR.scala:647:25, :793:43]
-        io_status_cease_r = _RANDOM_99[20];	// @[Reg.scala:35:20]
+        reg_pmp_8_cfg_l = _RANDOM_26[24];	// @[CSR.scala:501:20]
+        reg_pmp_8_cfg_a = _RANDOM_26[28:27];	// @[CSR.scala:501:20]
+        reg_pmp_8_cfg_x = _RANDOM_26[29];	// @[CSR.scala:501:20]
+        reg_pmp_8_cfg_w = _RANDOM_26[30];	// @[CSR.scala:501:20]
+        reg_pmp_8_cfg_r = _RANDOM_26[31];	// @[CSR.scala:501:20]
+        reg_pmp_8_addr = _RANDOM_27[29:0];	// @[CSR.scala:501:20]
+        reg_pmp_9_cfg_l = _RANDOM_27[30];	// @[CSR.scala:501:20]
+        reg_pmp_9_cfg_a = _RANDOM_28[2:1];	// @[CSR.scala:501:20]
+        reg_pmp_9_cfg_x = _RANDOM_28[3];	// @[CSR.scala:501:20]
+        reg_pmp_9_cfg_w = _RANDOM_28[4];	// @[CSR.scala:501:20]
+        reg_pmp_9_cfg_r = _RANDOM_28[5];	// @[CSR.scala:501:20]
+        reg_pmp_9_addr = {_RANDOM_28[31:6], _RANDOM_29[3:0]};	// @[CSR.scala:501:20]
+        reg_pmp_10_cfg_l = _RANDOM_29[4];	// @[CSR.scala:501:20]
+        reg_pmp_10_cfg_a = _RANDOM_29[8:7];	// @[CSR.scala:501:20]
+        reg_pmp_10_cfg_x = _RANDOM_29[9];	// @[CSR.scala:501:20]
+        reg_pmp_10_cfg_w = _RANDOM_29[10];	// @[CSR.scala:501:20]
+        reg_pmp_10_cfg_r = _RANDOM_29[11];	// @[CSR.scala:501:20]
+        reg_pmp_10_addr = {_RANDOM_29[31:12], _RANDOM_30[9:0]};	// @[CSR.scala:501:20]
+        reg_pmp_11_cfg_l = _RANDOM_30[10];	// @[CSR.scala:501:20]
+        reg_pmp_11_cfg_a = _RANDOM_30[14:13];	// @[CSR.scala:501:20]
+        reg_pmp_11_cfg_x = _RANDOM_30[15];	// @[CSR.scala:501:20]
+        reg_pmp_11_cfg_w = _RANDOM_30[16];	// @[CSR.scala:501:20]
+        reg_pmp_11_cfg_r = _RANDOM_30[17];	// @[CSR.scala:501:20]
+        reg_pmp_11_addr = {_RANDOM_30[31:18], _RANDOM_31[15:0]};	// @[CSR.scala:501:20]
+        reg_pmp_12_cfg_l = _RANDOM_31[16];	// @[CSR.scala:501:20]
+        reg_pmp_12_cfg_a = _RANDOM_31[20:19];	// @[CSR.scala:501:20]
+        reg_pmp_12_cfg_x = _RANDOM_31[21];	// @[CSR.scala:501:20]
+        reg_pmp_12_cfg_w = _RANDOM_31[22];	// @[CSR.scala:501:20]
+        reg_pmp_12_cfg_r = _RANDOM_31[23];	// @[CSR.scala:501:20]
+        reg_pmp_12_addr = {_RANDOM_31[31:24], _RANDOM_32[21:0]};	// @[CSR.scala:501:20]
+        reg_pmp_13_cfg_l = _RANDOM_32[22];	// @[CSR.scala:501:20]
+        reg_pmp_13_cfg_a = _RANDOM_32[26:25];	// @[CSR.scala:501:20]
+        reg_pmp_13_cfg_x = _RANDOM_32[27];	// @[CSR.scala:501:20]
+        reg_pmp_13_cfg_w = _RANDOM_32[28];	// @[CSR.scala:501:20]
+        reg_pmp_13_cfg_r = _RANDOM_32[29];	// @[CSR.scala:501:20]
+        reg_pmp_13_addr = {_RANDOM_32[31:30], _RANDOM_33[27:0]};	// @[CSR.scala:501:20]
+        reg_pmp_14_cfg_l = _RANDOM_33[28];	// @[CSR.scala:501:20]
+        reg_pmp_14_cfg_a = {_RANDOM_33[31], _RANDOM_34[0]};	// @[CSR.scala:501:20]
+        reg_pmp_14_cfg_x = _RANDOM_34[1];	// @[CSR.scala:501:20]
+        reg_pmp_14_cfg_w = _RANDOM_34[2];	// @[CSR.scala:501:20]
+        reg_pmp_14_cfg_r = _RANDOM_34[3];	// @[CSR.scala:501:20]
+        reg_pmp_14_addr = {_RANDOM_34[31:4], _RANDOM_35[1:0]};	// @[CSR.scala:501:20]
+        reg_pmp_15_cfg_l = _RANDOM_35[2];	// @[CSR.scala:501:20]
+        reg_pmp_15_cfg_a = _RANDOM_35[6:5];	// @[CSR.scala:501:20]
+        reg_pmp_15_cfg_x = _RANDOM_35[7];	// @[CSR.scala:501:20]
+        reg_pmp_15_cfg_w = _RANDOM_35[8];	// @[CSR.scala:501:20]
+        reg_pmp_15_cfg_r = _RANDOM_35[9];	// @[CSR.scala:501:20]
+        reg_pmp_15_addr = {_RANDOM_35[31:10], _RANDOM_36[7:0]};	// @[CSR.scala:501:20]
+        reg_mie = {_RANDOM_36[31:8], _RANDOM_37, _RANDOM_38[7:0]};	// @[CSR.scala:501:20, :503:20]
+        reg_mideleg = {_RANDOM_38[31:8], _RANDOM_39, _RANDOM_40[7:0]};	// @[CSR.scala:503:20, :505:18]
+        reg_medeleg = {_RANDOM_40[31:8], _RANDOM_41, _RANDOM_42[7:0]};	// @[CSR.scala:505:18, :509:18]
+        reg_mip_seip = _RANDOM_42[14];	// @[CSR.scala:509:18, :512:20]
+        reg_mip_stip = _RANDOM_42[18];	// @[CSR.scala:509:18, :512:20]
+        reg_mip_ssip = _RANDOM_42[22];	// @[CSR.scala:509:18, :512:20]
+        reg_mepc = {_RANDOM_42[31:24], _RANDOM_43};	// @[CSR.scala:509:18, :513:21]
+        reg_mcause = {_RANDOM_44, _RANDOM_45};	// @[CSR.scala:514:27]
+        reg_mtval = {_RANDOM_46, _RANDOM_47[7:0]};	// @[CSR.scala:515:22]
+        reg_mscratch = {_RANDOM_48[31:16], _RANDOM_49, _RANDOM_50[15:0]};	// @[CSR.scala:517:25]
+        reg_mtvec = {_RANDOM_50[31:16], _RANDOM_51[15:0]};	// @[CSR.scala:517:25, :520:31]
+        reg_mcounteren = {_RANDOM_57[31:6], _RANDOM_58[5:0]};	// @[CSR.scala:535:18]
+        reg_scounteren = {_RANDOM_58[31:6], _RANDOM_59[5:0]};	// @[CSR.scala:535:18, :539:18]
+        reg_hstatus_spvp = _RANDOM_65[29];	// @[CSR.scala:556:28]
+        reg_vsstatus_vs = _RANDOM_73[21:20];	// @[CSR.scala:566:25]
+        reg_vsstatus_spp = _RANDOM_73[22];	// @[CSR.scala:566:25]
+        reg_vsepc = {_RANDOM_75[31], _RANDOM_76, _RANDOM_77[6:0]};	// @[CSR.scala:568:22]
+        reg_sepc = {_RANDOM_82[31:15], _RANDOM_83[22:0]};	// @[CSR.scala:573:21]
+        reg_scause = {_RANDOM_83[31:23], _RANDOM_84, _RANDOM_85[22:0]};	// @[CSR.scala:573:21, :574:23]
+        reg_stval = {_RANDOM_85[31:23], _RANDOM_86[30:0]};	// @[CSR.scala:574:23, :575:22]
+        reg_sscratch = {_RANDOM_86[31], _RANDOM_87, _RANDOM_88[30:0]};	// @[CSR.scala:575:22, :576:25]
+        reg_stvec = {_RANDOM_88[31], _RANDOM_89, _RANDOM_90[5:0]};	// @[CSR.scala:576:25, :577:22]
+        reg_satp_mode = _RANDOM_90[9:6];	// @[CSR.scala:577:22, :578:21]
+        reg_satp_ppn = {_RANDOM_90[31:26], _RANDOM_91, _RANDOM_92[5:0]};	// @[CSR.scala:577:22, :578:21]
+        reg_wfi = _RANDOM_92[6];	// @[CSR.scala:578:21, :579:54]
+        reg_fflags = _RANDOM_92[11:7];	// @[CSR.scala:578:21, :581:23]
+        reg_frm = _RANDOM_92[14:12];	// @[CSR.scala:578:21, :582:20]
+        reg_vconfig_vl = _RANDOM_92[22:15];	// @[CSR.scala:578:21, :583:43]
+        reg_vconfig_vtype_vill = _RANDOM_92[23];	// @[CSR.scala:578:21, :583:43]
+        reg_vconfig_vtype_vma = _RANDOM_94[15];	// @[CSR.scala:583:43]
+        reg_vconfig_vtype_vta = _RANDOM_94[16];	// @[CSR.scala:583:43]
+        reg_vconfig_vtype_vsew = _RANDOM_94[19:17];	// @[CSR.scala:583:43]
+        reg_vconfig_vtype_vlmul_sign = _RANDOM_94[20];	// @[CSR.scala:583:43]
+        reg_vconfig_vtype_vlmul_mag = _RANDOM_94[22:21];	// @[CSR.scala:583:43]
+        reg_vstart = _RANDOM_94[29:23];	// @[CSR.scala:583:43, :584:42]
+        reg_vxsat = _RANDOM_94[30];	// @[CSR.scala:583:43, :585:41]
+        reg_vxrm = {_RANDOM_94[31], _RANDOM_95[0]};	// @[CSR.scala:583:43, :586:40]
+        reg_mcountinhibit = {_RANDOM_95[31:1], _RANDOM_96[11:0]};	// @[CSR.scala:586:40, :588:34]
+        small_0 = _RANDOM_96[17:12];	// @[CSR.scala:588:34, Counters.scala:45:41]
+        large_0 = {_RANDOM_96[31:18], _RANDOM_97, _RANDOM_98[11:0]};	// @[CSR.scala:588:34, Counters.scala:50:31]
+        small_1 = _RANDOM_98[17:12];	// @[Counters.scala:45:41, :50:31]
+        large_1 = {_RANDOM_98[31:18], _RANDOM_99, _RANDOM_100[11:0]};	// @[Counters.scala:50:31]
+        reg_hpmevent_0 = {_RANDOM_100[31:12], _RANDOM_101, _RANDOM_102[11:0]};	// @[CSR.scala:593:50, Counters.scala:50:31]
+        reg_hpmevent_1 = {_RANDOM_102[31:12], _RANDOM_103, _RANDOM_104[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_2 = {_RANDOM_104[31:12], _RANDOM_105, _RANDOM_106[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_3 = {_RANDOM_106[31:12], _RANDOM_107, _RANDOM_108[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_4 = {_RANDOM_108[31:12], _RANDOM_109, _RANDOM_110[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_5 = {_RANDOM_110[31:12], _RANDOM_111, _RANDOM_112[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_6 = {_RANDOM_112[31:12], _RANDOM_113, _RANDOM_114[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_7 = {_RANDOM_114[31:12], _RANDOM_115, _RANDOM_116[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_8 = {_RANDOM_116[31:12], _RANDOM_117, _RANDOM_118[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_9 = {_RANDOM_118[31:12], _RANDOM_119, _RANDOM_120[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_10 = {_RANDOM_120[31:12], _RANDOM_121, _RANDOM_122[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_11 = {_RANDOM_122[31:12], _RANDOM_123, _RANDOM_124[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_12 = {_RANDOM_124[31:12], _RANDOM_125, _RANDOM_126[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_13 = {_RANDOM_126[31:12], _RANDOM_127, _RANDOM_128[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_14 = {_RANDOM_128[31:12], _RANDOM_129, _RANDOM_130[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_15 = {_RANDOM_130[31:12], _RANDOM_131, _RANDOM_132[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_16 = {_RANDOM_132[31:12], _RANDOM_133, _RANDOM_134[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_17 = {_RANDOM_134[31:12], _RANDOM_135, _RANDOM_136[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_18 = {_RANDOM_136[31:12], _RANDOM_137, _RANDOM_138[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_19 = {_RANDOM_138[31:12], _RANDOM_139, _RANDOM_140[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_20 = {_RANDOM_140[31:12], _RANDOM_141, _RANDOM_142[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_21 = {_RANDOM_142[31:12], _RANDOM_143, _RANDOM_144[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_22 = {_RANDOM_144[31:12], _RANDOM_145, _RANDOM_146[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_23 = {_RANDOM_146[31:12], _RANDOM_147, _RANDOM_148[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_24 = {_RANDOM_148[31:12], _RANDOM_149, _RANDOM_150[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_25 = {_RANDOM_150[31:12], _RANDOM_151, _RANDOM_152[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_26 = {_RANDOM_152[31:12], _RANDOM_153, _RANDOM_154[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_27 = {_RANDOM_154[31:12], _RANDOM_155, _RANDOM_156[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_28 = {_RANDOM_156[31:12], _RANDOM_157, _RANDOM_158[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_29 = {_RANDOM_158[31:12], _RANDOM_159, _RANDOM_160[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_30 = {_RANDOM_160[31:12], _RANDOM_161, _RANDOM_162[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_31 = {_RANDOM_162[31:12], _RANDOM_163, _RANDOM_164[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_32 = {_RANDOM_164[31:12], _RANDOM_165, _RANDOM_166[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_33 = {_RANDOM_166[31:12], _RANDOM_167, _RANDOM_168[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_34 = {_RANDOM_168[31:12], _RANDOM_169, _RANDOM_170[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_35 = {_RANDOM_170[31:12], _RANDOM_171, _RANDOM_172[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_36 = {_RANDOM_172[31:12], _RANDOM_173, _RANDOM_174[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_37 = {_RANDOM_174[31:12], _RANDOM_175, _RANDOM_176[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_38 = {_RANDOM_176[31:12], _RANDOM_177, _RANDOM_178[11:0]};	// @[CSR.scala:593:50]
+        reg_hpmevent_39 = {_RANDOM_178[31:12], _RANDOM_179, _RANDOM_180[11:0]};	// @[CSR.scala:593:50]
+        small_2 = _RANDOM_180[17:12];	// @[CSR.scala:593:50, Counters.scala:45:69]
+        large_2 = {_RANDOM_180[31:18], _RANDOM_181[19:0]};	// @[CSR.scala:593:50, Counters.scala:50:69]
+        small_3 = _RANDOM_181[25:20];	// @[Counters.scala:45:69, :50:69]
+        large_3 = {_RANDOM_181[31:26], _RANDOM_182[27:0]};	// @[Counters.scala:50:69]
+        small_4 = {_RANDOM_182[31:28], _RANDOM_183[1:0]};	// @[Counters.scala:45:69, :50:69]
+        large_4 = {_RANDOM_183[31:2], _RANDOM_184[3:0]};	// @[Counters.scala:45:69, :50:69]
+        small_5 = _RANDOM_184[9:4];	// @[Counters.scala:45:69, :50:69]
+        large_5 = {_RANDOM_184[31:10], _RANDOM_185[11:0]};	// @[Counters.scala:50:69]
+        small_6 = _RANDOM_185[17:12];	// @[Counters.scala:45:69, :50:69]
+        large_6 = {_RANDOM_185[31:18], _RANDOM_186[19:0]};	// @[Counters.scala:50:69]
+        small_7 = _RANDOM_186[25:20];	// @[Counters.scala:45:69, :50:69]
+        large_7 = {_RANDOM_186[31:26], _RANDOM_187[27:0]};	// @[Counters.scala:50:69]
+        small_8 = {_RANDOM_187[31:28], _RANDOM_188[1:0]};	// @[Counters.scala:45:69, :50:69]
+        large_8 = {_RANDOM_188[31:2], _RANDOM_189[3:0]};	// @[Counters.scala:45:69, :50:69]
+        small_9 = _RANDOM_189[9:4];	// @[Counters.scala:45:69, :50:69]
+        large_9 = {_RANDOM_189[31:10], _RANDOM_190[11:0]};	// @[Counters.scala:50:69]
+        small_10 = _RANDOM_190[17:12];	// @[Counters.scala:45:69, :50:69]
+        large_10 = {_RANDOM_190[31:18], _RANDOM_191[19:0]};	// @[Counters.scala:50:69]
+        small_11 = _RANDOM_191[25:20];	// @[Counters.scala:45:69, :50:69]
+        large_11 = {_RANDOM_191[31:26], _RANDOM_192[27:0]};	// @[Counters.scala:50:69]
+        small_12 = {_RANDOM_192[31:28], _RANDOM_193[1:0]};	// @[Counters.scala:45:69, :50:69]
+        large_12 = {_RANDOM_193[31:2], _RANDOM_194[3:0]};	// @[Counters.scala:45:69, :50:69]
+        small_13 = _RANDOM_194[9:4];	// @[Counters.scala:45:69, :50:69]
+        large_13 = {_RANDOM_194[31:10], _RANDOM_195[11:0]};	// @[Counters.scala:50:69]
+        small_14 = _RANDOM_195[17:12];	// @[Counters.scala:45:69, :50:69]
+        large_14 = {_RANDOM_195[31:18], _RANDOM_196[19:0]};	// @[Counters.scala:50:69]
+        small_15 = _RANDOM_196[25:20];	// @[Counters.scala:45:69, :50:69]
+        large_15 = {_RANDOM_196[31:26], _RANDOM_197[27:0]};	// @[Counters.scala:50:69]
+        small_16 = {_RANDOM_197[31:28], _RANDOM_198[1:0]};	// @[Counters.scala:45:69, :50:69]
+        large_16 = {_RANDOM_198[31:2], _RANDOM_199[3:0]};	// @[Counters.scala:45:69, :50:69]
+        small_17 = _RANDOM_199[9:4];	// @[Counters.scala:45:69, :50:69]
+        large_17 = {_RANDOM_199[31:10], _RANDOM_200[11:0]};	// @[Counters.scala:50:69]
+        small_18 = _RANDOM_200[17:12];	// @[Counters.scala:45:69, :50:69]
+        large_18 = {_RANDOM_200[31:18], _RANDOM_201[19:0]};	// @[Counters.scala:50:69]
+        small_19 = _RANDOM_201[25:20];	// @[Counters.scala:45:69, :50:69]
+        large_19 = {_RANDOM_201[31:26], _RANDOM_202[27:0]};	// @[Counters.scala:50:69]
+        small_20 = {_RANDOM_202[31:28], _RANDOM_203[1:0]};	// @[Counters.scala:45:69, :50:69]
+        large_20 = {_RANDOM_203[31:2], _RANDOM_204[3:0]};	// @[Counters.scala:45:69, :50:69]
+        small_21 = _RANDOM_204[9:4];	// @[Counters.scala:45:69, :50:69]
+        large_21 = {_RANDOM_204[31:10], _RANDOM_205[11:0]};	// @[Counters.scala:50:69]
+        small_22 = _RANDOM_205[17:12];	// @[Counters.scala:45:69, :50:69]
+        large_22 = {_RANDOM_205[31:18], _RANDOM_206[19:0]};	// @[Counters.scala:50:69]
+        small_23 = _RANDOM_206[25:20];	// @[Counters.scala:45:69, :50:69]
+        large_23 = {_RANDOM_206[31:26], _RANDOM_207[27:0]};	// @[Counters.scala:50:69]
+        small_24 = {_RANDOM_207[31:28], _RANDOM_208[1:0]};	// @[Counters.scala:45:69, :50:69]
+        large_24 = {_RANDOM_208[31:2], _RANDOM_209[3:0]};	// @[Counters.scala:45:69, :50:69]
+        small_25 = _RANDOM_209[9:4];	// @[Counters.scala:45:69, :50:69]
+        large_25 = {_RANDOM_209[31:10], _RANDOM_210[11:0]};	// @[Counters.scala:50:69]
+        small_26 = _RANDOM_210[17:12];	// @[Counters.scala:45:69, :50:69]
+        large_26 = {_RANDOM_210[31:18], _RANDOM_211[19:0]};	// @[Counters.scala:50:69]
+        small_27 = _RANDOM_211[25:20];	// @[Counters.scala:45:69, :50:69]
+        large_27 = {_RANDOM_211[31:26], _RANDOM_212[27:0]};	// @[Counters.scala:50:69]
+        small_28 = {_RANDOM_212[31:28], _RANDOM_213[1:0]};	// @[Counters.scala:45:69, :50:69]
+        large_28 = {_RANDOM_213[31:2], _RANDOM_214[3:0]};	// @[Counters.scala:45:69, :50:69]
+        small_29 = _RANDOM_214[9:4];	// @[Counters.scala:45:69, :50:69]
+        large_29 = {_RANDOM_214[31:10], _RANDOM_215[11:0]};	// @[Counters.scala:50:69]
+        small_30 = _RANDOM_215[17:12];	// @[Counters.scala:45:69, :50:69]
+        large_30 = {_RANDOM_215[31:18], _RANDOM_216[19:0]};	// @[Counters.scala:50:69]
+        small_31 = _RANDOM_216[25:20];	// @[Counters.scala:45:69, :50:69]
+        large_31 = {_RANDOM_216[31:26], _RANDOM_217[27:0]};	// @[Counters.scala:50:69]
+        small_32 = {_RANDOM_217[31:28], _RANDOM_218[1:0]};	// @[Counters.scala:45:69, :50:69]
+        large_32 = {_RANDOM_218[31:2], _RANDOM_219[3:0]};	// @[Counters.scala:45:69, :50:69]
+        small_33 = _RANDOM_219[9:4];	// @[Counters.scala:45:69, :50:69]
+        large_33 = {_RANDOM_219[31:10], _RANDOM_220[11:0]};	// @[Counters.scala:50:69]
+        small_34 = _RANDOM_220[17:12];	// @[Counters.scala:45:69, :50:69]
+        large_34 = {_RANDOM_220[31:18], _RANDOM_221[19:0]};	// @[Counters.scala:50:69]
+        small_35 = _RANDOM_221[25:20];	// @[Counters.scala:45:69, :50:69]
+        large_35 = {_RANDOM_221[31:26], _RANDOM_222[27:0]};	// @[Counters.scala:50:69]
+        small_36 = {_RANDOM_222[31:28], _RANDOM_223[1:0]};	// @[Counters.scala:45:69, :50:69]
+        large_36 = {_RANDOM_223[31:2], _RANDOM_224[3:0]};	// @[Counters.scala:45:69, :50:69]
+        small_37 = _RANDOM_224[9:4];	// @[Counters.scala:45:69, :50:69]
+        large_37 = {_RANDOM_224[31:10], _RANDOM_225[11:0]};	// @[Counters.scala:50:69]
+        small_38 = _RANDOM_225[17:12];	// @[Counters.scala:45:69, :50:69]
+        large_38 = {_RANDOM_225[31:18], _RANDOM_226[19:0]};	// @[Counters.scala:50:69]
+        small_39 = _RANDOM_226[25:20];	// @[Counters.scala:45:69, :50:69]
+        large_39 = {_RANDOM_226[31:26], _RANDOM_227[27:0]};	// @[Counters.scala:50:69]
+        small_40 = {_RANDOM_227[31:28], _RANDOM_228[1:0]};	// @[Counters.scala:45:69, :50:69]
+        large_40 = {_RANDOM_228[31:2], _RANDOM_229[3:0]};	// @[Counters.scala:45:69, :50:69]
+        small_41 = _RANDOM_229[9:4];	// @[Counters.scala:45:69, :50:69]
+        large_41 = {_RANDOM_229[31:10], _RANDOM_230[11:0]};	// @[Counters.scala:50:69]
+        reg_misa = {_RANDOM_230[31:12], _RANDOM_231, _RANDOM_232[11:0]};	// @[CSR.scala:647:25, Counters.scala:50:69]
+        reg_custom_0 = {_RANDOM_232[31:12], _RANDOM_233, _RANDOM_234[11:0]};	// @[CSR.scala:647:25, :793:43]
+        io_status_cease_r = _RANDOM_240[12];	// @[Reg.scala:35:20]
       `endif // RANDOMIZE_REG_INIT
     end // initial
     `ifdef FIRRTL_AFTER_INITIAL
@@ -1427,7 +3167,7 @@ module CSRFile(
   assign io_decode_0_fp_illegal = _io_decode_0_fp_illegal_output;	// @[CSR.scala:897:91]
   assign io_decode_0_vector_illegal = _io_decode_0_vector_illegal_output;	// @[CSR.scala:899:95]
   assign io_decode_0_fp_csr = &_io_decode_0_fp_csr_T;	// @[Cat.scala:33:92, pla.scala:98:74]
-  assign io_decode_0_read_illegal = _io_decode_0_system_illegal_T | ~csr_exists | (_io_decode_0_virtual_access_illegal_T_24 | io_decode_0_inst[31:20] == 12'h680) & ~allow_sfence_vma | is_counter & ~((reg_mstatus_prv[1] | _io_decode_0_virtual_access_illegal_T_3[0]) & ((|reg_mstatus_prv) | _io_decode_0_virtual_access_illegal_T_11[0])) | (&{io_decode_0_inst[24], io_decode_0_inst[25], _GEN_16[0], io_decode_0_inst[27], io_decode_0_inst[28], io_decode_0_inst[29], io_decode_0_inst[30], _GEN_16[5]}) & ~reg_debug | (|{&{io_decode_0_inst[23], _GEN_17[0], _GEN_17[1], _GEN_17[2], _GEN_17[3], _GEN_17[4], _GEN_17[5], _GEN_17[6], _GEN_17[7]}, &{io_decode_0_inst[25], _GEN_17[2], _GEN_17[3], _GEN_17[4], _GEN_17[5], io_decode_0_inst[30], io_decode_0_inst[31]}}) & _io_decode_0_vector_illegal_output | (&_io_decode_0_fp_csr_T) & _io_decode_0_fp_illegal_output;	// @[CSR.scala:410:28, :490:26, :879:27, :881:{93,111}, :886:81, :888:61, :889:70, :890:88, :894:{52,70,86}, :895:{57,75}, :897:91, :899:95, :902:42, :906:7, :907:{30,38,56,59}, :908:{18,21}, :909:{42,45}, :910:{43,68}, :911:21, Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29, :98:74, :114:39]
+  assign io_decode_0_read_illegal = _io_decode_0_system_illegal_T | ~csr_exists | (_io_decode_0_virtual_access_illegal_T_24 | io_decode_0_inst[31:20] == 12'h680) & ~allow_sfence_vma | is_counter & ~((reg_mstatus_prv[1] | _io_decode_0_virtual_access_illegal_T_3[0]) & ((|reg_mstatus_prv) | _io_decode_0_virtual_access_illegal_T_11[0])) | (&{io_decode_0_inst[24], io_decode_0_inst[25], _GEN_24[0], io_decode_0_inst[27], io_decode_0_inst[28], io_decode_0_inst[29], io_decode_0_inst[30], _GEN_24[5]}) & ~reg_debug | (|{&{io_decode_0_inst[23], io_decode_0_read_illegal_invInputs_1[4], io_decode_0_read_illegal_invInputs_1[5], io_decode_0_read_illegal_invInputs_1[6], io_decode_0_read_illegal_invInputs_1[7], io_decode_0_read_illegal_invInputs_1[8], io_decode_0_read_illegal_invInputs_1[9], io_decode_0_read_illegal_invInputs_1[10], io_decode_0_read_illegal_invInputs_1[11]}, &{io_decode_0_read_illegal_invInputs_1[0], io_decode_0_read_illegal_invInputs_1[2], io_decode_0_read_illegal_invInputs_1[3], io_decode_0_read_illegal_invInputs_1[4], io_decode_0_inst[25], io_decode_0_read_illegal_invInputs_1[6], io_decode_0_read_illegal_invInputs_1[7], io_decode_0_read_illegal_invInputs_1[8], io_decode_0_read_illegal_invInputs_1[9], io_decode_0_inst[30], io_decode_0_inst[31]}, &{io_decode_0_read_illegal_invInputs_1[1], io_decode_0_read_illegal_invInputs_1[2], io_decode_0_read_illegal_invInputs_1[3], io_decode_0_read_illegal_invInputs_1[4], io_decode_0_inst[25], io_decode_0_read_illegal_invInputs_1[6], io_decode_0_read_illegal_invInputs_1[7], io_decode_0_read_illegal_invInputs_1[8], io_decode_0_read_illegal_invInputs_1[9], io_decode_0_inst[30], io_decode_0_inst[31]}}) & _io_decode_0_vector_illegal_output | (&_io_decode_0_fp_csr_T) & _io_decode_0_fp_illegal_output;	// @[CSR.scala:410:28, :490:26, :879:27, :881:{93,111}, :886:81, :888:61, :889:70, :890:88, :894:{52,70,86}, :895:{57,75}, :897:91, :899:95, :902:42, :906:7, :907:{30,38,56,59}, :908:{18,21}, :909:{42,45}, :910:{43,68}, :911:21, Cat.scala:33:92, pla.scala:78:21, :90:45, :91:29, :98:74, :114:39]
   assign io_decode_0_write_illegal = &(io_decode_0_inst[31:30]);	// @[CSR.scala:879:27, :912:{33,41}]
   assign io_decode_0_write_flush = ~(io_decode_0_write_flush_addr_m > 12'h33F & io_decode_0_write_flush_addr_m < 12'h344);	// @[CSR.scala:881:93, :914:25, :915:{7,16,35,45}]
   assign io_decode_0_system_illegal = _io_decode_0_system_illegal_T | (&_decoded_T_20) & ~(reg_mstatus_prv[1] | ~reg_mstatus_tw) | (|_decoded_orMatrixOutputs_T_10) & ~(reg_mstatus_prv[1] | ~(~reg_mstatus_v & reg_mstatus_tsr)) | (|_decoded_orMatrixOutputs_T_10) & io_decode_0_inst[30] & io_decode_0_inst[27] & ~reg_debug | (&_decoded_T_22) & ~allow_sfence_vma;	// @[CSR.scala:410:28, :490:26, :879:27, :888:{61,71,74}, :889:{70,77}, :892:{72,75,79}, :902:42, :907:59, :909:45, :918:{14,17}, :919:{14,17}, :920:{21,33,37,51}, :921:37, Cat.scala:33:92, pla.scala:98:74, :114:39]
@@ -1464,7 +3204,7 @@ module CSRFile(
   assign io_hstatus_spvp = reg_hstatus_spvp;	// @[CSR.scala:556:28]
   assign io_ptbr_mode = reg_satp_mode;	// @[CSR.scala:578:21]
   assign io_ptbr_ppn = reg_satp_ppn;	// @[CSR.scala:578:21]
-  assign io_evec = insn_ret ? (io_rw_addr[9] ? (_T_435 ? ~(~reg_dpc | _GEN_11) : ~(~reg_mepc | _GEN_11)) : reg_mstatus_v ? ~(~reg_vsepc | _GEN_11) : ~(~reg_sepc | _GEN_11)) : trapToDebug ? {28'h0, reg_debug ? {8'h80, ~insn_break, 3'h0} : 12'h800} : {_GEN_20[0] & cause[63] & cause[7:6] == 2'h0 ? {_GEN_20[39:8], cause[5:0]} : _GEN_20[39:2], 2'h0};	// @[CSR.scala:410:28, :415:44, :490:26, :491:20, :513:21, :568:22, :573:21, :875:83, :941:8, :943:25, :944:30, :947:119, :950:{22,37}, :959:19, :960:32, :962:{24,55,70,94}, :963:{8,38}, :976:17, :977:11, :1101:49, :1120:19, :1122:{43,48}, :1123:29, :1129:17, :1137:17, :1139:{48,66}, :1143:15, :1144:65, :1650:{26,28,31}, Cat.scala:33:92]
+  assign io_evec = insn_ret ? (io_rw_addr[9] ? (_T_540 ? ~(~reg_dpc | _GEN_19) : ~(~reg_mepc | _GEN_19)) : reg_mstatus_v ? ~(~reg_vsepc | _GEN_19) : ~(~reg_sepc | _GEN_19)) : trapToDebug ? {28'h0, reg_debug ? {8'h80, ~insn_break, 3'h0} : 12'h800} : {_GEN_27[0] & cause[63] & cause[7:6] == 2'h0 ? {_GEN_27[39:8], cause[5:0]} : _GEN_27[39:2], 2'h0};	// @[CSR.scala:410:28, :415:44, :490:26, :491:20, :513:21, :568:22, :573:21, :875:83, :941:8, :943:25, :944:30, :947:119, :950:{22,37}, :959:19, :960:32, :962:{24,55,70,94}, :963:{8,38}, :976:17, :977:11, :1101:49, :1120:19, :1122:{43,48}, :1123:29, :1129:17, :1137:17, :1139:{48,66}, :1143:15, :1144:65, :1650:{26,28,31}, Cat.scala:33:92]
   assign io_time = value_1;	// @[Cat.scala:33:92]
   assign io_fcsr_rm = reg_frm;	// @[CSR.scala:582:20]
   assign io_interrupt = ((io_interrupts_debug | _GEN_1[15] | _GEN_1[14] | _GEN_1[13] | _GEN_1[12] | _GEN_1[11] | _GEN_1[3] | _GEN_1[7] | _GEN_1[9] | _GEN_1[1] | _GEN_1[5] | _GEN_1[10] | _GEN_1[2] | _GEN_1[6] | _GEN_1[8] | _GEN_1[0] | _GEN_1[4] | _GEN_2[10] | _GEN_2[2] | _GEN_2[6] | _GEN_2[8] | _GEN_2[0] | _GEN_2[4]) & ~_io_singleStep_output | reg_singleStepped) & ~(reg_debug | io_status_cease_r);	// @[CSR.scala:490:26, :494:30, :618:25, :619:25, :624:{33,36,51,73,76,88}, :982:34, :1622:{76,90}, Reg.scala:35:20]
@@ -1535,6 +3275,102 @@ module CSRFile(
   assign io_pmp_7_cfg_r = reg_pmp_7_cfg_r;	// @[CSR.scala:501:20]
   assign io_pmp_7_addr = reg_pmp_7_addr;	// @[CSR.scala:501:20]
   assign io_pmp_7_mask = {_GEN_10 & ~(_GEN_10 + 30'h1), 2'h3};	// @[CSR.scala:403:21, PMP.scala:27:14, :58:{14,16,23}]
+  assign io_pmp_8_cfg_l = reg_pmp_8_cfg_l;	// @[CSR.scala:501:20]
+  assign io_pmp_8_cfg_a = reg_pmp_8_cfg_a;	// @[CSR.scala:501:20]
+  assign io_pmp_8_cfg_x = reg_pmp_8_cfg_x;	// @[CSR.scala:501:20]
+  assign io_pmp_8_cfg_w = reg_pmp_8_cfg_w;	// @[CSR.scala:501:20]
+  assign io_pmp_8_cfg_r = reg_pmp_8_cfg_r;	// @[CSR.scala:501:20]
+  assign io_pmp_8_addr = reg_pmp_8_addr;	// @[CSR.scala:501:20]
+  assign io_pmp_8_mask = {_GEN_11 & ~(_GEN_11 + 30'h1), 2'h3};	// @[CSR.scala:403:21, PMP.scala:27:14, :58:{14,16,23}]
+  assign io_pmp_9_cfg_l = reg_pmp_9_cfg_l;	// @[CSR.scala:501:20]
+  assign io_pmp_9_cfg_a = reg_pmp_9_cfg_a;	// @[CSR.scala:501:20]
+  assign io_pmp_9_cfg_x = reg_pmp_9_cfg_x;	// @[CSR.scala:501:20]
+  assign io_pmp_9_cfg_w = reg_pmp_9_cfg_w;	// @[CSR.scala:501:20]
+  assign io_pmp_9_cfg_r = reg_pmp_9_cfg_r;	// @[CSR.scala:501:20]
+  assign io_pmp_9_addr = reg_pmp_9_addr;	// @[CSR.scala:501:20]
+  assign io_pmp_9_mask = {_GEN_12 & ~(_GEN_12 + 30'h1), 2'h3};	// @[CSR.scala:403:21, PMP.scala:27:14, :58:{14,16,23}]
+  assign io_pmp_10_cfg_l = reg_pmp_10_cfg_l;	// @[CSR.scala:501:20]
+  assign io_pmp_10_cfg_a = reg_pmp_10_cfg_a;	// @[CSR.scala:501:20]
+  assign io_pmp_10_cfg_x = reg_pmp_10_cfg_x;	// @[CSR.scala:501:20]
+  assign io_pmp_10_cfg_w = reg_pmp_10_cfg_w;	// @[CSR.scala:501:20]
+  assign io_pmp_10_cfg_r = reg_pmp_10_cfg_r;	// @[CSR.scala:501:20]
+  assign io_pmp_10_addr = reg_pmp_10_addr;	// @[CSR.scala:501:20]
+  assign io_pmp_10_mask = {_GEN_13 & ~(_GEN_13 + 30'h1), 2'h3};	// @[CSR.scala:403:21, PMP.scala:27:14, :58:{14,16,23}]
+  assign io_pmp_11_cfg_l = reg_pmp_11_cfg_l;	// @[CSR.scala:501:20]
+  assign io_pmp_11_cfg_a = reg_pmp_11_cfg_a;	// @[CSR.scala:501:20]
+  assign io_pmp_11_cfg_x = reg_pmp_11_cfg_x;	// @[CSR.scala:501:20]
+  assign io_pmp_11_cfg_w = reg_pmp_11_cfg_w;	// @[CSR.scala:501:20]
+  assign io_pmp_11_cfg_r = reg_pmp_11_cfg_r;	// @[CSR.scala:501:20]
+  assign io_pmp_11_addr = reg_pmp_11_addr;	// @[CSR.scala:501:20]
+  assign io_pmp_11_mask = {_GEN_14 & ~(_GEN_14 + 30'h1), 2'h3};	// @[CSR.scala:403:21, PMP.scala:27:14, :58:{14,16,23}]
+  assign io_pmp_12_cfg_l = reg_pmp_12_cfg_l;	// @[CSR.scala:501:20]
+  assign io_pmp_12_cfg_a = reg_pmp_12_cfg_a;	// @[CSR.scala:501:20]
+  assign io_pmp_12_cfg_x = reg_pmp_12_cfg_x;	// @[CSR.scala:501:20]
+  assign io_pmp_12_cfg_w = reg_pmp_12_cfg_w;	// @[CSR.scala:501:20]
+  assign io_pmp_12_cfg_r = reg_pmp_12_cfg_r;	// @[CSR.scala:501:20]
+  assign io_pmp_12_addr = reg_pmp_12_addr;	// @[CSR.scala:501:20]
+  assign io_pmp_12_mask = {_GEN_15 & ~(_GEN_15 + 30'h1), 2'h3};	// @[CSR.scala:403:21, PMP.scala:27:14, :58:{14,16,23}]
+  assign io_pmp_13_cfg_l = reg_pmp_13_cfg_l;	// @[CSR.scala:501:20]
+  assign io_pmp_13_cfg_a = reg_pmp_13_cfg_a;	// @[CSR.scala:501:20]
+  assign io_pmp_13_cfg_x = reg_pmp_13_cfg_x;	// @[CSR.scala:501:20]
+  assign io_pmp_13_cfg_w = reg_pmp_13_cfg_w;	// @[CSR.scala:501:20]
+  assign io_pmp_13_cfg_r = reg_pmp_13_cfg_r;	// @[CSR.scala:501:20]
+  assign io_pmp_13_addr = reg_pmp_13_addr;	// @[CSR.scala:501:20]
+  assign io_pmp_13_mask = {_GEN_16 & ~(_GEN_16 + 30'h1), 2'h3};	// @[CSR.scala:403:21, PMP.scala:27:14, :58:{14,16,23}]
+  assign io_pmp_14_cfg_l = reg_pmp_14_cfg_l;	// @[CSR.scala:501:20]
+  assign io_pmp_14_cfg_a = reg_pmp_14_cfg_a;	// @[CSR.scala:501:20]
+  assign io_pmp_14_cfg_x = reg_pmp_14_cfg_x;	// @[CSR.scala:501:20]
+  assign io_pmp_14_cfg_w = reg_pmp_14_cfg_w;	// @[CSR.scala:501:20]
+  assign io_pmp_14_cfg_r = reg_pmp_14_cfg_r;	// @[CSR.scala:501:20]
+  assign io_pmp_14_addr = reg_pmp_14_addr;	// @[CSR.scala:501:20]
+  assign io_pmp_14_mask = {_GEN_17 & ~(_GEN_17 + 30'h1), 2'h3};	// @[CSR.scala:403:21, PMP.scala:27:14, :58:{14,16,23}]
+  assign io_pmp_15_cfg_l = reg_pmp_15_cfg_l;	// @[CSR.scala:501:20]
+  assign io_pmp_15_cfg_a = reg_pmp_15_cfg_a;	// @[CSR.scala:501:20]
+  assign io_pmp_15_cfg_x = reg_pmp_15_cfg_x;	// @[CSR.scala:501:20]
+  assign io_pmp_15_cfg_w = reg_pmp_15_cfg_w;	// @[CSR.scala:501:20]
+  assign io_pmp_15_cfg_r = reg_pmp_15_cfg_r;	// @[CSR.scala:501:20]
+  assign io_pmp_15_addr = reg_pmp_15_addr;	// @[CSR.scala:501:20]
+  assign io_pmp_15_mask = {_GEN_18 & ~(_GEN_18 + 30'h1), 2'h3};	// @[CSR.scala:403:21, PMP.scala:27:14, :58:{14,16,23}]
+  assign io_counters_0_eventSel = reg_hpmevent_0;	// @[CSR.scala:593:50]
+  assign io_counters_1_eventSel = reg_hpmevent_1;	// @[CSR.scala:593:50]
+  assign io_counters_2_eventSel = reg_hpmevent_2;	// @[CSR.scala:593:50]
+  assign io_counters_3_eventSel = reg_hpmevent_3;	// @[CSR.scala:593:50]
+  assign io_counters_4_eventSel = reg_hpmevent_4;	// @[CSR.scala:593:50]
+  assign io_counters_5_eventSel = reg_hpmevent_5;	// @[CSR.scala:593:50]
+  assign io_counters_6_eventSel = reg_hpmevent_6;	// @[CSR.scala:593:50]
+  assign io_counters_7_eventSel = reg_hpmevent_7;	// @[CSR.scala:593:50]
+  assign io_counters_8_eventSel = reg_hpmevent_8;	// @[CSR.scala:593:50]
+  assign io_counters_9_eventSel = reg_hpmevent_9;	// @[CSR.scala:593:50]
+  assign io_counters_10_eventSel = reg_hpmevent_10;	// @[CSR.scala:593:50]
+  assign io_counters_11_eventSel = reg_hpmevent_11;	// @[CSR.scala:593:50]
+  assign io_counters_12_eventSel = reg_hpmevent_12;	// @[CSR.scala:593:50]
+  assign io_counters_13_eventSel = reg_hpmevent_13;	// @[CSR.scala:593:50]
+  assign io_counters_14_eventSel = reg_hpmevent_14;	// @[CSR.scala:593:50]
+  assign io_counters_15_eventSel = reg_hpmevent_15;	// @[CSR.scala:593:50]
+  assign io_counters_16_eventSel = reg_hpmevent_16;	// @[CSR.scala:593:50]
+  assign io_counters_17_eventSel = reg_hpmevent_17;	// @[CSR.scala:593:50]
+  assign io_counters_18_eventSel = reg_hpmevent_18;	// @[CSR.scala:593:50]
+  assign io_counters_19_eventSel = reg_hpmevent_19;	// @[CSR.scala:593:50]
+  assign io_counters_20_eventSel = reg_hpmevent_20;	// @[CSR.scala:593:50]
+  assign io_counters_21_eventSel = reg_hpmevent_21;	// @[CSR.scala:593:50]
+  assign io_counters_22_eventSel = reg_hpmevent_22;	// @[CSR.scala:593:50]
+  assign io_counters_23_eventSel = reg_hpmevent_23;	// @[CSR.scala:593:50]
+  assign io_counters_24_eventSel = reg_hpmevent_24;	// @[CSR.scala:593:50]
+  assign io_counters_25_eventSel = reg_hpmevent_25;	// @[CSR.scala:593:50]
+  assign io_counters_26_eventSel = reg_hpmevent_26;	// @[CSR.scala:593:50]
+  assign io_counters_27_eventSel = reg_hpmevent_27;	// @[CSR.scala:593:50]
+  assign io_counters_28_eventSel = reg_hpmevent_28;	// @[CSR.scala:593:50]
+  assign io_counters_29_eventSel = reg_hpmevent_29;	// @[CSR.scala:593:50]
+  assign io_counters_30_eventSel = reg_hpmevent_30;	// @[CSR.scala:593:50]
+  assign io_counters_31_eventSel = reg_hpmevent_31;	// @[CSR.scala:593:50]
+  assign io_counters_32_eventSel = reg_hpmevent_32;	// @[CSR.scala:593:50]
+  assign io_counters_33_eventSel = reg_hpmevent_33;	// @[CSR.scala:593:50]
+  assign io_counters_34_eventSel = reg_hpmevent_34;	// @[CSR.scala:593:50]
+  assign io_counters_35_eventSel = reg_hpmevent_35;	// @[CSR.scala:593:50]
+  assign io_counters_36_eventSel = reg_hpmevent_36;	// @[CSR.scala:593:50]
+  assign io_counters_37_eventSel = reg_hpmevent_37;	// @[CSR.scala:593:50]
+  assign io_counters_38_eventSel = reg_hpmevent_38;	// @[CSR.scala:593:50]
+  assign io_counters_39_eventSel = reg_hpmevent_39;	// @[CSR.scala:593:50]
   assign io_inhibit_cycle = reg_mcountinhibit[0];	// @[CSR.scala:588:34, :589:40]
   assign io_trace_0_valid = io_retire | _io_trace_0_exception_output;	// @[CSR.scala:1027:43, :1606:32]
   assign io_trace_0_iaddr = io_pc;
@@ -1564,7 +3400,7 @@ module CSRFile(
   assign io_stval = {{24{reg_stval[39]}}, reg_stval};	// @[Bitwise.scala:77:12, CSR.scala:575:22, Cat.scala:33:92, package.scala:124:38]
   assign io_stvec = read_stvec;	// @[Cat.scala:33:92]
   assign io_scause = reg_scause;	// @[CSR.scala:574:23]
-  assign io_satp = {reg_satp_mode, 16'h0, reg_satp_ppn};	// @[CSR.scala:578:21, :1020:27, Mux.scala:27:73]
+  assign io_satp = {reg_satp_mode, 16'h0, reg_satp_ppn};	// @[CSR.scala:578:21, :1020:27, :1628:9]
   assign io_sscratch = reg_sscratch;	// @[CSR.scala:576:25]
   assign io_vtype = {reg_vconfig_vtype_vill, 55'h0, reg_vconfig_vtype_vma, reg_vconfig_vtype_vta, reg_vconfig_vtype_vsew, reg_vconfig_vtype_vlmul_sign, reg_vconfig_vtype_vlmul_mag};	// @[CSR.scala:583:43, :1022:41]
   assign io_vcsr = {61'h0, reg_vxrm, reg_vxsat};	// @[CSR.scala:585:41, :586:40, :623:63, :1023:15]

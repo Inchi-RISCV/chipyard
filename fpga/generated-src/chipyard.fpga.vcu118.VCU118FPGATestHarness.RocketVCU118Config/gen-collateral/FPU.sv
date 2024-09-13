@@ -89,10 +89,15 @@ module FPU(
   output          io_fcsr_rdy,
                   io_nack_mem,
                   io_illegal_rm,
+                  io_dec_ldst,
                   io_dec_wen,
                   io_dec_ren1,
                   io_dec_ren2,
                   io_dec_ren3,
+                  io_dec_swap23,
+                  io_dec_fma,
+                  io_dec_div,
+                  io_dec_sqrt,
                   io_sboard_set,
                   io_sboard_clr,
   output [4:0]    io_sboard_clra,
@@ -742,6 +747,7 @@ module FPU(
   `endif // not def SYNTHESIS
   FPUDecoder fp_decoder (	// @[FPU.scala:752:26]
     .io_inst            (io_inst),
+    .io_sigs_ldst       (io_dec_ldst),
     .io_sigs_wen        (io_dec_wen),
     .io_sigs_ren1       (_fp_decoder_io_sigs_ren1),
     .io_sigs_ren2       (_fp_decoder_io_sigs_ren2),
@@ -1017,6 +1023,10 @@ module FPU(
   assign io_dec_ren1 = _fp_decoder_io_sigs_ren1;	// @[FPU.scala:752:26]
   assign io_dec_ren2 = _fp_decoder_io_sigs_ren2;	// @[FPU.scala:752:26]
   assign io_dec_ren3 = _fp_decoder_io_sigs_ren3;	// @[FPU.scala:752:26]
+  assign io_dec_swap23 = _fp_decoder_io_sigs_swap23;	// @[FPU.scala:752:26]
+  assign io_dec_fma = _fp_decoder_io_sigs_fma;	// @[FPU.scala:752:26]
+  assign io_dec_div = _fp_decoder_io_sigs_div;	// @[FPU.scala:752:26]
+  assign io_dec_sqrt = _fp_decoder_io_sigs_sqrt;	// @[FPU.scala:752:26]
   assign io_sboard_set = wb_reg_valid & io_sboard_set_REG;	// @[FPU.scala:781:29, :1000:{49,59}]
   assign io_sboard_clr = divSqrt_wen | wen[0] & (&wbInfo_0_pipeid);	// @[FPU.scala:937:20, :938:19, :967:30, :1001:{49,60}, :1030:66, :1031:21, package.scala:33:86]
   assign io_sboard_clra = waddr;	// @[FPU.scala:963:18]

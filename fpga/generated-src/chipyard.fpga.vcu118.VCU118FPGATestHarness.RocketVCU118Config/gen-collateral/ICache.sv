@@ -88,7 +88,8 @@ module ICache(
   output        io_resp_valid,
   output [31:0] io_resp_bits_data,
   output        io_resp_bits_replay,
-                io_resp_bits_ae
+                io_resp_bits_ae,
+                io_perf_acquire
 );
 
   wire         data_arrays_1_dout_1_en;	// @[ICache.scala:582:46]
@@ -405,5 +406,6 @@ module ICache(
   assign io_resp_bits_data = (s2_tag_hit_0 ? s2_dout_0 : 32'h0) | (s2_tag_hit_1 ? s2_dout_1 : 32'h0) | (s2_tag_hit_2 ? s2_dout_2 : 32'h0) | (s2_tag_hit_3 ? s2_dout_3 : 32'h0);	// @[Bundles.scala:259:74, Mux.scala:27:73, Reg.scala:19:16]
   assign io_resp_bits_replay = |_s2_tag_disparity_T;	// @[ICache.scala:606:{65,72}]
   assign io_resp_bits_ae = s2_tl_error;	// @[Reg.scala:19:16]
+  assign io_perf_acquire = _refill_fire_T;	// @[Decoupled.scala:51:35]
 endmodule
 
